@@ -1,5 +1,6 @@
 {
   "authors": [
+    { "id": "photo-club-thuir", "name": "Photo Club de Thuir", "kind": "organisation", "bioCa": "Club fotogràfic amateur de Thuir (Rosselló), participant habitual del circuit OFF de Perpinyà.", "profileUrl": "https://photoclubdethuir.fr/visa-off-2026", "sources": ["https://photoclubdethuir.fr/visa-off-2026"] },
     { "id": "laurent-ballesta", "name": "Laurent Ballesta", "kind": "person", "bioCa": "Fotògraf, biòleg marí i submarinista francès, fundador d'Andromède Océanologie i líder de les expedicions Gombessa. Triple Wildlife Photographer of the Year.", "profileUrl": "https://fr.wikipedia.org/wiki/Laurent_Ballesta", "sources": ["https://visapourlimage.com/les-expositions/2026/loin-du-ciel/"] },
     { "id": "philemon-barbier", "name": "Philémon Barbier", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/syrie-laube-des-cendres/", "https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"] },
     { "id": "elise-blanchard", "name": "Élise Blanchard", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/afghanistan-les-fillettes-vendues-pour-survivre-aux-secheresses/"] },

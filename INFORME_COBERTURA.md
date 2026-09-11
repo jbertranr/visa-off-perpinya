@@ -36,7 +36,27 @@ la fitxa web recollida al fitxer inicial; Dominicains segons el preprograma PDF 
 (cap article esmenta l'emplaçament). **Es mostra a l'app amb totes dues afirmacions i les
 fonts, sense assignar-hi un punt definitiu** — tal com exigia l'encàrrec.
 
-## OFF de Perpinyà — 10/146 importades (mostra, no catàleg complet)
+## Actualització 11/09/2026 (tarda) — nous intents
+
+Es va continuar buscant OFF més enllà del primer informe. Resultat:
+
+- **`festivaloff-perpignan.fr/copie-de-programme`** dona una taula neta i completa
+  (títol/autor/emplaçament) — però **és l'edició del 2023, no la 2026** (l'encapçalament
+  de la pròpia pàgina ho diu). **Descartada expressament**: no s'ha incorporat cap
+  d'aquestes entrades al catàleg, tot i tenir el format perfecte, perquè serien dades
+  d'un any equivocat presentades com si fossin del 2026. Un dels autors (Michel Craipeau)
+  hi apareix amb una exposició i emplaçament diferents dels del 2026 — confirma que
+  cada edició és independent i que no es pot reutilitzar res d'un any per l'altre.
+- **`liste-lieux-exposition`**: HTTP 403 (bloquejat).
+- **`photoclubdethuir.fr/visa-off-2026`** (font independent, no la guia oficial): **1
+  exposició nova verificada** — "En Suspension" (Photo Club de Thuir, Centre Hospitalier
+  de Perpinyà, 29/08–30/09/2026 — dates que superen el tancament general de l'OFF,
+  pendent de confirmar si és una pròrroga real d'aquest espai).
+- **`dis-leur.fr`** (premsa local): resum verificat per a "Poses Gourmandes" (ja al
+  catàleg) — confirma que l'espai és el restaurant Clos des Lys, no la botiga Cémoi.
+- Catàleg OFF ara: **11/146**.
+
+## OFF de Perpinyà — 11/146 importades (mostra, no catàleg complet)
 
 Els 10 registres del fitxer inicial (Annex B) s'han mantingut, amb les adreces **confir­mades
 i, en alguns casos, precisades** contra `festivaloff-perpignan.fr/les-commerçants` (llista

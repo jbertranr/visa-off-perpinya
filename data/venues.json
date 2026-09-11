@@ -1,6 +1,26 @@
 {
   "venues": [
     {
+      "id": "hopital",
+      "name": "Centre Hospitalier de Perpignan",
+      "address": "Avenue du Languedoc",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "institucio",
+      "circuit": "OFF",
+      "coordinates": { "lat": 42.7257488, "lng": 2.8899549 },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-11",
+      "geocodeSource": "nominatim.openstreetmap.org",
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": ["https://photoclubdethuir.fr/visa-off-2026"],
+      "addressStatus": "source-recorded",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Discrepància d'adreça detectada: la llista de comerços del festival dona '20 Av. du Languedoc', que geocodifica a Cabestany (~7 km, fora de lloc) — s'ha fet servir en canvi la coincidència directa 'Centre hospitalier de Perpignan' de Nominatim. Verificar l'entrada real (probablement un espai concret dins l'hospital, no l'edifici sencer)."
+    },
+    {
       "id": "minimes",
       "name": "Couvent des Minimes",
       "address": "24 rue François Rabelais",

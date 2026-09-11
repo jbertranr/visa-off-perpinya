@@ -15,12 +15,12 @@
   "off": {
     "announcedExhibitions": 146,
     "announcedVenues": 103,
-    "importedExhibitions": 10,
-    "withVenueAssigned": 10,
-    "withVerifiedCoordinates": 9,
+    "importedExhibitions": 11,
+    "withVenueAssigned": 11,
+    "withVerifiedCoordinates": 10,
     "withConfirmedOpeningHours": 0,
-    "withVerifiedSummary": 0,
-    "notesCa": "Mostra parcial de 10 sobre 146 exposicions anunciades. La importació completa no s'ha pogut fer en aquesta sessió: la guia 2026 (calameo) és un flipbook sense text extraïble i les pàgines de categories del web mostren només imatges sense dades associades — la mateixa limitació que ja anotava l'encàrrec. S'ha confirmat de nou aquest bloqueig en aquesta sessió (vegeu incidències)."
+    "withVerifiedSummary": 2,
+    "notesCa": "Mostra parcial de 11 sobre 146 exposicions anunciades (10 de la guia inicial + 1 trobada per cerca independent, Photo Club de Thuir). La importació completa de la guia no s'ha pogut fer: calameo (3 URLs diferents provades) falla sistemàticament (socket hang up o només imatges sense text) i les pàgines de categories del web mostren només imatges sense dades associades. 2 resums verificats contra fonts independents (premsa local, web del club) — la resta d'entrades OFF mantenen summaryCa: null."
   },
   "venues": {
     "total": 19,
