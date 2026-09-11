@@ -185,7 +185,9 @@
 .voff-card__fav-btn.is-active { color: var(--ds-color-warning); }
 
 .voff-card__body {
-  display: block;
+  display: flex;
+  gap: var(--ds-space-3);
+  align-items: flex-start;
   width: 100%;
   text-align: left;
   cursor: pointer;
@@ -196,6 +198,20 @@
   min-height: 44px;
   text-decoration: none;
   color: inherit;
+}
+
+.voff-card__thumb {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--ds-radius);
+  object-fit: contain;
+  background: var(--ds-color-surface-alt);
+}
+
+.voff-card__text {
+  flex: 1;
+  min-width: 0;
 }
 .voff-card__body:hover,
 .voff-card__body:visited,
@@ -374,16 +390,19 @@
   margin: var(--ds-space-4) 0;
 }
 
+/* Imatge de capçalera: a sang per damunt del padding de la targeta
+   (marges negatius = amplada del padding de .voff-fitxa-card). */
 .voff-fitxa__image {
-  margin: var(--ds-space-3) 0 0;
+  margin: calc(var(--ds-space-4) * -1) calc(var(--ds-space-4) * -1) var(--ds-space-3);
 }
 .voff-fitxa__image img {
   width: 100%;
-  border-radius: var(--ds-radius);
+  height: auto;
   display: block;
+  border-radius: var(--ds-radius-lg) var(--ds-radius-lg) 0 0;
 }
 .voff-fitxa__image-caption {
-  margin-top: var(--ds-space-1);
+  margin: var(--ds-space-1) var(--ds-space-4) 0;
   font-size: 0.68rem;
   color: var(--ds-color-muted);
 }

@@ -86,11 +86,22 @@ export function renderExhibitionCard(exh, { parisWallClock, closingSoonMinutes, 
   body.className = "voff-card__body";
   body.href = `fitxa.html?edition=${encodeURIComponent(exh.editionId)}&id=${encodeURIComponent(exh.id)}`;
   body.setAttribute("data-no-router", ""); // router.js no l'ha de tractar com una navegació de pàgina
-  body.append(el("p", "voff-card__title", exh.titleOriginal));
-  body.append(el("span", "ds-card__accent"));
-  body.append(el("p", "voff-card__author", authorshipLabel(exh)));
+
+  if (exh.image) {
+    const thumb = document.createElement("img");
+    thumb.className = "voff-card__thumb";
+    thumb.src = exh.image;
+    thumb.alt = "";
+    thumb.loading = "lazy";
+    body.append(thumb);
+  }
+
+  const text = el("div", "voff-card__text");
+  text.append(el("p", "voff-card__title", exh.titleOriginal));
+  text.append(el("span", "ds-card__accent"));
+  text.append(el("p", "voff-card__author", authorshipLabel(exh)));
   if (exh.summaryCa) {
-    body.append(el("p", "voff-card__summary", exh.summaryCa));
+    text.append(el("p", "voff-card__summary", exh.summaryCa));
   }
   if (exh.venue) {
     const venueLine = el("p", "voff-card__venue");
@@ -98,14 +109,15 @@ export function renderExhibitionCard(exh, { parisWallClock, closingSoonMinutes, 
     pin.className = "fa-solid fa-location-dot";
     pin.setAttribute("aria-hidden", "true");
     venueLine.append(pin, document.createTextNode(` ${exh.venue.name} — ${exh.venue.address}`));
-    body.append(venueLine);
+    text.append(venueLine);
   }
-
   if (parisWallClock) {
     const { node } = statusPill(exh, parisWallClock, closingSoonMinutes);
     node.classList.add("voff-card__status");
-    body.append(node);
+    text.append(node);
   }
+  body.append(text);
+
   body.addEventListener("click", (ev) => {
     // Deixa passar clic amb modificador / botó central: obrir en pestanya
     // nova ha de funcionar com en qualsevol enllaç real.
@@ -268,6 +280,24 @@ function fitxaSourcesBlock(exh) {
 export function buildFitxaCard(exh, mods, { onRouteChange } = {}) {
   const card = el("div", "voff-fitxa-card");
 
+  // Imatge de capçalera (si n'hi ha) — a dalt de tot de la fitxa.
+  if (exh.image) {
+    const figure = el("figure", "voff-fitxa__image");
+    const img = document.createElement("img");
+    img.src = exh.image;
+    img.alt = "";
+    img.loading = "lazy";
+    figure.append(img);
+    const captions = {
+      "festival-promotional-not-explicitly-licensed": "Cartell oficial del festival — drets no confirmats explícitament per a redistribució.",
+      "press-editorial-not-explicitly-licensed": "Fotografia de l'autor, reproduïda via premsa (phototrend.fr) — drets no confirmats explícitament per a redistribució."
+    };
+    if (captions[exh.imageRightsStatus]) {
+      figure.append(el("figcaption", "voff-fitxa__image-caption", captions[exh.imageRightsStatus]));
+    }
+    card.append(figure);
+  }
+
   const bullets = el("div", "voff-fitxa__bullets");
   bullets.append(circuitBadge(exh.circuit));
 
@@ -326,23 +356,6 @@ export function buildFitxaCard(exh, mods, { onRouteChange } = {}) {
   reflectRouteToggle();
   bullets.append(routeToggleBtn);
   card.append(bullets);
-
-  if (exh.image) {
-    const figure = el("figure", "voff-fitxa__image");
-    const img = document.createElement("img");
-    img.src = exh.image;
-    img.alt = "";
-    img.loading = "lazy";
-    figure.append(img);
-    const captions = {
-      "festival-promotional-not-explicitly-licensed": "Cartell oficial del festival — drets no confirmats explícitament per a redistribució.",
-      "press-editorial-not-explicitly-licensed": "Fotografia de l'autor, reproduïda via premsa (phototrend.fr) — drets no confirmats explícitament per a redistribució."
-    };
-    if (captions[exh.imageRightsStatus]) {
-      figure.append(el("figcaption", "voff-fitxa__image-caption", captions[exh.imageRightsStatus]));
-    }
-    card.append(figure);
-  }
 
   card.append(el("h1", "voff-fitxa__title", exh.titleOriginal));
   card.append(fitxaAuthorshipBlock(exh));
