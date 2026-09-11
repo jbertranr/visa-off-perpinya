@@ -171,6 +171,8 @@
 .voff-card__imgcol {
   flex: 0 0 35%;
   align-self: stretch;
+  display: block;
+  cursor: pointer;
 }
 .voff-card__imgcol img {
   width: 100%;

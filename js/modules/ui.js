@@ -51,12 +51,30 @@ function authorshipLabel(exh) {
  * Targeta compacta d'exposició (llista "A prop" dins d'un grup, o
  * resultats d'"Explora"). navigate(exh) és cridada en fer clic.
  */
+// Enllaç real cap a la fitxa, compartit entre la foto i el cos de text
+// de la targeta — deixa passar clic amb modificador / botó central
+// (obrir en pestanya nova ha de funcionar com en qualsevol enllaç).
+function fitxaHref(exh) {
+  return `fitxa.html?edition=${encodeURIComponent(exh.editionId)}&id=${encodeURIComponent(exh.id)}`;
+}
+function wireCardNavigate(a, exh, onOpen) {
+  a.href = fitxaHref(exh);
+  a.setAttribute("data-no-router", ""); // router.js no l'ha de tractar com una navegació de pàgina
+  a.addEventListener("click", (ev) => {
+    if (ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+    ev.preventDefault();
+    onOpen(exh);
+  });
+}
+
 export function renderExhibitionCard(exh, { parisWallClock, closingSoonMinutes, onOpen, onToggleFavorite }) {
   const card = el("div", `ds-card ds-card--status-start voff-card ${exh.circuit === "VISA" ? "ds-card--primary" : "ds-card--accent"}`);
   card.setAttribute("data-exh-id", exh.id);
 
   if (exh.image) {
-    const imgCol = el("div", "voff-card__imgcol");
+    const imgCol = document.createElement("a");
+    imgCol.className = "voff-card__imgcol";
+    wireCardNavigate(imgCol, exh, onOpen);
     const thumb = document.createElement("img");
     thumb.src = exh.image;
     thumb.alt = "";
@@ -101,8 +119,7 @@ export function renderExhibitionCard(exh, { parisWallClock, closingSoonMinutes, 
 
   const body = document.createElement("a");
   body.className = "voff-card__body";
-  body.href = `fitxa.html?edition=${encodeURIComponent(exh.editionId)}&id=${encodeURIComponent(exh.id)}`;
-  body.setAttribute("data-no-router", ""); // router.js no l'ha de tractar com una navegació de pàgina
+  wireCardNavigate(body, exh, onOpen);
 
   const text = el("div", "voff-card__text");
   text.append(el("p", "voff-card__title", exh.titleOriginal));
@@ -125,14 +142,6 @@ export function renderExhibitionCard(exh, { parisWallClock, closingSoonMinutes, 
     text.append(node);
   }
   body.append(text);
-
-  body.addEventListener("click", (ev) => {
-    // Deixa passar clic amb modificador / botó central: obrir en pestanya
-    // nova ha de funcionar com en qualsevol enllaç real.
-    if (ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
-    ev.preventDefault();
-    onOpen(exh);
-  });
   rightCol.append(body);
   card.append(rightCol);
 
