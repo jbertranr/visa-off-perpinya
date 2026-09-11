@@ -390,11 +390,15 @@
   margin: var(--ds-space-4) 0;
 }
 
-/* Imatge de capçalera: ocupa un terç de l'amplada de la fitxa,
-   centrada, sense retallar mai (object-fit natural). */
+/* Foto en la seva pròpia columna (1/3) + text al costat (2/3). */
+.voff-fitxa__hero {
+  display: flex;
+  gap: var(--ds-space-3);
+  align-items: flex-start;
+}
 .voff-fitxa__image {
+  flex: 0 0 33%;
   width: 33%;
-  margin: 0 auto var(--ds-space-3);
 }
 .voff-fitxa__image img {
   width: 100%;
@@ -404,9 +408,16 @@
 }
 .voff-fitxa__image-caption {
   margin: var(--ds-space-1) 0 0;
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   color: var(--ds-color-muted);
-  text-align: center;
+}
+.voff-fitxa__hero-text {
+  flex: 1;
+  min-width: 0;
+}
+/* Sense foto: el text ocupa tota l'amplada, sense columnes. */
+.voff-fitxa__hero:has(.voff-fitxa__hero-text:only-child) .voff-fitxa__hero-text {
+  flex-basis: 100%;
 }
 
 .voff-fitxa__title {
