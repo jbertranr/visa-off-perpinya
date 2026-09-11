@@ -152,11 +152,16 @@ html.voff-text-xl { font-size: 125%; }
 }
 .voff-venue-group:last-child { border-bottom: none; }
 
+/* Nom de la seu (títol) i distància/recompte (meta) en línies
+   separades — abans anaven en una mateixa fila (space-between) i la
+   meta (sense poder embolcallar) es quedava amb tot l'espai que li
+   calia, retallant molt el nom de la seu quan hi havia distància
+   activa (p. ex. "245 m · 3 exposicions · ubicació aproximada"). */
 .voff-venue-group__header {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: var(--ds-space-2);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
   margin-bottom: var(--ds-space-1);
 }
 
@@ -182,7 +187,6 @@ html.voff-text-xl { font-size: 125%; }
   margin: 0;
   font-size: 0.74rem;
   color: var(--ds-color-muted);
-  white-space: nowrap;
 }
 
 .voff-venue-group__list {
@@ -220,11 +224,18 @@ html.voff-text-xl { font-size: 125%; }
   align-self: stretch;
   display: block;
   cursor: pointer;
+  /* Fons subtil per quan object-fit:contain deixa marges (imatges
+     verticals de l'OFF, 3:4, dins d'una columna que sovint és més
+     ampla que alta segons el text de la targeta). */
+  background: var(--ds-color-surface-alt);
 }
 .voff-card__imgcol img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* contain, no cover: amb cover, les fotos verticals de l'OFF (totes
+     3:4) es retallaven molt quan la fila era curta (targetes amb poc
+     text) — es veu sencera sempre, com ja es fa a la fitxa. */
+  object-fit: contain;
   display: block;
 }
 .voff-card__rightcol {
