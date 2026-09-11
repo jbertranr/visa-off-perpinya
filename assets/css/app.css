@@ -36,7 +36,12 @@ html.voff-text-xl { font-size: 125%; }
    queda com a primer element, per això es neutralitza el separador
    (border-left en escriptori / border-top en mòbil quan la capçalera
    passa a columna) que el design-system afegia per marcar-lo respecte
-   al logo — ja no té sentit sense cap element abans. */
+   al logo — ja no té sentit sense cap element abans.
+   Es força una sola fila (flex-direction: row) fins i tot per sota dels
+   520px on el design-system passa normalment a columna: els botons
+   d'acció (mida de lletra…) han de quedar alineats amb el títol, mai
+   baixats a una fila pròpia — el títol/subtítol ja trunquen amb el·lipsi
+   (min-width:0) i es pot reduir més la mida de lletra si cal. */
 .voff-header-wrap {
   position: sticky;
   top: 0;
@@ -47,42 +52,48 @@ html.voff-text-xl { font-size: 125%; }
 .voff-header-wrap .ds-site-header {
   padding: var(--ds-space-2) var(--ds-space-4);
   gap: var(--ds-space-2);
+  flex-direction: row;
+  align-items: center;
 }
 
 .voff-header-wrap .ds-site-header__text {
   border: none;
   padding: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .voff-header-wrap .ds-site-header__title {
-  font-size: 1rem;
+  font-size: 0.92rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .voff-header-wrap .ds-site-header__subtitle {
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 /* Contenidor dels botons d'acció de la capçalera (data/planificació,
-   mida de lletra…) — un sol element de flex perquè, quan la capçalera
-   passa a columna en mòbil (media query més avall), els botons quedin
-   junts en una mateixa fila en lloc d'un per línia. */
+   mida de lletra…) — sempre a la mateixa fila que el títol. */
 .voff-header__actions {
   display: flex;
   align-items: center;
-  gap: var(--ds-space-2);
+  gap: var(--ds-space-1);
   flex-shrink: 0;
-  margin-left: auto;
 }
 
 .voff-header__date-btn,
 .voff-header__fontsize-btn {
   flex-shrink: 0;
+}
+
+.voff-header-wrap .ds-icon-button {
+  width: 2rem;
+  height: 2rem;
 }
 
 /* Filtres visibles (Tots/Visa/OFF) + desplegable de filtres addicionals. */
