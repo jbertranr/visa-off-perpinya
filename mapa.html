@@ -46,12 +46,14 @@
 
   <header class="voff-header-wrap">
     <div class="ds-site-header">
-      <div class="ds-site-header__logo-wrap">
-        <img class="ds-site-header__logo" src="assets/icons/icon.svg" alt="" aria-hidden="true">
-      </div>
       <div class="ds-site-header__text">
         <p class="ds-site-header__title">Visa 2026 i VISA OFF</p>
         <p class="ds-site-header__subtitle">Mapa &middot; només emplaçaments amb coordenades verificades</p>
+      </div>
+      <div class="voff-header__actions">
+        <button class="ds-icon-button voff-header__fontsize-btn" id="btn-fontsize" type="button" aria-label="Augmenta la mida de la lletra">
+          <i class="fa-solid fa-text-height" aria-hidden="true"></i>
+        </button>
       </div>
     </div>
   </header>
@@ -74,6 +76,7 @@
   </nav>
 
   <script src="assets/vendor/leaflet1.9.3/leaflet.js"></script>
+  <script src="js/fontsize.js"></script>
   <script src="js/mapa.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
    Visa+OFF Perpinyà — afegits propis (per sobre del design-system
    compartit). Mòbil-first: dissenyat a 390px, comprovat a 320/360/430
    i escriptori. Tot fa servir els tokens --ds-color-x / --ds-space-x
-   de la skin activa, amb UN sol override local (vegeu just sota).
+   de la skin activa, amb els overrides locals següents.
    ============================================================ */
 
 /* Override local, només d'aquesta app: fons blanc en lloc del gris
@@ -13,7 +13,30 @@
   --ds-color-bg: #ffffff;
 }
 
-/* ── Capçalera (.ds-site-header del design-system, sticky, amb logo) ── */
+/* Evita el desplaçament lateral accidental en gestos tàctils (un
+   fregament vertical una mica en diagonal no ha d'arrossegar la
+   pàgina cap als costats) — només desplaçament vertical a nivell de
+   pàgina. Els contenidors amb scroll horitzontal intencionat
+   (.voff-filters, .voff-map-filters) no en depenen: mantenen el seu
+   propi comportament tàctil per defecte. */
+html, body {
+  overflow-x: hidden;
+  touch-action: pan-y pinch-zoom;
+}
+
+/* Mida de lletra (accessibilitat, botó a la capçalera — js/fontsize.js).
+   Escala el font-size arrel: com que tot el design-system està
+   dimensionat en rem, un sol canvi aquí escala text, espaiats i icones
+   de tota l'app de manera coherent. */
+html.voff-text-lg { font-size: 112.5%; }
+html.voff-text-xl { font-size: 125%; }
+
+/* ── Capçalera (.ds-site-header del design-system, sticky, sense logo) ──
+   S'ha tret el logo-wrap (icona) per estalviar alçada: el bloc de text
+   queda com a primer element, per això es neutralitza el separador
+   (border-left en escriptori / border-top en mòbil quan la capçalera
+   passa a columna) que el design-system afegia per marcar-lo respecte
+   al logo — ja no té sentit sense cap element abans. */
 .voff-header-wrap {
   position: sticky;
   top: 0;
@@ -22,17 +45,13 @@
 }
 
 .voff-header-wrap .ds-site-header {
-  padding: var(--ds-space-3) var(--ds-space-4);
+  padding: var(--ds-space-2) var(--ds-space-4);
+  gap: var(--ds-space-2);
 }
 
-.voff-header-wrap .ds-site-header__logo-wrap {
-  min-width: 40px;
-  min-height: 36px;
-  padding: var(--ds-space-1) var(--ds-space-2);
-}
-
-.voff-header-wrap .ds-site-header__logo {
-  height: 20px;
+.voff-header-wrap .ds-site-header__text {
+  border: none;
+  padding: 0;
 }
 
 .voff-header-wrap .ds-site-header__title {
@@ -49,17 +68,21 @@
   text-overflow: ellipsis;
 }
 
-.voff-header-wrap .ds-site-header__tagline {
-  margin: 1px 0 0;
-  font-size: 0.68rem;
-  font-weight: 600;
-  color: var(--ds-color-accent);
-  letter-spacing: 0.02em;
-}
-
-.voff-header__date-btn {
+/* Contenidor dels botons d'acció de la capçalera (data/planificació,
+   mida de lletra…) — un sol element de flex perquè, quan la capçalera
+   passa a columna en mòbil (media query més avall), els botons quedin
+   junts en una mateixa fila en lloc d'un per línia. */
+.voff-header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-2);
   flex-shrink: 0;
   margin-left: auto;
+}
+
+.voff-header__date-btn,
+.voff-header__fontsize-btn {
+  flex-shrink: 0;
 }
 
 /* Filtres visibles (Tots/Visa/OFF) + desplegable de filtres addicionals. */
@@ -268,6 +291,17 @@
   gap: 4px;
 }
 .voff-card__venue i { margin-top: 2px; flex-shrink: 0; color: var(--ds-color-primary); }
+
+/* Nom de la seu + adreça, en línies separades dins la mateixa columna
+   (min-width:0 perquè pugui encongir dins del flex i faci salt de
+   línia en lloc de sortir de la targeta/pantalla). */
+.voff-card__venue-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.voff-card__venue-name { font-weight: 600; }
+.voff-card__venue-address { white-space: normal; overflow-wrap: anywhere; }
 
 .voff-card__status { font-size: 0.78rem; }
 

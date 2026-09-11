@@ -133,7 +133,15 @@ export function renderExhibitionCard(exh, { parisWallClock, closingSoonMinutes, 
     const pin = document.createElement("i");
     pin.className = "fa-solid fa-location-dot";
     pin.setAttribute("aria-hidden", "true");
-    venueLine.append(pin, document.createTextNode(` ${exh.venue.name} — ${exh.venue.address}`));
+    venueLine.append(pin);
+    // Nom i adreça en línies separades (dins del mateix bloc de text),
+    // perquè una adreça llarga faci salt de línia en lloc de sortir
+    // fora de pantalla — el text com a node solt dins d'un flex no
+    // encongeix per defecte (min-width:auto), calia embolcallar-lo.
+    const venueText = el("span", "voff-card__venue-text");
+    venueText.append(el("span", "voff-card__venue-name", exh.venue.name));
+    venueText.append(el("span", "voff-card__venue-address", exh.venue.address));
+    venueLine.append(venueText);
     text.append(venueLine);
   }
   if (parisWallClock) {
