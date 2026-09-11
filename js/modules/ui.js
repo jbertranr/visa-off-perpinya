@@ -261,6 +261,13 @@ function fitxaSourcesBlock(exh) {
     }
   }
   if (exh.notesCa) wrap.append(el("p", "ds-text ds-text--sm", exh.notesCa));
+  const imageCaptions = {
+    "festival-promotional-not-explicitly-licensed": "Imatge: cartell oficial del festival — drets no confirmats explícitament per a redistribució.",
+    "press-editorial-not-explicitly-licensed": "Imatge: fotografia de l'autor, reproduïda via premsa (phototrend.fr) — drets no confirmats explícitament per a redistribució."
+  };
+  if (imageCaptions[exh.imageRightsStatus]) {
+    wrap.append(el("p", "ds-text ds-text--sm ds-text--muted", imageCaptions[exh.imageRightsStatus]));
+  }
   if (exh.sensitiveContentNotice) {
     const p = el("p", "ds-text ds-text--sm");
     p.style.color = "var(--ds-color-warning)";
@@ -339,8 +346,16 @@ export function buildFitxaCard(exh, mods, { onRouteChange } = {}) {
   bullets.append(routeToggleBtn);
   card.append(bullets);
 
-  // Foto en la seva pròpia columna + text a la columna del costat.
-  const hero = el("div", "voff-fitxa__hero");
+  // Una sola columna (millor per mòbil): títol/autoria/resum primer,
+  // la foto al final del bloc — sense res més a sota.
+  card.append(el("h1", "voff-fitxa__title", exh.titleOriginal));
+  card.append(fitxaAuthorshipBlock(exh));
+  if (exh.summaryCa) {
+    card.append(el("p", "ds-text", exh.summaryCa));
+  } else {
+    card.append(el("p", "ds-text ds-text--sm ds-text--muted", "Encara no hi ha un resum verificat d'aquesta exposició."));
+  }
+
   if (exh.image) {
     const figure = el("figure", "voff-fitxa__image");
     const img = document.createElement("img");
@@ -348,26 +363,8 @@ export function buildFitxaCard(exh, mods, { onRouteChange } = {}) {
     img.alt = "";
     img.loading = "lazy";
     figure.append(img);
-    const captions = {
-      "festival-promotional-not-explicitly-licensed": "Cartell oficial del festival — drets no confirmats explícitament per a redistribució.",
-      "press-editorial-not-explicitly-licensed": "Fotografia de l'autor, reproduïda via premsa (phototrend.fr) — drets no confirmats explícitament per a redistribució."
-    };
-    if (captions[exh.imageRightsStatus]) {
-      figure.append(el("figcaption", "voff-fitxa__image-caption", captions[exh.imageRightsStatus]));
-    }
-    hero.append(figure);
+    card.append(figure);
   }
-
-  const heroText = el("div", "voff-fitxa__hero-text");
-  heroText.append(el("h1", "voff-fitxa__title", exh.titleOriginal));
-  heroText.append(fitxaAuthorshipBlock(exh));
-  if (exh.summaryCa) {
-    heroText.append(el("p", "ds-text", exh.summaryCa));
-  } else {
-    heroText.append(el("p", "ds-text ds-text--sm ds-text--muted", "Encara no hi ha un resum verificat d'aquesta exposició."));
-  }
-  hero.append(heroText);
-  card.append(hero);
 
   card.append(el("hr", "voff-fitxa__divider"));
 
