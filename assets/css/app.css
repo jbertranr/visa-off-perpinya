@@ -5,6 +5,16 @@
    de la skin activa, amb els overrides locals següents.
    ============================================================ */
 
+/* [hidden] ha de guanyar sempre. Diversos components d'aquesta app
+   defineixen el seu propi `display` (p. ex. .voff-geo-bar/.voff-plan-fields
+   amb display:flex): com que l'origen "autor" batega el de l'agent
+   d'usuari encara que l'especificitat empati, la regla nativa
+   [hidden]{display:none} quedava tapada i `el.hidden = true` no amagava
+   res (bug real: el botó de tancar l'avís d'ubicació no funcionava). */
+[hidden] {
+  display: none !important;
+}
+
 /* Override local, només d'aquesta app: fons blanc en lloc del gris
    blavós per defecte de skin-neutra (--ds-color-bg: #eef0f4) — no es
    toca l'skin compartida perquè no afecti la resta d'apps que la fan
