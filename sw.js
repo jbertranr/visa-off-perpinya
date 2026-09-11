@@ -10,7 +10,13 @@
    sense connexió; la resta de l'app, sí.
    ============================================================ */
 
-const CACHE_NAME = "voff-shell-v1";
+// IMPORTANT: puja aquest número cada vegada que es toqui sw.js O es vulgui
+// forçar que tothom rebi l'última versió del shell de seguida — un
+// CACHE_NAME que no canvia mai fa que el navegador no detecti que hi ha
+// service worker nou per instal·lar, i la gent es queda amb HTML/CSS/JS
+// vells indefinidament encara que el lloc s'actualitzi. Bug real trobat
+// i corregit el 2026-09-11.
+const CACHE_NAME = "voff-shell-v2";
 
 const SHELL_FILES = [
   "./",
@@ -65,6 +71,16 @@ function isMapOrExternalRequest(url) {
   return /tile\.openstreetmap\.org|nominatim\.openstreetmap\.org|unpkg\.com|google\.com\/maps/.test(url);
 }
 
+// Codi propi (HTML/CSS/JS de l'app, en desenvolupament actiu): xarxa
+// primer, perquè els canvis es vegin de seguida — la memòria cau només
+// és la xarxa de seguretat per quan no hi ha connexió. Els fitxers de
+// tercers vendoritzats (Font Awesome, Leaflet) i les imatges de les
+// exposicions pràcticament no canvien un cop publicats: cau primer,
+// estalvia dades i van més ràpid.
+function isAppCode(url) {
+  return /\.(html|css|js)(\?|$)/.test(url) && !/\/(vendor|fontawesome)\//.test(url);
+}
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -88,8 +104,10 @@ self.addEventListener("fetch", (event) => {
 
   const isDataFile = request.url.includes("/data/");
 
-  if (isDataFile) {
-    // Xarxa primer (catàleg fresc); si falla, la còpia desada.
+  if (isDataFile || isAppCode(request.url)) {
+    // Xarxa primer (dades i codi propi sempre frescos quan hi ha
+    // connexió); si falla, la còpia desada — així funciona sense
+    // connexió sense quedar-se mai amb una versió vella pel mig.
     event.respondWith(
       fetch(request)
         .then((resp) => {
@@ -102,7 +120,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Shell: memòria cau primer, xarxa com a reforç en segon pla.
+  // Fitxers de tercers vendoritzats i imatges: memòria cau primer.
   event.respondWith(
     caches.match(request).then((cached) => {
       const network = fetch(request).then((resp) => {
