@@ -19,8 +19,12 @@ function el(tag, className, text) {
 }
 
 export function circuitBadge(circuit) {
-  const b = el("span", `ds-badge ds-badge--sm ${circuit === "VISA" ? "ds-badge--primary" : "ds-badge--neutral"}`);
-  b.textContent = circuit;
+  const isVisa = circuit === "VISA";
+  const b = el("span", `ds-badge ds-badge--sm ${isVisa ? "ds-badge--primary" : "voff-badge--off"}`);
+  const icon = document.createElement("i");
+  icon.className = isVisa ? "fa-solid fa-camera-retro" : "fa-solid fa-store";
+  icon.setAttribute("aria-hidden", "true");
+  b.append(icon, document.createTextNode(" " + circuit));
   return b;
 }
 
