@@ -8,13 +8,18 @@
       "countryCode": "FR",
       "kind": "institucio",
       "circuit": "OFF",
-      "coordinates": { "lat": 42.7257488, "lng": 2.8899549 },
+      "coordinates": {
+        "lat": 42.7257488,
+        "lng": 2.8899549
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://photoclubdethuir.fr/visa-off-2026"],
+      "addressSources": [
+        "https://photoclubdethuir.fr/visa-off-2026"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -28,13 +33,18 @@
       "countryCode": "FR",
       "kind": "centre-cultural",
       "circuit": "VISA",
-      "coordinates": { "lat": 42.6994905, "lng": 2.9006820 },
+      "coordinates": {
+        "lat": 42.6994905,
+        "lng": 2.900682
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://visapourlimage.com/en/"],
+      "addressSources": [
+        "https://visapourlimage.com/en/"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -48,13 +58,18 @@
       "countryCode": "FR",
       "kind": "patrimoni",
       "circuit": "VISA",
-      "coordinates": { "lat": 42.7005575, "lng": 2.8999766 },
+      "coordinates": {
+        "lat": 42.7005575,
+        "lng": 2.8999766
+      },
       "coordinateStatus": "approximate-street-nominatim",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://visapourlimage.com/en/"],
+      "addressSources": [
+        "https://visapourlimage.com/en/"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -68,13 +83,18 @@
       "countryCode": "FR",
       "kind": "patrimoni",
       "circuit": "VISA",
-      "coordinates": { "lat": 42.6999152, "lng": 2.9003108 },
+      "coordinates": {
+        "lat": 42.6999152,
+        "lng": 2.9003108
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.perpignantourisme.com/activite/centre-departemental-de-memoire-des-pyrenees-orientales/"],
+      "addressSources": [
+        "https://www.perpignantourisme.com/activite/centre-departemental-de-memoire-des-pyrenees-orientales/"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -88,13 +108,18 @@
       "countryCode": "FR",
       "kind": "patrimoni",
       "circuit": "VISA",
-      "coordinates": { "lat": 42.6978399, "lng": 2.8993881 },
+      "coordinates": {
+        "lat": 42.6978399,
+        "lng": 2.8993881
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://mairie.perpignan.fr/culture-patrimoine/patrimoine/monuments/lancienne-universite"],
+      "addressSources": [
+        "https://mairie.perpignan.fr/culture-patrimoine/patrimoine/monuments/lancienne-universite"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -108,13 +133,18 @@
       "countryCode": "FR",
       "kind": "centre-cultural",
       "circuit": "VISA",
-      "coordinates": { "lat": 42.7010968, "lng": 2.8977129 },
+      "coordinates": {
+        "lat": 42.7010968,
+        "lng": 2.8977129
+      },
       "coordinateStatus": "approximate-street-nominatim",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.perpignantourisme.com/activite/maison-de-la-catalanite/"],
+      "addressSources": [
+        "https://www.perpignantourisme.com/activite/maison-de-la-catalanite/"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -128,13 +158,18 @@
       "countryCode": "FR",
       "kind": "patrimoni",
       "circuit": "VISA",
-      "coordinates": { "lat": 42.6979918, "lng": 2.8983747 },
+      "coordinates": {
+        "lat": 42.6979918,
+        "lng": 2.8983747
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.perpignantourisme.com/activite/hotel-pams/"],
+      "addressSources": [
+        "https://www.perpignantourisme.com/activite/hotel-pams/"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -148,13 +183,18 @@
       "countryCode": "FR",
       "kind": "patrimoni",
       "circuit": "VISA",
-      "coordinates": { "lat": 42.6989900, "lng": 2.8971592 },
+      "coordinates": {
+        "lat": 42.69899,
+        "lng": 2.8971592
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.perpignantourisme.com/activite/casa-xanxo-ciap-centre-d-interpretation-de-l-architecture-et-du-patrimoine/"],
+      "addressSources": [
+        "https://www.perpignantourisme.com/activite/casa-xanxo-ciap-centre-d-interpretation-de-l-architecture-et-du-patrimoine/"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -168,13 +208,18 @@
       "countryCode": "FR",
       "kind": "patrimoni",
       "circuit": "VISA",
-      "coordinates": { "lat": 42.6996787, "lng": 2.8983905 },
+      "coordinates": {
+        "lat": 42.6996787,
+        "lng": 2.8983905
+      },
       "coordinateStatus": "approximate-street-nominatim",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://visapourlimage.com/en/"],
+      "addressSources": [
+        "https://visapourlimage.com/en/"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -188,13 +233,18 @@
       "countryCode": "FR",
       "kind": "institucio",
       "circuit": "VISA",
-      "coordinates": { "lat": 42.6976930, "lng": 2.8907649 },
+      "coordinates": {
+        "lat": 42.697693,
+        "lng": 2.8907649
+      },
       "coordinateStatus": "approximate-street-nominatim",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://visapourlimage.com/en/"],
+      "addressSources": [
+        "https://visapourlimage.com/en/"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -208,13 +258,18 @@
       "countryCode": "FR",
       "kind": "patrimoni",
       "circuit": "VISA",
-      "coordinates": { "lat": 42.6996628, "lng": 2.8947314 },
+      "coordinates": {
+        "lat": 42.6996628,
+        "lng": 2.8947314
+      },
       "coordinateStatus": "approximate-street-nominatim",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://visapourlimage.com/en/"],
+      "addressSources": [
+        "https://visapourlimage.com/en/"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -228,13 +283,18 @@
       "countryCode": "FR",
       "kind": "espai-festival",
       "circuit": "OFF",
-      "coordinates": { "lat": 42.6992875, "lng": 2.8921365 },
+      "coordinates": {
+        "lat": 42.6992875,
+        "lng": 2.8921365
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"],
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -248,13 +308,18 @@
       "countryCode": "FR",
       "kind": "sala-exposicions",
       "circuit": "OFF",
-      "coordinates": { "lat": 42.7014714, "lng": 2.8959236 },
+      "coordinates": {
+        "lat": 42.7014714,
+        "lng": 2.8959236
+      },
       "coordinateStatus": "approximate-street-nominatim",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"],
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -268,13 +333,18 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": { "lat": 42.6982522, "lng": 2.8963657 },
+      "coordinates": {
+        "lat": 42.6982522,
+        "lng": 2.8963657
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"],
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -288,13 +358,18 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": { "lat": 42.6982693, "lng": 2.8911112 },
+      "coordinates": {
+        "lat": 42.6982693,
+        "lng": 2.8911112
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"],
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -308,13 +383,18 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": { "lat": 42.7002146, "lng": 2.8962238 },
+      "coordinates": {
+        "lat": 42.7002146,
+        "lng": 2.8962238
+      },
       "coordinateStatus": "approximate-street-nominatim",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"],
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -328,13 +408,18 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": { "lat": 42.6989980, "lng": 2.8885533 },
+      "coordinates": {
+        "lat": 42.698998,
+        "lng": 2.8885533
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"],
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -348,13 +433,18 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": { "lat": 42.7039423, "lng": 2.8903128 },
+      "coordinates": {
+        "lat": 42.7039423,
+        "lng": 2.8903128
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"],
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -368,13 +458,18 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": { "lat": 42.6987123, "lng": 2.8899113 },
+      "coordinates": {
+        "lat": 42.6987123,
+        "lng": 2.8899113
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"],
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
@@ -388,17 +483,792 @@
       "countryCode": "FR",
       "kind": "restaurant",
       "circuit": "OFF",
-      "coordinates": { "lat": 42.6708532, "lng": 2.8960736 },
+      "coordinates": {
+        "lat": 42.6708532,
+        "lng": 2.8960736
+      },
       "coordinateStatus": "verified-nominatim-portal",
       "geocodedOn": "2026-09-11",
       "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
-      "addressSources": ["https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"],
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-commer%C3%A7ants"
+      ],
       "addressStatus": "source-recorded",
       "entranceVerified": false,
       "normalOpeningHours": null,
       "notesCa": "IMPORTANT (avís explícit de l'encàrrec): els horaris de la botiga patrocinadora Cémoi que apareixen en alguns anuncis del festival NO són els horaris d'accés a l'exposició d'aquest restaurant. Horari d'accés a l'exposició pendent de confirmar directament amb Clos des Lys."
+    },
+    {
+      "id": "art-no-coiffure",
+      "name": "Art.no Coiffure",
+      "address": "8 rue Queya",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "camara",
+      "name": "Camara",
+      "address": "6 Avenue Torcatis",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "curtina",
+      "name": "Curtina",
+      "address": "6 Boulevard Clemenceau",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "hotel-mondial",
+      "name": "Hôtel Mondial",
+      "address": "40 Boulevard Clemenceau",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "la-part-du-reve",
+      "name": "La Part du Rêve",
+      "address": "29 Boulevard Clemenceau",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "maison-dahlia",
+      "name": "Maison Dahlia",
+      "address": "14 rue de l'Ange",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "au-goustous",
+      "name": "Au Goustous",
+      "address": "5 rue du Théâtre",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "cave-millesime",
+      "name": "Cave Millésime",
+      "address": "6 rue Gustave Flaubert",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "ego-glacier",
+      "name": "Égo Glacier",
+      "address": "1 place République",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "italia-mia",
+      "name": "Italia Mia",
+      "address": "14 Place Rigaud",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "la-rotonde",
+      "name": "La Rotonde",
+      "address": "8 place Jean Payra",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "bohem-cuisine",
+      "name": "Bohèm Cuisine",
+      "address": "4 Boulevard Clemenceau",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "boucherie-guillaume",
+      "name": "Boucherie Guillaume",
+      "address": "14 rue Mirabeau",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "clemenceau-gestion-immobiliere",
+      "name": "Clemenceau Gestion Immobilière",
+      "address": "55 avenue Général de Gaulle",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "havas-voyage",
+      "name": "Havas Voyage",
+      "address": "14 rue de la Loge",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "l-atelier-photo-mgb",
+      "name": "L'Atelier Photo MGB",
+      "address": "1 rue du Temple",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "librairie-hybride",
+      "name": "Librairie Hybride",
+      "address": "5 rue du Castillet",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "panirosa",
+      "name": "Panirosa",
+      "address": "11 rue des 3 journées",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "cajelice",
+      "name": "Cajélice",
+      "address": "11 rue du Docteur Pous",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "credit-agricole-agence-catalogne",
+      "name": "Crédit Agricole Agence Catalogne",
+      "address": "15 Place Jean Payra",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "havas-voyage-2",
+      "name": "Havas Voyage",
+      "address": "1 place Arago",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "la-cour-du-baron",
+      "name": "La Cour du Baron",
+      "address": "6 rue du Théâtre",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "lily-aime",
+      "name": "Lily Aime",
+      "address": "2 place Gambetta",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "petite-pousse",
+      "name": "Petite Pousse",
+      "address": "2 Place Jean Payra",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "atelier-saint-augustin",
+      "name": "Atelier Saint-Augustin",
+      "address": "17 rue des Augustins",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "la-droguerie",
+      "name": "La Droguerie",
+      "address": "37 rue des Augustins",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "la-ferme-des-augustins",
+      "name": "La Ferme des Augustins",
+      "address": "37 rue des Augustins",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "patisserie-buisson",
+      "name": "Patisserie Buisson",
+      "address": "38 rue des Augustins",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "gigi-brunch",
+      "name": "Gigi Brunch",
+      "address": "46 rue des Augustins",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "nocibe",
+      "name": "Nocibé",
+      "address": "2 rue des marchands",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "botanika",
+      "name": "Botanika",
+      "address": "26 rue remparts Villeneuve",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "bookine",
+      "name": "Bookine",
+      "address": "8 rue de la Cloche D'Or",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "mano-di-pasta",
+      "name": "Mano Di Pasta",
+      "address": "37 Quai Vauban / Les Halles",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "pharmacie-vauban",
+      "name": "Pharmacie Vauban",
+      "address": "23 Quai Vauban",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+    },
+    {
+      "id": "villa-arts-66",
+      "name": "Villa Arts 66",
+      "address": "19 rue de Ronsard",
+      "city": "Perpignan",
+      "countryCode": "FR",
+      "kind": "comerc",
+      "circuit": "OFF",
+      "coordinates": null,
+      "coordinateStatus": "pending-geocode",
+      "geocodedOn": null,
+      "geocodeSource": null,
+      "accessibility": null,
+      "contactUrl": null,
+      "addressSources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "addressStatus": "verified-image-inspection",
+      "entranceVerified": false,
+      "normalOpeningHours": null,
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
     }
   ]
 }

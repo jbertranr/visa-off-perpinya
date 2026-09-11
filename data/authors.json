@@ -1,45 +1,974 @@
 {
   "authors": [
-    { "id": "photo-club-thuir", "name": "Photo Club de Thuir", "kind": "organisation", "bioCa": "Club fotogràfic amateur de Thuir (Rosselló), participant habitual del circuit OFF de Perpinyà.", "profileUrl": "https://photoclubdethuir.fr/visa-off-2026", "sources": ["https://photoclubdethuir.fr/visa-off-2026"] },
-    { "id": "laurent-ballesta", "name": "Laurent Ballesta", "kind": "person", "bioCa": "Fotògraf, biòleg marí i submarinista francès, fundador d'Andromède Océanologie i líder de les expedicions Gombessa. Triple Wildlife Photographer of the Year.", "profileUrl": "https://fr.wikipedia.org/wiki/Laurent_Ballesta", "sources": ["https://visapourlimage.com/les-expositions/2026/loin-du-ciel/"] },
-    { "id": "philemon-barbier", "name": "Philémon Barbier", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/syrie-laube-des-cendres/", "https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"] },
-    { "id": "elise-blanchard", "name": "Élise Blanchard", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/afghanistan-les-fillettes-vendues-pour-survivre-aux-secheresses/"] },
-    { "id": "abdulmonam-eassa", "name": "Abdulmonam Eassa", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/guerre-au-soudan-une-nation-prise-au-piege/"] },
-    { "id": "jeremy-lempin", "name": "Jérémy Lempin", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/lecole-de-la-vie-liberte-egalite-invisibilite/"] },
-    { "id": "yoray-liberman", "name": "Yoray Liberman", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/war-diary-journal-de-guerre/"] },
-    { "id": "gerd-ludwig", "name": "Gerd Ludwig", "kind": "person", "bioCa": "Fotògraf germano-americà de National Geographic, especialitzat en l'antiga URSS i el desastre de Txernòbil, que documenta des de 1993. Premi Lucie 2006.", "profileUrl": "https://www.gerdludwig.com/biography", "sources": ["https://visapourlimage.com/les-expositions/2026/pas-de-fin-en-vue-tchernobyl-40-ans-plus-tard/"] },
-    { "id": "etienne-montes", "name": "Étienne Montès", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/quinze-ans-de-photos-et-basta/"] },
-    { "id": "jean-luc-moreau-deleris", "name": "Jean-Luc Moreau Deleris", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/cambodge-dune-guerre-a-lautre/"] },
-    { "id": "mads-nissen", "name": "Mads Nissen", "kind": "person", "bioCa": "Fotoperiodista danès del diari Politiken, doble guanyador del World Press Photo of the Year (2015 i 2021) i del World Press Photo Story of the Year (2023).", "profileUrl": "https://en.wikipedia.org/wiki/Mads_Nissen", "sources": ["https://visapourlimage.com/les-expositions/2026/sangre-blanca-la-geographie-de-la-cocaine/"] },
-    { "id": "marion-pehee", "name": "Marion Péhée", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/donbass-une-generation-marquee-par-la-guerre/"] },
-    { "id": "hashem-shakeri", "name": "Hashem Shakeri", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/iran-le-cycle-de-la-guerre/"] },
-    { "id": "robin-tutenges", "name": "Robin Tutenges", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/fanos-kingdom/"] },
-    { "id": "michael-yamashita", "name": "Michael Yamashita", "kind": "person", "bioCa": "Fotògraf nord-americà d'origen japonès, col·laborador de National Geographic des de fa dècades, especialitzat en Àsia i la Xina (rutes de Marco Polo i Zheng He).", "profileUrl": "https://www.michaelyamashita.com/about", "sources": ["https://visapourlimage.com/les-expositions/2026/lorient-rencontre-loccident-40-ans-de-photographie-en-chine/"] },
-    { "id": "mohammad-yassine", "name": "Mohammad Yassine", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/liban-la-guerre-de-trop/"] },
-    { "id": "raymond-depardon", "name": "Raymond Depardon", "kind": "person", "bioCa": "Fotoperiodista i cineasta francès, cofundador de l'agència Gamma (1966), membre de Magnum Photos des de 1979 i Premi Pulitzer 1977.", "profileUrl": "https://visapourlimage.com/les-photographes/raymond-depardon/", "sources": ["https://visapourlimage.com/les-expositions/2026/reporter-photographe/"] },
-    { "id": "jerome-gence", "name": "Jérôme Gence", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/au-japon-les-mariages-virtuels/"] },
-    { "id": "david-guttenfelder", "name": "David Guttenfelder", "kind": "person", "bioCa": "Fotoperiodista nord-americà de National Geographic, especialitzat en conflictes geopolítics (Corea del Nord inclosa). Nou vegades guanyador del World Press Photo.", "profileUrl": "https://en.wikipedia.org/wiki/David_Guttenfelder", "sources": ["https://visapourlimage.com/les-expositions/2026/the-people-of-minneapolis-vs-ice/"] },
-    { "id": "khames-alrefi", "name": "Khames Alrefi", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/civils-les-premieres-victimes/"] },
-    { "id": "tyler-hicks", "name": "Tyler Hicks", "kind": "person", "bioCa": "Fotoperiodista del New York Times, especialitzat en zones de conflicte. Guanyador de dos Premis Pulitzer (2014 i 2016) i la Medalla Robert Capa.", "profileUrl": "https://www.pulitzer.org/winners/tyler-hicks", "sources": ["https://visapourlimage.com/les-expositions/2026/kostiantynivka-une-ville-dans-la-zone-de-mort/"] },
-    { "id": "diego-ibarra-sanchez", "name": "Diego Ibarra Sánchez", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/liban-2015-2026-la-derniere-guerre/"] },
-    { "id": "herve-lequeux", "name": "Hervé Lequeux", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/boza-free-lexil-des-mineurs-guineens/"] },
-    { "id": "paolo-roversi", "name": "Paolo Roversi", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/lodeur-de-linde/"] },
-    { "id": "gael-turine", "name": "Gaël Turine", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/brises-par-le-kush/"] },
-    { "id": "aida-dahmani", "name": "Aïda Dahmani", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"] },
-    { "id": "cebos-nalcakan", "name": "Cebos Nalcakan", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"] },
-    { "id": "valentin-goppel", "name": "Valentin Goppel", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"] },
-    { "id": "lilas-lehanneur", "name": "Lilas Lehanneur", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"] },
-    { "id": "william-camargo", "name": "William Camargo", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"] },
-    { "id": "le-figaro", "name": "Le Figaro", "kind": "organisation", "bioCa": null, "profileUrl": null, "sources": ["https://visapourlimage.com/les-expositions/2026/le-figaro-la-culture-de-la-liberte-depuis-1826-expo-invitee/"] },
-    { "id": "michel-craipeau", "name": "Michel Craipeau", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"] },
-    { "id": "hubert-auer", "name": "Hubert Auer", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"] },
-    { "id": "francis-dietrich", "name": "Francis Dietrich", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"] },
-    { "id": "jean-souid", "name": "Jean Souid", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"] },
-    { "id": "claudine-ripoll", "name": "Claudine Ripoll", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"] },
-    { "id": "jean-pierre-rieu", "name": "Jean-Pierre Rieu", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"] },
-    { "id": "renee-gatimel", "name": "Renée Gatimel", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"] },
-    { "id": "jacques-sanchez", "name": "Jacques Sanchez", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"] },
-    { "id": "cecile-guillaume-buissonnier", "name": "Cécile Guillaume-Buissonnier", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"] },
-    { "id": "lionel-moogin", "name": "Lionel Moogin", "kind": "person", "bioCa": null, "profileUrl": null, "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"] }
+    {
+      "id": "photo-club-thuir",
+      "name": "Photo Club de Thuir",
+      "kind": "organisation",
+      "bioCa": "Club fotogràfic amateur de Thuir (Rosselló), participant habitual del circuit OFF de Perpinyà.",
+      "profileUrl": "https://photoclubdethuir.fr/visa-off-2026",
+      "sources": [
+        "https://photoclubdethuir.fr/visa-off-2026"
+      ]
+    },
+    {
+      "id": "montagne-benjamin",
+      "name": "Montagne Benjamin",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026-1"
+      ],
+      "notesCa": "Nom extret literalment del nom de fitxer de la imatge de presentació ('Montagne Benjamin Couchers de soleil.jpg') — l'ordre nom/cognom NO està confirmat."
+    },
+    {
+      "id": "club-photo-barcaresien",
+      "name": "Club Photo Barcarésien",
+      "kind": "organisation",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026-1"
+      ]
+    },
+    {
+      "id": "club-creatifs-rivesaltes",
+      "name": "Club Créatifs Rivesaltes",
+      "kind": "organisation",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026-1"
+      ]
+    },
+    {
+      "id": "laurent-ballesta",
+      "name": "Laurent Ballesta",
+      "kind": "person",
+      "bioCa": "Fotògraf, biòleg marí i submarinista francès, fundador d'Andromède Océanologie i líder de les expedicions Gombessa. Triple Wildlife Photographer of the Year.",
+      "profileUrl": "https://fr.wikipedia.org/wiki/Laurent_Ballesta",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/loin-du-ciel/"
+      ]
+    },
+    {
+      "id": "philemon-barbier",
+      "name": "Philémon Barbier",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/syrie-laube-des-cendres/",
+        "https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"
+      ]
+    },
+    {
+      "id": "elise-blanchard",
+      "name": "Élise Blanchard",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/afghanistan-les-fillettes-vendues-pour-survivre-aux-secheresses/"
+      ]
+    },
+    {
+      "id": "abdulmonam-eassa",
+      "name": "Abdulmonam Eassa",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/guerre-au-soudan-une-nation-prise-au-piege/"
+      ]
+    },
+    {
+      "id": "jeremy-lempin",
+      "name": "Jérémy Lempin",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/lecole-de-la-vie-liberte-egalite-invisibilite/"
+      ]
+    },
+    {
+      "id": "yoray-liberman",
+      "name": "Yoray Liberman",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/war-diary-journal-de-guerre/"
+      ]
+    },
+    {
+      "id": "gerd-ludwig",
+      "name": "Gerd Ludwig",
+      "kind": "person",
+      "bioCa": "Fotògraf germano-americà de National Geographic, especialitzat en l'antiga URSS i el desastre de Txernòbil, que documenta des de 1993. Premi Lucie 2006.",
+      "profileUrl": "https://www.gerdludwig.com/biography",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/pas-de-fin-en-vue-tchernobyl-40-ans-plus-tard/"
+      ]
+    },
+    {
+      "id": "etienne-montes",
+      "name": "Étienne Montès",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/quinze-ans-de-photos-et-basta/"
+      ]
+    },
+    {
+      "id": "jean-luc-moreau-deleris",
+      "name": "Jean-Luc Moreau Deleris",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/cambodge-dune-guerre-a-lautre/"
+      ]
+    },
+    {
+      "id": "mads-nissen",
+      "name": "Mads Nissen",
+      "kind": "person",
+      "bioCa": "Fotoperiodista danès del diari Politiken, doble guanyador del World Press Photo of the Year (2015 i 2021) i del World Press Photo Story of the Year (2023).",
+      "profileUrl": "https://en.wikipedia.org/wiki/Mads_Nissen",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/sangre-blanca-la-geographie-de-la-cocaine/"
+      ]
+    },
+    {
+      "id": "marion-pehee",
+      "name": "Marion Péhée",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/donbass-une-generation-marquee-par-la-guerre/"
+      ]
+    },
+    {
+      "id": "hashem-shakeri",
+      "name": "Hashem Shakeri",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/iran-le-cycle-de-la-guerre/"
+      ]
+    },
+    {
+      "id": "robin-tutenges",
+      "name": "Robin Tutenges",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/fanos-kingdom/"
+      ]
+    },
+    {
+      "id": "michael-yamashita",
+      "name": "Michael Yamashita",
+      "kind": "person",
+      "bioCa": "Fotògraf nord-americà d'origen japonès, col·laborador de National Geographic des de fa dècades, especialitzat en Àsia i la Xina (rutes de Marco Polo i Zheng He).",
+      "profileUrl": "https://www.michaelyamashita.com/about",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/lorient-rencontre-loccident-40-ans-de-photographie-en-chine/"
+      ]
+    },
+    {
+      "id": "mohammad-yassine",
+      "name": "Mohammad Yassine",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/liban-la-guerre-de-trop/"
+      ]
+    },
+    {
+      "id": "raymond-depardon",
+      "name": "Raymond Depardon",
+      "kind": "person",
+      "bioCa": "Fotoperiodista i cineasta francès, cofundador de l'agència Gamma (1966), membre de Magnum Photos des de 1979 i Premi Pulitzer 1977.",
+      "profileUrl": "https://visapourlimage.com/les-photographes/raymond-depardon/",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/reporter-photographe/"
+      ]
+    },
+    {
+      "id": "jerome-gence",
+      "name": "Jérôme Gence",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/au-japon-les-mariages-virtuels/"
+      ]
+    },
+    {
+      "id": "david-guttenfelder",
+      "name": "David Guttenfelder",
+      "kind": "person",
+      "bioCa": "Fotoperiodista nord-americà de National Geographic, especialitzat en conflictes geopolítics (Corea del Nord inclosa). Nou vegades guanyador del World Press Photo.",
+      "profileUrl": "https://en.wikipedia.org/wiki/David_Guttenfelder",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/the-people-of-minneapolis-vs-ice/"
+      ]
+    },
+    {
+      "id": "khames-alrefi",
+      "name": "Khames Alrefi",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/civils-les-premieres-victimes/"
+      ]
+    },
+    {
+      "id": "tyler-hicks",
+      "name": "Tyler Hicks",
+      "kind": "person",
+      "bioCa": "Fotoperiodista del New York Times, especialitzat en zones de conflicte. Guanyador de dos Premis Pulitzer (2014 i 2016) i la Medalla Robert Capa.",
+      "profileUrl": "https://www.pulitzer.org/winners/tyler-hicks",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/kostiantynivka-une-ville-dans-la-zone-de-mort/"
+      ]
+    },
+    {
+      "id": "diego-ibarra-sanchez",
+      "name": "Diego Ibarra Sánchez",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/liban-2015-2026-la-derniere-guerre/"
+      ]
+    },
+    {
+      "id": "herve-lequeux",
+      "name": "Hervé Lequeux",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/boza-free-lexil-des-mineurs-guineens/"
+      ]
+    },
+    {
+      "id": "paolo-roversi",
+      "name": "Paolo Roversi",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/lodeur-de-linde/"
+      ]
+    },
+    {
+      "id": "gael-turine",
+      "name": "Gaël Turine",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/brises-par-le-kush/"
+      ]
+    },
+    {
+      "id": "aida-dahmani",
+      "name": "Aïda Dahmani",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"
+      ]
+    },
+    {
+      "id": "cebos-nalcakan",
+      "name": "Cebos Nalcakan",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"
+      ]
+    },
+    {
+      "id": "valentin-goppel",
+      "name": "Valentin Goppel",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"
+      ]
+    },
+    {
+      "id": "lilas-lehanneur",
+      "name": "Lilas Lehanneur",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"
+      ]
+    },
+    {
+      "id": "william-camargo",
+      "name": "William Camargo",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"
+      ]
+    },
+    {
+      "id": "le-figaro",
+      "name": "Le Figaro",
+      "kind": "organisation",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/le-figaro-la-culture-de-la-liberte-depuis-1826-expo-invitee/"
+      ]
+    },
+    {
+      "id": "michel-craipeau",
+      "name": "Michel Craipeau",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ]
+    },
+    {
+      "id": "hubert-auer",
+      "name": "Hubert Auer",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ]
+    },
+    {
+      "id": "francis-dietrich",
+      "name": "Francis Dietrich",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ]
+    },
+    {
+      "id": "jean-souid",
+      "name": "Jean Souid",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ]
+    },
+    {
+      "id": "claudine-ripoll",
+      "name": "Claudine Ripoll",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ]
+    },
+    {
+      "id": "jean-pierre-rieu",
+      "name": "Jean-Pierre Rieu",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ]
+    },
+    {
+      "id": "renee-gatimel",
+      "name": "Renée Gatimel",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ]
+    },
+    {
+      "id": "jacques-sanchez",
+      "name": "Jacques Sanchez",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ]
+    },
+    {
+      "id": "cecile-guillaume-buissonnier",
+      "name": "Cécile Guillaume-Buissonnier",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ]
+    },
+    {
+      "id": "lionel-moogin",
+      "name": "Lionel Moogin",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ]
+    },
+    {
+      "id": "garros-edmond",
+      "name": "Garros Edmond",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "jeanjean-annick",
+      "name": "Jeanjean Annick",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "ponsardin-patrick",
+      "name": "Ponsardin Patrick",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "espinosa-alain",
+      "name": "Espinosa Alain",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "pottiezk-philippe",
+      "name": "Pottiezk Philippe",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "campdoras-corine",
+      "name": "Campdoras Corine",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "colomer-arthur",
+      "name": "Colomer Arthur",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "pages-julia",
+      "name": "Pages Julia",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "lacaze-bernard",
+      "name": "Lacaze Bernard",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "mok-ta",
+      "name": "Mok_ta",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "bardet-lea",
+      "name": "Bardet Léa",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "veron-jean-bernard",
+      "name": "Veron Jean-Bernard",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "wolff-patrick",
+      "name": "Wolff Patrick",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "boch-lauren",
+      "name": "Boch Lauren",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "chambre-six",
+      "name": "Chambre Six",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "poure-jean-claude",
+      "name": "Poure Jean-Claude",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "semis-lluc",
+      "name": "Semis Lluc",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "verdiere-dominique",
+      "name": "Verdière Dominique",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "chamague-jordi",
+      "name": "Chamagué Jordi",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "rebotier-max",
+      "name": "Rebotier Max",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "durrenberger-christian",
+      "name": "Durrenberger Christian",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "napolitano-benjamin",
+      "name": "Napolitano Benjamin",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "sonza-reordat-benedicte",
+      "name": "Sonza Reordat Bénédicte",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "gilbert-veronique",
+      "name": "Gilbert Véronique",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "ferrer-julia",
+      "name": "Ferrer Julia",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "varoqui-florence",
+      "name": "Varoqui Florence",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "cabrera-alain",
+      "name": "Cabrera Alain",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "ribes-marie-france",
+      "name": "Ribes Marie-France",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "corigliano-patrick",
+      "name": "Corigliano Patrick",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "royer-pascale",
+      "name": "Royer Pascale",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "izard-christian",
+      "name": "Izard Christian",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "billa-brigitte",
+      "name": "Billa Brigitte",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "canitini-ugo",
+      "name": "Canitini Ugo",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "lasshini-sheryne",
+      "name": "Lasshini Sheryne",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "vemarch-giancarlo",
+      "name": "Vemarch Giancarlo",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "bertrand-thomas",
+      "name": "Bertrand Thomas",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "margarin-shoot",
+      "name": "Margarin Shoot",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "chabot-sabine",
+      "name": "Chabot Sabine",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "guichou-daniel",
+      "name": "Guichou Daniel",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "mikou",
+      "name": "Mikou",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "brume-liza",
+      "name": "Brume Liza",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "baunez-christelle",
+      "name": "Baunez Christelle",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "pepin-maimiti-julie",
+      "name": "Pépin-Maimiti Julie",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "delort-alex",
+      "name": "Delort Alex",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "bottequin-patrick",
+      "name": "Bottequin Patrick",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "rabeau-jean-louis",
+      "name": "Rabeau Jean-Louis",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "lozano-gabriel",
+      "name": "Lozano Gabriel",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    },
+    {
+      "id": "prady-olivier",
+      "name": "Prady Olivier",
+      "kind": "person",
+      "bioCa": null,
+      "profileUrl": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "notesCa": "Nom llegit directament de la fitxa-imatge oficial (ordre tal com hi apareix imprès)."
+    }
   ]
 }

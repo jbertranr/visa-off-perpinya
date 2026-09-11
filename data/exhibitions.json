@@ -1,55 +1,3215 @@
 {
   "exhibitions": [
-    { "id": "visa-2026-loin-du-ciel", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Loin du ciel", "titleCa": null, "authorIds": ["laurent-ballesta"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Una mirada a la biodiversitat submarina a partir d'expedicions en entorns molt diferents, de l'Antàrtida a les Filipines i Còrsega.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/loin-du-ciel/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-syrie-laube-des-cendres", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Syrie : L'aube des cendres", "titleCa": null, "authorIds": ["philemon-barbier"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "La transició de Síria després de la caiguda del règim d'Assad, entre la reconstrucció, les fractures socials i la incertesa.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": true, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/syrie-laube-des-cendres/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-afghanistan-les-fillettes-vendues-pour-survivre-aux-secheresses", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Afghanistan : Les fillettes vendues pour survivre aux sécheresses", "titleCa": null, "authorIds": ["elise-blanchard"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "La sequera i la pobresa a Badghis, a l'Afganistan, i les seves conseqüències per a les nenes sotmeses a matrimonis infantils.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": true, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/afghanistan-les-fillettes-vendues-pour-survivre-aux-secheresses/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-guerre-au-soudan-une-nation-prise-au-piege", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Guerre au Soudan : une nation prise au piège", "titleCa": null, "authorIds": ["abdulmonam-eassa"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "El Sudan entre l'esperança de canvi democràtic i una guerra que ha devastat la vida de la població civil.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": true, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/guerre-au-soudan-une-nation-prise-au-piege/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-lecole-de-la-vie-liberte-egalite-invisibilite", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "L'école de la vie : liberté, égalité, invisibilité", "titleCa": null, "authorIds": ["jeremy-lempin"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Les dificultats de les persones amb problemes de lectura i escriptura a França i a la Guaiana, i el seu impacte en l'autonomia quotidiana.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/lecole-de-la-vie-liberte-egalite-invisibilite/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-war-diary-journal-de-guerre", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "War Diary (Journal de guerre)", "titleCa": null, "authorIds": ["yoray-liberman"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "La vida quotidiana a Israel sota la presència constant de la guerra, les alarmes i els refugis.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/war-diary-journal-de-guerre/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-pas-de-fin-en-vue-tchernobyl-40-ans-plus-tard", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Pas de fin en vue : Tchernobyl 40 ans plus tard", "titleCa": null, "authorIds": ["gerd-ludwig"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Les empremtes humanes i ambientals de Txernòbil, documentades al llarg dels anys fins al quarantè aniversari de la catàstrofe.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/pas-de-fin-en-vue-tchernobyl-40-ans-plus-tard/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-quinze-ans-de-photos-et-basta", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Quinze ans de photos et basta !", "titleCa": null, "authorIds": ["etienne-montes"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Un recorregut per l'etapa de reporter del fotògraf, abans del seu retorn a les vinyes familiars del Rosselló.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/quinze-ans-de-photos-et-basta/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-cambodge-dune-guerre-a-lautre", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Cambodge : d'une guerre à l'autre", "titleCa": null, "authorIds": ["jean-luc-moreau-deleris"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "El conflicte entre Cambodja i Tailàndia i la persistència de les ferides d'altres guerres en la societat cambodjana.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/cambodge-dune-guerre-a-lautre/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-sangre-blanca-la-geographie-de-la-cocaine", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Sangre Blanca : La géographie de la cocaïne", "titleCa": null, "authorIds": ["mads-nissen"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Les conseqüències humanes del negoci internacional de la cocaïna, amb connexions entre Amèrica Llatina i Europa.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": true, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/sangre-blanca-la-geographie-de-la-cocaine/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-donbass-une-generation-marquee-par-la-guerre", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Donbass, une génération marquée par la guerre", "titleCa": null, "authorIds": ["marion-pehee"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "El seguiment d'una generació d'adolescents del Donbàs, coneguts el 2016, i de com la guerra ha condicionat les seves trajectòries.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": true, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/donbass-une-generation-marquee-par-la-guerre/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-iran-le-cycle-de-la-guerre", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Iran, le cycle de la guerre", "titleCa": null, "authorIds": ["hashem-shakeri"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Una aproximació a la societat iraniana sota la pressió de la guerra, la repressió i la incertesa.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/iran-le-cycle-de-la-guerre/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-fanos-kingdom", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Fano's Kingdom", "titleCa": null, "authorIds": ["robin-tutenges"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "El conflicte de la regió amhara d'Etiòpia i les vides de les persones que hi queden atrapades.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/fanos-kingdom/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-lorient-rencontre-loccident-40-ans-de-photographie-en-chine", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "L'Orient rencontre l'Occident — 40 ans de photographie en Chine", "titleCa": null, "authorIds": ["michael-yamashita"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Quatre dècades de transformacions socials i culturals de la Xina, fotografiades des d'una mirada sostinguda en el temps.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/lorient-rencontre-loccident-40-ans-de-photographie-en-chine/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-liban-la-guerre-de-trop", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Liban : la guerre de trop", "titleCa": null, "authorIds": ["mohammad-yassine"], "authorshipKind": "person", "venueId": "minimes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "L'impacte d'una nova guerra sobre la població libanesa, ja marcada per crisis anteriors.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": true, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/liban-la-guerre-de-trop/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-reporter-photographe", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Raymond Depardon, Reporter / Photographe", "titleCa": null, "authorIds": ["raymond-depardon"], "authorshipKind": "person", "venueId": "dominicains", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Una retrospectiva de la mirada periodística i fotogràfica de Raymond Depardon.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/reporter-photographe/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-au-japon-les-mariages-virtuels", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Les mariages virtuels au Japon", "titleCa": null, "authorIds": ["jerome-gence"], "authorshipKind": "person", "venueId": "dominicains", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Persones del Japó que estableixen vincles sentimentals amb personatges ficticis i celebren matrimonis virtuals.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/au-japon-les-mariages-virtuels/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-the-people-of-minneapolis-vs-ice", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "The People of Minneapolis vs. ICE", "titleCa": null, "authorIds": ["david-guttenfelder"], "authorshipKind": "person", "venueId": null, "venueCandidates": ["minimes", "dominicains"], "venueStatus": "conflicting", "summaryCa": "Les protestes i la resposta ciutadana davant les actuacions de la policia migratòria a Minneapolis.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/the-people-of-minneapolis-vs-ice/"], "checkedOn": "2026-09-11",
+    {
+      "id": "visa-2026-loin-du-ciel",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Loin du ciel",
+      "titleCa": null,
+      "authorIds": [
+        "laurent-ballesta"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Una mirada a la biodiversitat submarina a partir d'expedicions en entorns molt diferents, de l'Antàrtida a les Filipines i Còrsega.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-loin-du-ciel.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/loin-du-ciel/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-syrie-laube-des-cendres",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Syrie : L'aube des cendres",
+      "titleCa": null,
+      "authorIds": [
+        "philemon-barbier"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "La transició de Síria després de la caiguda del règim d'Assad, entre la reconstrucció, les fractures socials i la incertesa.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": true,
+      "image": "assets/visa-images/visa-2026-syrie-laube-des-cendres.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/syrie-laube-des-cendres/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-afghanistan-les-fillettes-vendues-pour-survivre-aux-secheresses",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Afghanistan : Les fillettes vendues pour survivre aux sécheresses",
+      "titleCa": null,
+      "authorIds": [
+        "elise-blanchard"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "La sequera i la pobresa a Badghis, a l'Afganistan, i les seves conseqüències per a les nenes sotmeses a matrimonis infantils.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": true,
+      "image": "assets/visa-images/visa-2026-afghanistan-les-fillettes-vendues-pour-survivre-aux-secheresses.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/afghanistan-les-fillettes-vendues-pour-survivre-aux-secheresses/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-guerre-au-soudan-une-nation-prise-au-piege",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Guerre au Soudan : une nation prise au piège",
+      "titleCa": null,
+      "authorIds": [
+        "abdulmonam-eassa"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "El Sudan entre l'esperança de canvi democràtic i una guerra que ha devastat la vida de la població civil.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": true,
+      "image": "assets/visa-images/visa-2026-guerre-au-soudan-une-nation-prise-au-piege.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/guerre-au-soudan-une-nation-prise-au-piege/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-lecole-de-la-vie-liberte-egalite-invisibilite",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "L'école de la vie : liberté, égalité, invisibilité",
+      "titleCa": null,
+      "authorIds": [
+        "jeremy-lempin"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Les dificultats de les persones amb problemes de lectura i escriptura a França i a la Guaiana, i el seu impacte en l'autonomia quotidiana.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-lecole-de-la-vie-liberte-egalite-invisibilite.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/lecole-de-la-vie-liberte-egalite-invisibilite/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-war-diary-journal-de-guerre",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "War Diary (Journal de guerre)",
+      "titleCa": null,
+      "authorIds": [
+        "yoray-liberman"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "La vida quotidiana a Israel sota la presència constant de la guerra, les alarmes i els refugis.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-war-diary-journal-de-guerre.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/war-diary-journal-de-guerre/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-pas-de-fin-en-vue-tchernobyl-40-ans-plus-tard",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Pas de fin en vue : Tchernobyl 40 ans plus tard",
+      "titleCa": null,
+      "authorIds": [
+        "gerd-ludwig"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Les empremtes humanes i ambientals de Txernòbil, documentades al llarg dels anys fins al quarantè aniversari de la catàstrofe.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-pas-de-fin-en-vue-tchernobyl-40-ans-plus-tard.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/pas-de-fin-en-vue-tchernobyl-40-ans-plus-tard/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-quinze-ans-de-photos-et-basta",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Quinze ans de photos et basta !",
+      "titleCa": null,
+      "authorIds": [
+        "etienne-montes"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Un recorregut per l'etapa de reporter del fotògraf, abans del seu retorn a les vinyes familiars del Rosselló.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-quinze-ans-de-photos-et-basta.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/quinze-ans-de-photos-et-basta/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-cambodge-dune-guerre-a-lautre",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Cambodge : d'une guerre à l'autre",
+      "titleCa": null,
+      "authorIds": [
+        "jean-luc-moreau-deleris"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "El conflicte entre Cambodja i Tailàndia i la persistència de les ferides d'altres guerres en la societat cambodjana.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-cambodge-dune-guerre-a-lautre.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/cambodge-dune-guerre-a-lautre/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-sangre-blanca-la-geographie-de-la-cocaine",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Sangre Blanca : La géographie de la cocaïne",
+      "titleCa": null,
+      "authorIds": [
+        "mads-nissen"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Les conseqüències humanes del negoci internacional de la cocaïna, amb connexions entre Amèrica Llatina i Europa.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": true,
+      "image": "assets/visa-images/visa-2026-sangre-blanca-la-geographie-de-la-cocaine.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/sangre-blanca-la-geographie-de-la-cocaine/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-donbass-une-generation-marquee-par-la-guerre",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Donbass, une génération marquée par la guerre",
+      "titleCa": null,
+      "authorIds": [
+        "marion-pehee"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "El seguiment d'una generació d'adolescents del Donbàs, coneguts el 2016, i de com la guerra ha condicionat les seves trajectòries.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": true,
+      "image": "assets/visa-images/visa-2026-donbass-une-generation-marquee-par-la-guerre.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/donbass-une-generation-marquee-par-la-guerre/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-iran-le-cycle-de-la-guerre",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Iran, le cycle de la guerre",
+      "titleCa": null,
+      "authorIds": [
+        "hashem-shakeri"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Una aproximació a la societat iraniana sota la pressió de la guerra, la repressió i la incertesa.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-iran-le-cycle-de-la-guerre.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/iran-le-cycle-de-la-guerre/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-fanos-kingdom",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Fano's Kingdom",
+      "titleCa": null,
+      "authorIds": [
+        "robin-tutenges"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "El conflicte de la regió amhara d'Etiòpia i les vides de les persones que hi queden atrapades.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-fanos-kingdom.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/fanos-kingdom/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-lorient-rencontre-loccident-40-ans-de-photographie-en-chine",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "L'Orient rencontre l'Occident — 40 ans de photographie en Chine",
+      "titleCa": null,
+      "authorIds": [
+        "michael-yamashita"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Quatre dècades de transformacions socials i culturals de la Xina, fotografiades des d'una mirada sostinguda en el temps.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-lorient-rencontre-loccident-40-ans-de-photographie-en-chine.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/lorient-rencontre-loccident-40-ans-de-photographie-en-chine/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-liban-la-guerre-de-trop",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Liban : la guerre de trop",
+      "titleCa": null,
+      "authorIds": [
+        "mohammad-yassine"
+      ],
+      "authorshipKind": "person",
+      "venueId": "minimes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "L'impacte d'una nova guerra sobre la població libanesa, ja marcada per crisis anteriors.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": true,
+      "image": "assets/visa-images/visa-2026-liban-la-guerre-de-trop.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/liban-la-guerre-de-trop/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-reporter-photographe",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Raymond Depardon, Reporter / Photographe",
+      "titleCa": null,
+      "authorIds": [
+        "raymond-depardon"
+      ],
+      "authorshipKind": "person",
+      "venueId": "dominicains",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Una retrospectiva de la mirada periodística i fotogràfica de Raymond Depardon.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-reporter-photographe.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/reporter-photographe/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-au-japon-les-mariages-virtuels",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Les mariages virtuels au Japon",
+      "titleCa": null,
+      "authorIds": [
+        "jerome-gence"
+      ],
+      "authorshipKind": "person",
+      "venueId": "dominicains",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Persones del Japó que estableixen vincles sentimentals amb personatges ficticis i celebren matrimonis virtuals.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-au-japon-les-mariages-virtuels.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/au-japon-les-mariages-virtuels/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-the-people-of-minneapolis-vs-ice",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "The People of Minneapolis vs. ICE",
+      "titleCa": null,
+      "authorIds": [
+        "david-guttenfelder"
+      ],
+      "authorshipKind": "person",
+      "venueId": null,
+      "venueCandidates": [
+        "minimes",
+        "dominicains"
+      ],
+      "venueStatus": "conflicting",
+      "summaryCa": "Les protestes i la resposta ciutadana davant les actuacions de la policia migratòria a Minneapolis.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-the-people-of-minneapolis-vs-ice.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/the-people-of-minneapolis-vs-ice/"
+      ],
+      "checkedOn": "2026-09-11",
       "notesCa": "Emplaçament contradictori entre fonts: no s'ha pogut resoldre de manera fiable en aquesta sessió (vegeu venueClaims). No es dedueix automàticament — es mostra com a pendent de confirmació.",
       "venueClaims": [
-        { "venueId": "minimes", "label": "Couvent des Minimes", "sourceUrl": "https://visapourlimage.com/les-expositions/2026/the-people-of-minneapolis-vs-ice/", "sourceType": "fitxa web oficial" },
-        { "venueId": "dominicains", "label": "Église des Dominicains", "sourceUrl": "https://visapourlimage.com/wp-content/uploads/2026/08/preprog_VISAPOURLIMAGE_2026_us.pdf", "sourceDate": "2026-08-07", "pageIndex": 6, "sourceType": "preprograma PDF" }
+        {
+          "venueId": "minimes",
+          "label": "Couvent des Minimes",
+          "sourceUrl": "https://visapourlimage.com/les-expositions/2026/the-people-of-minneapolis-vs-ice/",
+          "sourceType": "fitxa web oficial"
+        },
+        {
+          "venueId": "dominicains",
+          "label": "Église des Dominicains",
+          "sourceUrl": "https://visapourlimage.com/wp-content/uploads/2026/08/preprog_VISAPOURLIMAGE_2026_us.pdf",
+          "sourceDate": "2026-08-07",
+          "pageIndex": 6,
+          "sourceType": "preprograma PDF"
+        }
       ],
       "resolutionAttempt": {
         "attemptedOn": "2026-09-11",
-        "methodsTried": ["fetch directe de visapourlimage.com/les-expositions/... (HTTP 403, bloquejat)", "fetch directe del PDF preprog_VISAPOURLIMAGE_2026_us.pdf (HTTP 403, bloquejat)", "cerca web + articles de premsa (phototrend.fr, loeildelinfo.fr — cap esmenta l'emplaçament)"],
+        "methodsTried": [
+          "fetch directe de visapourlimage.com/les-expositions/... (HTTP 403, bloquejat)",
+          "fetch directe del PDF preprog_VISAPOURLIMAGE_2026_us.pdf (HTTP 403, bloquejat)",
+          "cerca web + articles de premsa (phototrend.fr, loeildelinfo.fr — cap esmenta l'emplaçament)"
+        ],
         "result": "no-resolt",
         "recommendationCa": "Verificar-ho al plànol físic o al taulell d'informació de Visa en arribar, o repetir el fetch quan el bloqueig del lloc no hi sigui."
-      }
+      },
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
     },
-    { "id": "visa-2026-civils-les-premieres-victimes", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Civils : Les premières victimes", "titleCa": null, "authorIds": ["khames-alrefi"], "authorshipKind": "person", "venueId": "xanxo", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "La població civil de Gaza, el patiment de la guerra i la defensa de la dignitat en condicions extremes.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": true, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/civils-les-premieres-victimes/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-kostiantynivka-une-ville-dans-la-zone-de-mort", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Kostiantynivka, une ville dans la zone de mort", "titleCa": null, "authorIds": ["tyler-hicks"], "authorshipKind": "person", "venueId": "gallieni", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "La vida i la devastació de Kostiantynivka, una ciutat ucraïnesa exposada directament a la guerra.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": true, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/kostiantynivka-une-ville-dans-la-zone-de-mort/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-liban-2015-2026-la-derniere-guerre", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "La dernière guerre — Liban, 2015-2026", "titleCa": null, "authorIds": ["diego-ibarra-sanchez"], "authorshipKind": "person", "venueId": "universite", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Una dècada de guerres i fractures socials i polítiques al Líban.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": true, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/liban-2015-2026-la-derniere-guerre/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-boza-free-lexil-des-mineurs-guineens", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Boza free : L'exil des mineurs guinéens", "titleCa": null, "authorIds": ["herve-lequeux"], "authorshipKind": "person", "venueId": "tiers-ordre", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Els itineraris de menors guineans que emigren sols, des de Conakry fins a Europa i París.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/boza-free-lexil-des-mineurs-guineens/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-lodeur-de-linde", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "L'odeur de l'Inde", "titleCa": null, "authorIds": ["paolo-roversi"], "authorshipKind": "person", "venueId": "pams", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Una visió poètica de l'Índia a través de retrats, paisatges i escenes quotidianes.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/lodeur-de-linde/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-brises-par-le-kush", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Brisés par le kush", "titleCa": null, "authorIds": ["gael-turine"], "authorshipKind": "person", "venueId": "catalanite", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "La crisi provocada pel consum de kush a Sierra Leone i Libèria i les seves conseqüències humanes.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": true, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/brises-par-le-kush/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-presse-quotidienne-internationale", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Presse quotidienne internationale", "titleCa": null, "authorIds": [], "authorshipKind": "collective-unknown-members", "venueId": "cci", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Una exposició col·lectiva dedicada a la premsa diària internacional. Cal completar la relació de mitjans participants.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": null, "image": null, "sources": ["https://visapourlimage.com/wp-content/uploads/2026/08/preprog_VISAPOURLIMAGE_2026_us.pdf"], "checkedOn": "2026-09-11", "notesCa": "Relació de mitjans participants pendent de completar." },
-    { "id": "visa-2026-bourse-de-la-nouvelle-photographie-urbaine-expo-invitee", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Bourse de la nouvelle photographie urbaine (Expo invitée)", "titleCa": null, "authorIds": ["aida-dahmani", "cebos-nalcakan", "philemon-barbier", "valentin-goppel", "lilas-lehanneur", "william-camargo"], "authorshipKind": "multiple", "venueId": "cci", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Una exposició convidada que presenta treballs de sis participants de la beca de nova fotografia urbana.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": null, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"], "checkedOn": "2026-09-11", "notesCa": null },
-    { "id": "visa-2026-le-figaro-la-culture-de-la-liberte-depuis-1826-expo-invitee", "editionId": "visa-2026", "circuit": "VISA", "titleOriginal": "Le Figaro : La culture de la liberté depuis 1826 (Expo invitée)", "titleCa": null, "authorIds": ["le-figaro"], "authorshipKind": "organisation", "venueId": "loge", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Una exposició convidada vinculada al bicentenari del diari Le Figaro.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-13", "openingHours": { "timeZone": "Europe/Paris", "appliesEveryDay": true, "intervals": [["10:00", "20:00"]], "exceptions": {}, "sourceUrl": "https://visapourlimage.com/les-expositions/", "status": "confirmed-festival-schedule" }, "price": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" }, "sensitiveContentNotice": false, "image": null, "sources": ["https://visapourlimage.com/les-expositions/2026/le-figaro-la-culture-de-la-liberte-depuis-1826-expo-invitee/"], "checkedOn": "2026-09-11", "notesCa": null },
-
-    { "id": "off-2026-michel-craipeau-latelier-de-velo-du-fouillis-a-la-creation", "editionId": "off-2026", "circuit": "OFF", "titleOriginal": "L'Atelier de vélo, du fouillis à la création", "titleCa": null, "authorIds": ["michel-craipeau"], "authorshipKind": "person", "venueId": "maison-off", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": null, "summaryType": null, "startDate": null, "endDate": null, "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.", "openingHours": null, "price": null, "sensitiveContentNotice": null, "image": null, "sourceNumber": "59", "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"], "checkedOn": "2026-09-11", "retrievalMethod": "indexed-guide-extract", "recordStatus": "partial-needs-guide-visual-check", "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol." },
-    { "id": "off-2026-hubert-auer-les-prisons-de-madagascar", "editionId": "off-2026", "circuit": "OFF", "titleOriginal": "Les prisons de Madagascar", "titleCa": null, "authorIds": ["hubert-auer"], "authorshipKind": "person", "venueId": "libertes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": null, "summaryType": null, "startDate": null, "endDate": null, "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.", "openingHours": null, "price": null, "sensitiveContentNotice": null, "image": null, "sourceNumber": "61", "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"], "checkedOn": "2026-09-11", "retrievalMethod": "indexed-guide-extract", "recordStatus": "partial-needs-guide-visual-check", "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol." },
-    { "id": "off-2026-francis-dietrich-memoire-de-fer", "editionId": "off-2026", "circuit": "OFF", "titleOriginal": "Mémoire de fer", "titleCa": null, "authorIds": ["francis-dietrich"], "authorshipKind": "person", "venueId": "libertes", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": null, "summaryType": null, "startDate": null, "endDate": null, "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.", "openingHours": null, "price": null, "sensitiveContentNotice": null, "image": null, "sourceNumber": "62", "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"], "checkedOn": "2026-09-11", "retrievalMethod": "indexed-guide-extract", "recordStatus": "partial-needs-guide-visual-check", "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol." },
-    { "id": "off-2026-jean-souid-la-forme-de-leau", "editionId": "off-2026", "circuit": "OFF", "titleOriginal": "La forme de l'eau", "titleCa": null, "authorIds": ["jean-souid"], "authorshipKind": "person", "venueId": "segona", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": null, "summaryType": null, "startDate": null, "endDate": null, "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.", "openingHours": null, "price": null, "sensitiveContentNotice": null, "image": null, "sourceNumber": "68", "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"], "checkedOn": "2026-09-11", "retrievalMethod": "indexed-guide-extract", "recordStatus": "partial-needs-guide-visual-check", "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol." },
-    { "id": "off-2026-claudine-ripoll-regard-croise-en-rajasthan", "editionId": "off-2026", "circuit": "OFF", "titleOriginal": "Regard croisé en Rajasthan", "titleCa": null, "authorIds": ["claudine-ripoll"], "authorshipKind": "person", "venueId": "stephan-vauban", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": null, "summaryType": null, "startDate": null, "endDate": null, "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.", "openingHours": null, "price": null, "sensitiveContentNotice": null, "image": null, "sourceNumber": "71", "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"], "checkedOn": "2026-09-11", "retrievalMethod": "indexed-guide-extract", "recordStatus": "partial-needs-guide-visual-check", "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol." },
-    { "id": "off-2026-jean-pierre-rieu-varanasi-la-cite-de-shiva", "editionId": "off-2026", "circuit": "OFF", "titleOriginal": "Varanasi la cité de Shiva", "titleCa": null, "authorIds": ["jean-pierre-rieu"], "authorshipKind": "person", "venueId": "stephan-gambetta", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": null, "summaryType": null, "startDate": null, "endDate": null, "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.", "openingHours": null, "price": null, "sensitiveContentNotice": null, "image": null, "sourceNumber": "72", "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"], "checkedOn": "2026-09-11", "retrievalMethod": "indexed-guide-extract", "recordStatus": "partial-needs-guide-visual-check", "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol." },
-    { "id": "off-2026-renee-gatimel-larbre-magique", "editionId": "off-2026", "circuit": "OFF", "titleOriginal": "L'Arbre Magique", "titleCa": null, "authorIds": ["renee-gatimel"], "authorshipKind": "person", "venueId": "square-habitat", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": null, "summaryType": null, "startDate": null, "endDate": null, "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.", "openingHours": null, "price": null, "sensitiveContentNotice": null, "image": null, "sourceNumber": "70", "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"], "checkedOn": "2026-09-11", "retrievalMethod": "indexed-guide-extract", "recordStatus": "partial-needs-guide-visual-check", "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol." },
-    { "id": "off-2026-jacques-sanchez-villes-du-sud-regards-croises", "editionId": "off-2026", "circuit": "OFF", "titleOriginal": "Villes du Sud, Regards croisés", "titleCa": null, "authorIds": ["jacques-sanchez"], "authorshipKind": "person", "venueId": "naturellement-coiffe", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": null, "summaryType": null, "startDate": null, "endDate": null, "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.", "openingHours": null, "price": null, "sensitiveContentNotice": null, "image": null, "sourceNumber": "82", "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"], "checkedOn": "2026-09-11", "retrievalMethod": "indexed-guide-extract", "recordStatus": "partial-needs-guide-visual-check", "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol." },
-    { "id": "off-2026-cecile-guillaume-buissonnier-reminiscence", "editionId": "off-2026", "circuit": "OFF", "titleOriginal": "Réminiscence", "titleCa": null, "authorIds": ["cecile-guillaume-buissonnier"], "authorshipKind": "person", "venueId": "encore-fleurs", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": null, "summaryType": null, "startDate": null, "endDate": null, "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.", "openingHours": null, "price": null, "sensitiveContentNotice": null, "image": null, "sourceNumber": "84", "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92"], "checkedOn": "2026-09-11", "retrievalMethod": "indexed-guide-extract", "recordStatus": "partial-needs-guide-visual-check", "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol." },
-    { "id": "off-2026-lionel-moogin-poses-gourmandes", "editionId": "off-2026", "circuit": "OFF", "titleOriginal": "Poses Gourmandes", "titleCa": null, "authorIds": ["lionel-moogin"], "authorshipKind": "person", "venueId": "clos-lys", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "Retrats en estudi i fotografies de creacions pastisseres dels col·laboradors de CÉMOI Perpinyà, una mirada íntima als equips creatius del sector del xocolate.", "summaryType": "editorial-paraphrase", "startDate": null, "endDate": null, "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.", "openingHours": null, "price": null, "sensitiveContentNotice": null, "image": null, "sourceNumber": null, "sources": ["https://www.calameo.com/capsud66/books/005992874731caeca1b92", "https://dis-leur.fr/saveurs-poses-gourmandes-lexpo-photos-a-deguster-sans-moderation/"], "checkedOn": "2026-09-11", "retrievalMethod": "indexed-guide-extract", "recordStatus": "partial-needs-guide-visual-check", "notesCa": "IMPORTANT: els horaris de la botiga patrocinadora Cémoi que apareixen en anuncis del festival NO són els de l'exposició al Clos des Lys — l'espai és el restaurant del xef Franck Séguret, no la botiga. Horari d'accés a l'exposició encara desconegut." },
-    { "id": "off-2026-photo-club-thuir-en-suspension", "editionId": "off-2026", "circuit": "OFF", "titleOriginal": "En Suspension", "titleCa": null, "authorIds": ["photo-club-thuir"], "authorshipKind": "organisation", "venueId": "hopital", "venueCandidates": [], "venueStatus": "source-recorded", "summaryCa": "El club ha triat captar moments en què persones, animals o objectes escapen de l'atracció gravitatòria: instants fugaços congelats en el temps.", "summaryType": "editorial-paraphrase", "startDate": "2026-08-29", "endDate": "2026-09-30", "openingHours": null, "price": null, "sensitiveContentNotice": false, "image": null, "sourceNumber": null, "sources": ["https://photoclubdethuir.fr/visa-off-2026"], "checkedOn": "2026-09-11", "retrievalMethod": "web-search", "recordStatus": "verified-independent-source", "notesCa": "Trobada fora de la guia oficial (pàgina pròpia del Photo Club de Thuir). Dates de l'exposició (fins al 30/09) superen la data de tancament general de l'OFF (12/09) — verificar si es tracta d'una pròrroga real d'aquest espai concret abans de confiar-hi per planificar una visita fora del 12/09." }
+    {
+      "id": "visa-2026-civils-les-premieres-victimes",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Civils : Les premières victimes",
+      "titleCa": null,
+      "authorIds": [
+        "khames-alrefi"
+      ],
+      "authorshipKind": "person",
+      "venueId": "xanxo",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "La població civil de Gaza, el patiment de la guerra i la defensa de la dignitat en condicions extremes.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": true,
+      "image": "assets/visa-images/visa-2026-civils-les-premieres-victimes.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/civils-les-premieres-victimes/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-kostiantynivka-une-ville-dans-la-zone-de-mort",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Kostiantynivka, une ville dans la zone de mort",
+      "titleCa": null,
+      "authorIds": [
+        "tyler-hicks"
+      ],
+      "authorshipKind": "person",
+      "venueId": "gallieni",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "La vida i la devastació de Kostiantynivka, una ciutat ucraïnesa exposada directament a la guerra.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": true,
+      "image": "assets/visa-images/visa-2026-kostiantynivka-une-ville-dans-la-zone-de-mort.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/kostiantynivka-une-ville-dans-la-zone-de-mort/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-liban-2015-2026-la-derniere-guerre",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "La dernière guerre — Liban, 2015-2026",
+      "titleCa": null,
+      "authorIds": [
+        "diego-ibarra-sanchez"
+      ],
+      "authorshipKind": "person",
+      "venueId": "universite",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Una dècada de guerres i fractures socials i polítiques al Líban.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": true,
+      "image": "assets/visa-images/visa-2026-liban-2015-2026-la-derniere-guerre.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/liban-2015-2026-la-derniere-guerre/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-boza-free-lexil-des-mineurs-guineens",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Boza free : L'exil des mineurs guinéens",
+      "titleCa": null,
+      "authorIds": [
+        "herve-lequeux"
+      ],
+      "authorshipKind": "person",
+      "venueId": "tiers-ordre",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Els itineraris de menors guineans que emigren sols, des de Conakry fins a Europa i París.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-boza-free-lexil-des-mineurs-guineens.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/boza-free-lexil-des-mineurs-guineens/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-lodeur-de-linde",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "L'odeur de l'Inde",
+      "titleCa": null,
+      "authorIds": [
+        "paolo-roversi"
+      ],
+      "authorshipKind": "person",
+      "venueId": "pams",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Una visió poètica de l'Índia a través de retrats, paisatges i escenes quotidianes.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": "assets/visa-images/visa-2026-lodeur-de-linde.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/lodeur-de-linde/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-brises-par-le-kush",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Brisés par le kush",
+      "titleCa": null,
+      "authorIds": [
+        "gael-turine"
+      ],
+      "authorshipKind": "person",
+      "venueId": "catalanite",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "La crisi provocada pel consum de kush a Sierra Leone i Libèria i les seves conseqüències humanes.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": true,
+      "image": "assets/visa-images/visa-2026-brises-par-le-kush.jpg",
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/brises-par-le-kush/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null,
+      "imageRightsStatus": "press-editorial-not-explicitly-licensed",
+      "imageSource": "https://phototrend.fr/2026/08/visa-pour-limage-2026/"
+    },
+    {
+      "id": "visa-2026-presse-quotidienne-internationale",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Presse quotidienne internationale",
+      "titleCa": null,
+      "authorIds": [],
+      "authorshipKind": "collective-unknown-members",
+      "venueId": "cci",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Una exposició col·lectiva dedicada a la premsa diària internacional. Cal completar la relació de mitjans participants.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sources": [
+        "https://visapourlimage.com/wp-content/uploads/2026/08/preprog_VISAPOURLIMAGE_2026_us.pdf"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": "Relació de mitjans participants pendent de completar."
+    },
+    {
+      "id": "visa-2026-bourse-de-la-nouvelle-photographie-urbaine-expo-invitee",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Bourse de la nouvelle photographie urbaine (Expo invitée)",
+      "titleCa": null,
+      "authorIds": [
+        "aida-dahmani",
+        "cebos-nalcakan",
+        "philemon-barbier",
+        "valentin-goppel",
+        "lilas-lehanneur",
+        "william-camargo"
+      ],
+      "authorshipKind": "multiple",
+      "venueId": "cci",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Una exposició convidada que presenta treballs de sis participants de la beca de nova fotografia urbana.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/bourse-de-la-nouvelle-photographie-urbaine-expo-invitee/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null
+    },
+    {
+      "id": "visa-2026-le-figaro-la-culture-de-la-liberte-depuis-1826-expo-invitee",
+      "editionId": "visa-2026",
+      "circuit": "VISA",
+      "titleOriginal": "Le Figaro : La culture de la liberté depuis 1826 (Expo invitée)",
+      "titleCa": null,
+      "authorIds": [
+        "le-figaro"
+      ],
+      "authorshipKind": "organisation",
+      "venueId": "loge",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Una exposició convidada vinculada al bicentenari del diari Le Figaro.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "openingHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "exceptions": {},
+        "sourceUrl": "https://visapourlimage.com/les-expositions/",
+        "status": "confirmed-festival-schedule"
+      },
+      "price": {
+        "amount": 0,
+        "currency": "EUR",
+        "status": "confirmed-festival-rule"
+      },
+      "sensitiveContentNotice": false,
+      "image": null,
+      "sources": [
+        "https://visapourlimage.com/les-expositions/2026/le-figaro-la-culture-de-la-liberte-depuis-1826-expo-invitee/"
+      ],
+      "checkedOn": "2026-09-11",
+      "notesCa": null
+    },
+    {
+      "id": "off-2026-michel-craipeau-latelier-de-velo-du-fouillis-a-la-creation",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "L'Atelier de vélo, du fouillis à la création",
+      "titleCa": null,
+      "authorIds": [
+        "michel-craipeau"
+      ],
+      "authorshipKind": "person",
+      "venueId": "maison-off",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": "59",
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "indexed-guide-extract",
+      "recordStatus": "partial-needs-guide-visual-check",
+      "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol."
+    },
+    {
+      "id": "off-2026-hubert-auer-les-prisons-de-madagascar",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Les prisons de Madagascar",
+      "titleCa": null,
+      "authorIds": [
+        "hubert-auer"
+      ],
+      "authorshipKind": "person",
+      "venueId": "libertes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": "61",
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "indexed-guide-extract",
+      "recordStatus": "partial-needs-guide-visual-check",
+      "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol."
+    },
+    {
+      "id": "off-2026-francis-dietrich-memoire-de-fer",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Mémoire de fer",
+      "titleCa": null,
+      "authorIds": [
+        "francis-dietrich"
+      ],
+      "authorshipKind": "person",
+      "venueId": "libertes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": "62",
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "indexed-guide-extract",
+      "recordStatus": "partial-needs-guide-visual-check",
+      "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol."
+    },
+    {
+      "id": "off-2026-jean-souid-la-forme-de-leau",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "La forme de l'eau",
+      "titleCa": null,
+      "authorIds": [
+        "jean-souid"
+      ],
+      "authorshipKind": "person",
+      "venueId": "segona",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": "68",
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "indexed-guide-extract",
+      "recordStatus": "partial-needs-guide-visual-check",
+      "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol."
+    },
+    {
+      "id": "off-2026-claudine-ripoll-regard-croise-en-rajasthan",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Regard croisé en Rajasthan",
+      "titleCa": null,
+      "authorIds": [
+        "claudine-ripoll"
+      ],
+      "authorshipKind": "person",
+      "venueId": "stephan-vauban",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": "71",
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "indexed-guide-extract",
+      "recordStatus": "partial-needs-guide-visual-check",
+      "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol."
+    },
+    {
+      "id": "off-2026-jean-pierre-rieu-varanasi-la-cite-de-shiva",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Varanasi la cité de Shiva",
+      "titleCa": null,
+      "authorIds": [
+        "jean-pierre-rieu"
+      ],
+      "authorshipKind": "person",
+      "venueId": "stephan-gambetta",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": "72",
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "indexed-guide-extract",
+      "recordStatus": "partial-needs-guide-visual-check",
+      "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol."
+    },
+    {
+      "id": "off-2026-renee-gatimel-larbre-magique",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "L'Arbre Magique",
+      "titleCa": null,
+      "authorIds": [
+        "renee-gatimel"
+      ],
+      "authorshipKind": "person",
+      "venueId": "square-habitat",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": "70",
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "indexed-guide-extract",
+      "recordStatus": "partial-needs-guide-visual-check",
+      "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol."
+    },
+    {
+      "id": "off-2026-jacques-sanchez-villes-du-sud-regards-croises",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Villes du Sud, Regards croisés",
+      "titleCa": null,
+      "authorIds": [
+        "jacques-sanchez"
+      ],
+      "authorshipKind": "person",
+      "venueId": "naturellement-coiffe",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": "82",
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "indexed-guide-extract",
+      "recordStatus": "partial-needs-guide-visual-check",
+      "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol."
+    },
+    {
+      "id": "off-2026-cecile-guillaume-buissonnier-reminiscence",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Réminiscence",
+      "titleCa": null,
+      "authorIds": [
+        "cecile-guillaume-buissonnier"
+      ],
+      "authorshipKind": "person",
+      "venueId": "encore-fleurs",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": "84",
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "indexed-guide-extract",
+      "recordStatus": "partial-needs-guide-visual-check",
+      "notesCa": "Horari d'accés a l'exposició desconegut. No aplicar el 10-20h de Visa. No s'ha inferit cap descripció pel títol."
+    },
+    {
+      "id": "off-2026-lionel-moogin-poses-gourmandes",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Poses Gourmandes",
+      "titleCa": null,
+      "authorIds": [
+        "lionel-moogin"
+      ],
+      "authorshipKind": "person",
+      "venueId": "clos-lys",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "Retrats en estudi i fotografies de creacions pastisseres dels col·laboradors de CÉMOI Perpinyà, una mirada íntima als equips creatius del sector del xocolate.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival; dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": null,
+      "sources": [
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92",
+        "https://dis-leur.fr/saveurs-poses-gourmandes-lexpo-photos-a-deguster-sans-moderation/"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "indexed-guide-extract",
+      "recordStatus": "partial-needs-guide-visual-check",
+      "notesCa": "IMPORTANT: els horaris de la botiga patrocinadora Cémoi que apareixen en anuncis del festival NO són els de l'exposició al Clos des Lys — l'espai és el restaurant del xef Franck Séguret, no la botiga. Horari d'accés a l'exposició encara desconegut."
+    },
+    {
+      "id": "off-2026-photo-club-thuir-en-suspension",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "En Suspension",
+      "titleCa": null,
+      "authorIds": [
+        "photo-club-thuir"
+      ],
+      "authorshipKind": "organisation",
+      "venueId": "hopital",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": "El club ha triat captar moments en què persones, animals o objectes escapen de l'atracció gravitatòria: instants fugaços congelats en el temps.",
+      "summaryType": "editorial-paraphrase",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-30",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": false,
+      "image": null,
+      "sourceNumber": null,
+      "sources": [
+        "https://photoclubdethuir.fr/visa-off-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "web-search",
+      "recordStatus": "verified-independent-source",
+      "notesCa": "Trobada fora de la guia oficial (pàgina pròpia del Photo Club de Thuir). Dates de l'exposició (fins al 30/09) superen la data de tancament general de l'OFF (12/09) — verificar si es tracta d'una pròrroga real d'aquest espai concret abans de confiar-hi per planificar una visita fora del 12/09."
+    },
+    {
+      "id": "off-2026-montagne-benjamin-couchers-de-soleil",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Couchers de soleil",
+      "titleCa": null,
+      "authorIds": [
+        "montagne-benjamin"
+      ],
+      "authorshipKind": "person",
+      "venueId": null,
+      "venueCandidates": [],
+      "venueStatus": "unknown",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel libre»); dates, horari i emplaçament pendents de confirmació.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026-1"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-filename-extract",
+      "recordStatus": "low-confidence-name-order-unverified",
+      "notesCa": "BAIXA CONFIANÇA: títol i nom extrets del fitxer d'imatge de presentació de la categoria; sense emplaçament confirmat; l'ordre nom/cognom de l'autor no s'ha pogut verificar."
+    },
+    {
+      "id": "off-2026-club-photo-barcaresien-collectif",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Exposició col·lectiva (títol per confirmar)",
+      "titleCa": null,
+      "authorIds": [
+        "club-photo-barcaresien"
+      ],
+      "authorshipKind": "organisation",
+      "venueId": null,
+      "venueCandidates": [],
+      "venueStatus": "unknown",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Collectif reportage»); dates, horari, emplaçament i títol concret pendents de confirmació.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026-1"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-filename-extract",
+      "recordStatus": "low-confidence-title-unknown",
+      "notesCa": "BAIXA CONFIANÇA: només es coneix el nom del club a partir del fitxer d'un cartell de presentació — sense títol d'obra confirmat ni emplaçament."
+    },
+    {
+      "id": "off-2026-club-creatifs-rivesaltes-collectif",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Exposició col·lectiva (títol per confirmar)",
+      "titleCa": null,
+      "authorIds": [
+        "club-creatifs-rivesaltes"
+      ],
+      "authorshipKind": "organisation",
+      "venueId": null,
+      "venueCandidates": [],
+      "venueStatus": "unknown",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Collectif libre»); dates, horari, emplaçament i títol concret pendents de confirmació.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": null,
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026-1"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-filename-extract",
+      "recordStatus": "low-confidence-title-unknown",
+      "notesCa": "BAIXA CONFIANÇA: només es coneix el nom del club a partir del fitxer d'un cartell de presentació — sense títol d'obra confirmat ni emplaçament."
+    },
+    {
+      "id": "off-2026-garros-edmond-adieu-gondoles",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Adieu Gondoles",
+      "titleCa": null,
+      "authorIds": [
+        "garros-edmond"
+      ],
+      "authorshipKind": "person",
+      "venueId": "art-no-coiffure",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-garros-edmond-adieu-gondoles.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-jeanjean-annick-au-coeur-de-la-caravane",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Au coeur de la caravane",
+      "titleCa": null,
+      "authorIds": [
+        "jeanjean-annick"
+      ],
+      "authorshipKind": "person",
+      "venueId": "camara",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-jeanjean-annick-au-coeur-de-la-caravane.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-ponsardin-patrick-ce-que-la-terre-garde",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Ce que la terre Garde",
+      "titleCa": null,
+      "authorIds": [
+        "ponsardin-patrick"
+      ],
+      "authorshipKind": "person",
+      "venueId": "curtina",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-ponsardin-patrick-ce-que-la-terre-garde.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-espinosa-alain-une-nuit-a-hanoi",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Une nuit à Hanoï",
+      "titleCa": null,
+      "authorIds": [
+        "espinosa-alain"
+      ],
+      "authorshipKind": "person",
+      "venueId": "hotel-mondial",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-espinosa-alain-une-nuit-a-hanoi.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-pottiezk-philippe-corons",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Corons",
+      "titleCa": null,
+      "authorIds": [
+        "pottiezk-philippe"
+      ],
+      "authorshipKind": "person",
+      "venueId": "la-part-du-reve",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-pottiezk-philippe-corons.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-campdoras-corine-empreinte-du-japon",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Empreinte du Japon",
+      "titleCa": null,
+      "authorIds": [
+        "campdoras-corine"
+      ],
+      "authorshipKind": "person",
+      "venueId": "maison-dahlia",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-campdoras-corine-empreinte-du-japon.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-colomer-arthur-resistance-karen",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Résistance Karen",
+      "titleCa": null,
+      "authorIds": [
+        "colomer-arthur"
+      ],
+      "authorshipKind": "person",
+      "venueId": "libertes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-colomer-arthur-resistance-karen.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-pages-julia-sant-jordi",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Sant Jordi",
+      "titleCa": null,
+      "authorIds": [
+        "pages-julia"
+      ],
+      "authorshipKind": "person",
+      "venueId": "maison-off",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-pages-julia-sant-jordi.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-lacaze-bernard-semana-santa-sevilla",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Semana Santa Sevilla",
+      "titleCa": null,
+      "authorIds": [
+        "lacaze-bernard"
+      ],
+      "authorshipKind": "person",
+      "venueId": "au-goustous",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-lacaze-bernard-semana-santa-sevilla.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-mok-ta-reprendre-la-terre",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Reprendre la terre",
+      "titleCa": null,
+      "authorIds": [
+        "mok-ta"
+      ],
+      "authorshipKind": "person",
+      "venueId": "cave-millesime",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-mok-ta-reprendre-la-terre.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-bardet-lea-portraits-de-femmes",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Portraits de Femmes",
+      "titleCa": null,
+      "authorIds": [
+        "bardet-lea"
+      ],
+      "authorshipKind": "person",
+      "venueId": "ego-glacier",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-bardet-lea-portraits-de-femmes.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-veron-jean-bernard-haiti-pays-en-crise",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Haïti pays en crise",
+      "titleCa": null,
+      "authorIds": [
+        "veron-jean-bernard"
+      ],
+      "authorshipKind": "person",
+      "venueId": "italia-mia",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-veron-jean-bernard-haiti-pays-en-crise.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-wolff-patrick-urgence-amazonie",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Urgence Amazonie",
+      "titleCa": null,
+      "authorIds": [
+        "wolff-patrick"
+      ],
+      "authorshipKind": "person",
+      "venueId": "la-rotonde",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-wolff-patrick-urgence-amazonie.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-boch-lauren-djibouti-visages-et-horizons",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Djibouti, Visages et horizons",
+      "titleCa": null,
+      "authorIds": [
+        "boch-lauren"
+      ],
+      "authorshipKind": "person",
+      "venueId": "bohem-cuisine",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-boch-lauren-djibouti-visages-et-horizons.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-chambre-six-struthoff",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Struthoff",
+      "titleCa": null,
+      "authorIds": [
+        "chambre-six"
+      ],
+      "authorshipKind": "person",
+      "venueId": "libertes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-chambre-six-struthoff.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-poure-jean-claude-jusqu-au-bout-de-soi",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Jusqu'au bout de soi",
+      "titleCa": null,
+      "authorIds": [
+        "poure-jean-claude"
+      ],
+      "authorshipKind": "person",
+      "venueId": "maison-off",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-poure-jean-claude-jusqu-au-bout-de-soi.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-semis-lluc-natural-instans",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Natural Instans...",
+      "titleCa": null,
+      "authorIds": [
+        "semis-lluc"
+      ],
+      "authorshipKind": "person",
+      "venueId": "maison-off",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-semis-lluc-natural-instans.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-verdiere-dominique-castellers-del-riberal",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Castellers Del Ribéral",
+      "titleCa": null,
+      "authorIds": [
+        "verdiere-dominique"
+      ],
+      "authorshipKind": "person",
+      "venueId": "boucherie-guillaume",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-verdiere-dominique-castellers-del-riberal.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-chamague-jordi-a-la-surface-de-la-mer",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "A la surface de la mer",
+      "titleCa": null,
+      "authorIds": [
+        "chamague-jordi"
+      ],
+      "authorshipKind": "person",
+      "venueId": "clemenceau-gestion-immobiliere",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-chamague-jordi-a-la-surface-de-la-mer.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-rebotier-max-grand-tournoi-de-sumo-de-tokyo",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Grand tournoi de Sumo de Tokyo",
+      "titleCa": null,
+      "authorIds": [
+        "rebotier-max"
+      ],
+      "authorshipKind": "person",
+      "venueId": "havas-voyage",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-rebotier-max-grand-tournoi-de-sumo-de-tokyo.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-durrenberger-christian-humain-quel-est-ton-regard",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Humain, quel est ton regard ?",
+      "titleCa": null,
+      "authorIds": [
+        "durrenberger-christian"
+      ],
+      "authorshipKind": "person",
+      "venueId": "l-atelier-photo-mgb",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-durrenberger-christian-humain-quel-est-ton-regard.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-napolitano-benjamin-des-chevaux-et-un-homme",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Des chevaux et un homme",
+      "titleCa": null,
+      "authorIds": [
+        "napolitano-benjamin"
+      ],
+      "authorshipKind": "person",
+      "venueId": "librairie-hybride",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-napolitano-benjamin-des-chevaux-et-un-homme.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-sonza-reordat-benedicte-portraits-du-rajasthan",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Portraits du Rajasthan",
+      "titleCa": null,
+      "authorIds": [
+        "sonza-reordat-benedicte"
+      ],
+      "authorshipKind": "person",
+      "venueId": "panirosa",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-sonza-reordat-benedicte-portraits-du-rajasthan.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-gilbert-veronique-le-jour-d-apres",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Le jour d'après",
+      "titleCa": null,
+      "authorIds": [
+        "gilbert-veronique"
+      ],
+      "authorshipKind": "person",
+      "venueId": "libertes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-gilbert-veronique-le-jour-d-apres.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-ferrer-julia-au-dela-des-grands-icones",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Au delà des Grands Icônes",
+      "titleCa": null,
+      "authorIds": [
+        "ferrer-julia"
+      ],
+      "authorshipKind": "person",
+      "venueId": "maison-off",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-ferrer-julia-au-dela-des-grands-icones.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-varoqui-florence-l-art-de-tailler",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "L'Art de tailler",
+      "titleCa": null,
+      "authorIds": [
+        "varoqui-florence"
+      ],
+      "authorshipKind": "person",
+      "venueId": "maison-off",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-varoqui-florence-l-art-de-tailler.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-cabrera-alain-libellule-en-survie",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Libellule en survie",
+      "titleCa": null,
+      "authorIds": [
+        "cabrera-alain"
+      ],
+      "authorshipKind": "person",
+      "venueId": "cajelice",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-cabrera-alain-libellule-en-survie.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-ribes-marie-france-au-fil-de-l-eau",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Au fil de l'eau",
+      "titleCa": null,
+      "authorIds": [
+        "ribes-marie-france"
+      ],
+      "authorshipKind": "person",
+      "venueId": "credit-agricole-agence-catalogne",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-ribes-marie-france-au-fil-de-l-eau.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-corigliano-patrick-madagascar-la-ou-la-lumiere-survit",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Madagascar « Là où la lumière survit »",
+      "titleCa": null,
+      "authorIds": [
+        "corigliano-patrick"
+      ],
+      "authorshipKind": "person",
+      "venueId": "havas-voyage-2",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-corigliano-patrick-madagascar-la-ou-la-lumiere-survit.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-royer-pascale-remise-a-flots",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Remise à flots",
+      "titleCa": null,
+      "authorIds": [
+        "royer-pascale"
+      ],
+      "authorshipKind": "person",
+      "venueId": "la-cour-du-baron",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-royer-pascale-remise-a-flots.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-izard-christian-la-vallee-du-sel-au-pays-basque",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "La vallée du sel au Pays Basque",
+      "titleCa": null,
+      "authorIds": [
+        "izard-christian"
+      ],
+      "authorshipKind": "person",
+      "venueId": "lily-aime",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-izard-christian-la-vallee-du-sel-au-pays-basque.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-billa-brigitte-a-tire-d-ailes-a-marcevol",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "A tire d'ailes à Marcevol",
+      "titleCa": null,
+      "authorIds": [
+        "billa-brigitte"
+      ],
+      "authorshipKind": "person",
+      "venueId": "petite-pousse",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-billa-brigitte-a-tire-d-ailes-a-marcevol.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-canitini-ugo-ocupas",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Ocupas",
+      "titleCa": null,
+      "authorIds": [
+        "canitini-ugo"
+      ],
+      "authorshipKind": "person",
+      "venueId": "libertes",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-canitini-ugo-ocupas.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-lasshini-sheryne-nos-murs-parlent",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Nos murs parlent",
+      "titleCa": null,
+      "authorIds": [
+        "lasshini-sheryne"
+      ],
+      "authorshipKind": "person",
+      "venueId": "maison-off",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-lasshini-sheryne-nos-murs-parlent.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-vemarch-giancarlo-coexistence",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Coexistence",
+      "titleCa": null,
+      "authorIds": [
+        "vemarch-giancarlo"
+      ],
+      "authorshipKind": "person",
+      "venueId": "maison-off",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-vemarch-giancarlo-coexistence.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-bertrand-thomas-la-cyclo-2026",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "La Cyclo 2026",
+      "titleCa": null,
+      "authorIds": [
+        "bertrand-thomas"
+      ],
+      "authorshipKind": "person",
+      "venueId": "maison-off",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-bertrand-thomas-la-cyclo-2026.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-margarin-shoot-visibilis-e-e-s",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Visibilis.é.e.s",
+      "titleCa": null,
+      "authorIds": [
+        "margarin-shoot"
+      ],
+      "authorshipKind": "person",
+      "venueId": "maison-off",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-margarin-shoot-visibilis-e-e-s.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-chabot-sabine-femmes-des-marees",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Femmes des marées",
+      "titleCa": null,
+      "authorIds": [
+        "chabot-sabine"
+      ],
+      "authorshipKind": "person",
+      "venueId": "atelier-saint-augustin",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-chabot-sabine-femmes-des-marees.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-guichou-daniel-ceremonie-de-la-compensation-en-papouasie",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Cérémonie de la Compensation en Papouasie",
+      "titleCa": null,
+      "authorIds": [
+        "guichou-daniel"
+      ],
+      "authorshipKind": "person",
+      "venueId": "la-droguerie",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-guichou-daniel-ceremonie-de-la-compensation-en-papouasie.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-mikou-entre-les-mailles",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Entre les mailles",
+      "titleCa": null,
+      "authorIds": [
+        "mikou"
+      ],
+      "authorshipKind": "person",
+      "venueId": "la-ferme-des-augustins",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-mikou-entre-les-mailles.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-brume-liza-venise-capitale-de-l-eau-et-des-metiers-invisibles",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Venise, Capitale de l'eau et des métiers invisibles",
+      "titleCa": null,
+      "authorIds": [
+        "brume-liza"
+      ],
+      "authorshipKind": "person",
+      "venueId": "patisserie-buisson",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-brume-liza-venise-capitale-de-l-eau-et-des-metiers-invisibles.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-baunez-christelle-pygmees-d-ouganda",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Pygmées d'Ouganda",
+      "titleCa": null,
+      "authorIds": [
+        "baunez-christelle"
+      ],
+      "authorshipKind": "person",
+      "venueId": "gigi-brunch",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-baunez-christelle-pygmees-d-ouganda.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-pepin-maimiti-julie-le-pujllay-le-diable-argentin",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Le Pujllay, le diable argentin",
+      "titleCa": null,
+      "authorIds": [
+        "pepin-maimiti-julie"
+      ],
+      "authorshipKind": "person",
+      "venueId": "nocibe",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-pepin-maimiti-julie-le-pujllay-le-diable-argentin.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-delort-alex-voyage",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Voyage",
+      "titleCa": null,
+      "authorIds": [
+        "delort-alex"
+      ],
+      "authorshipKind": "person",
+      "venueId": "botanika",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-delort-alex-voyage.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-bottequin-patrick-vie-villageoise-au-nigeria",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Vie villageoise au Nigéria",
+      "titleCa": null,
+      "authorIds": [
+        "bottequin-patrick"
+      ],
+      "authorshipKind": "person",
+      "venueId": "bookine",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-bottequin-patrick-vie-villageoise-au-nigeria.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-rabeau-jean-louis-bars-et-cafes-d-europe",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Bars et Cafés d'Europe",
+      "titleCa": null,
+      "authorIds": [
+        "rabeau-jean-louis"
+      ],
+      "authorshipKind": "person",
+      "venueId": "mano-di-pasta",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-rabeau-jean-louis-bars-et-cafes-d-europe.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-lozano-gabriel-une-vie-de-chien",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Une vie de chien",
+      "titleCa": null,
+      "authorIds": [
+        "lozano-gabriel"
+      ],
+      "authorshipKind": "person",
+      "venueId": "pharmacie-vauban",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-lozano-gabriel-une-vie-de-chien.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    },
+    {
+      "id": "off-2026-prady-olivier-saint-jacques",
+      "editionId": "off-2026",
+      "circuit": "OFF",
+      "titleOriginal": "Saint-Jacques",
+      "titleCa": null,
+      "authorIds": [
+        "prady-olivier"
+      ],
+      "authorshipKind": "person",
+      "venueId": "villa-arts-66",
+      "venueCandidates": [],
+      "venueStatus": "source-recorded",
+      "summaryCa": null,
+      "summaryType": null,
+      "startDate": null,
+      "endDate": null,
+      "dateNoteCa": "Participació al programa del festival (categoria «Individuel Reportage»); dates i horari d'accés particulars pendents de comprovació directa amb l'espai.",
+      "openingHours": null,
+      "price": null,
+      "sensitiveContentNotice": null,
+      "image": "assets/off-images/off-2026-prady-olivier-saint-jacques.jpg",
+      "sourceNumber": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/les-expos-2026"
+      ],
+      "checkedOn": "2026-09-11",
+      "retrievalMethod": "image-inspection",
+      "recordStatus": "verified-image-inspection",
+      "notesCa": "Títol, autor i emplaçament llegits directament de la fitxa-imatge oficial del festival (inspecció visual de la imatge en alta resolució) — no de text indexat. Horari d'accés a l'exposició desconegut.",
+      "imageRightsStatus": "festival-promotional-not-explicitly-licensed"
+    }
   ]
 }

@@ -327,6 +327,23 @@ export function buildFitxaCard(exh, mods, { onRouteChange } = {}) {
   bullets.append(routeToggleBtn);
   card.append(bullets);
 
+  if (exh.image) {
+    const figure = el("figure", "voff-fitxa__image");
+    const img = document.createElement("img");
+    img.src = exh.image;
+    img.alt = "";
+    img.loading = "lazy";
+    figure.append(img);
+    const captions = {
+      "festival-promotional-not-explicitly-licensed": "Cartell oficial del festival — drets no confirmats explícitament per a redistribució.",
+      "press-editorial-not-explicitly-licensed": "Fotografia de l'autor, reproduïda via premsa (phototrend.fr) — drets no confirmats explícitament per a redistribució."
+    };
+    if (captions[exh.imageRightsStatus]) {
+      figure.append(el("figcaption", "voff-fitxa__image-caption", captions[exh.imageRightsStatus]));
+    }
+    card.append(figure);
+  }
+
   card.append(el("h1", "voff-fitxa__title", exh.titleOriginal));
   card.append(fitxaAuthorshipBlock(exh));
   if (exh.summaryCa) {

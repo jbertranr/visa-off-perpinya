@@ -10,17 +10,22 @@
     "withVerifiedCoordinates": 27,
     "withConfirmedOpeningHours": 27,
     "withVerifiedSummary": 27,
-    "notesCa": "Els 27 títols s'han contrastat amb una font de premsa independent (phototrend.fr) — coincideixen. L'horari 10-20h i la gratuïtat són la regla general publicada pel festival, no verificats un per un a cada fitxa individual (la web oficial ha bloquejat l'accés automatitzat, vegeu incidències)."
+    "withImage": 24,
+    "notesCa": "Els 27 títols s'han contrastat amb una font de premsa independent (phototrend.fr) — coincideixen. L'horari 10-20h i la gratuïtat són la regla general publicada pel festival, no verificats un per un a cada fitxa individual (la web oficial ha bloquejat l'accés automatitzat, vegeu incidències). 24/27 porten fotografia real de l'autor (via phototrend.fr, drets no confirmats explícitament — decisió presa amb l'usuari, vegeu notesCa de cada exposició); les 3 restants (premsa, beca col·lectiva, Le Figaro) no en tenien a la font."
   },
   "off": {
     "announcedExhibitions": 146,
     "announcedVenues": 103,
-    "importedExhibitions": 11,
-    "withVenueAssigned": 11,
+    "importedExhibitions": 62,
+    "importedExhibitionsSolid": 58,
+    "importedExhibitionsLowConfidence": 4,
+    "withVenueAssigned": 62,
     "withVerifiedCoordinates": 10,
+    "withVenuePendingGeocode": 35,
     "withConfirmedOpeningHours": 0,
     "withVerifiedSummary": 2,
-    "notesCa": "Mostra parcial de 11 sobre 146 exposicions anunciades (10 de la guia inicial + 1 trobada per cerca independent, Photo Club de Thuir). La importació completa de la guia no s'ha pogut fer: calameo (3 URLs diferents provades) falla sistemàticament (socket hang up o només imatges sense text) i les pàgines de categories del web mostren només imatges sense dades associades. 2 resums verificats contra fonts independents (premsa local, web del club) — la resta d'entrades OFF mantenen summaryCa: null."
+    "withImage": 48,
+    "notesCa": "62 sobre 146 anunciades. 53 provenen d'inspecció visual directa (baixada + lectura) de totes les imatges de la categoria «Individuel reportage Off 2026» — cada imatge és una fitxa completa amb títol, autor i emplaçament impresos, no un simple nom de fitxer. 5 d'aquestes coincidien exactament amb entrades ja importades de la guia inicial (bona validació creuada). 4 més són de BAIXA CONFIANÇA (noms de fitxer de les miniatures de categoria, sense emplaçament, ordre nom/cognom no verificat en 2 d'elles). Els 35 emplaçaments nous d'aquesta categoria tenen adreça verificada visualment però CAP coordenada encara — pendents d'un lot de geocodificació. Falten 4 categories del programa OFF (Collectif reportage, Invité, Individuel libre, Collectif libre, ~93 exposicions més) per fer amb el mateix mètode."
   },
   "venues": {
     "total": 19,

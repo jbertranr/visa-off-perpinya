@@ -374,6 +374,20 @@
   margin: var(--ds-space-4) 0;
 }
 
+.voff-fitxa__image {
+  margin: var(--ds-space-3) 0 0;
+}
+.voff-fitxa__image img {
+  width: 100%;
+  border-radius: var(--ds-radius);
+  display: block;
+}
+.voff-fitxa__image-caption {
+  margin-top: var(--ds-space-1);
+  font-size: 0.68rem;
+  color: var(--ds-color-muted);
+}
+
 .voff-fitxa__title {
   margin: var(--ds-space-2) 0 0;
   font-size: 1.3rem;
