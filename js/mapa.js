@@ -75,6 +75,26 @@
     else document.getElementById("dlg-venue").showModal();
   }
 
+  // Icona d'un color diferent segons el circuit (com el badge de les
+  // targetes: blau=Visa, taronja=OFF) — quan un lloc barreja exposicions
+  // dels dos circuits, un color neutre propi ("mixed").
+  function groupCircuit(group) {
+    const circuits = new Set(group.exhibitions.map((e) => e.circuit));
+    if (circuits.size === 1) return circuits.values().next().value;
+    return "mixed";
+  }
+
+  function circuitIcon(circuit) {
+    const cls = circuit === "VISA" ? "voff-map-marker--visa" : circuit === "OFF" ? "voff-map-marker--off" : "voff-map-marker--mixed";
+    return L.divIcon({
+      className: `voff-map-marker ${cls}`,
+      html: '<i class="fa-solid fa-location-dot" aria-hidden="true"></i>',
+      iconSize: [30, 30],
+      iconAnchor: [15, 29],
+      popupAnchor: [0, -26]
+    });
+  }
+
   function renderMarkers(catalog) {
     markers.forEach((m) => map.removeLayer(m.marker));
     markers = [];
@@ -86,7 +106,8 @@
 
     for (const group of groups) {
       const marker = L.marker([group.venue.coordinates.lat, group.venue.coordinates.lng], {
-        title: `${group.venue.name} (${group.exhibitions.length})`
+        title: `${group.venue.name} (${group.exhibitions.length})`,
+        icon: circuitIcon(groupCircuit(group))
       });
       marker.on("click", () => openVenueModal(group));
       marker.addTo(map);
@@ -141,8 +162,17 @@
     map = L.map(mapEl, { zoomControl: true });
     map.setView([window.APP.perpignanCenterRef.lat, window.APP.perpignanCenterRef.lng], 15);
 
+    // Nota: es va provar l'estil "Positron" de CARTO
+    // (basemaps.cartocdn.com/light_all) com a alternativa més suau, però
+    // ara exigeix clau d'API (retornava tessel·les amb marca d'aigua
+    // "API KEY REQUIRED") i maps.wikimedia.org està restringit a llocs
+    // de la Wikimedia (403). Es manté doncs tile.openstreetmap.org (únic
+    // proveïdor OSM gratuït sense clau que funciona) i se suavitza amb
+    // un filtre CSS (.voff-map-tiles-soft a mapa.html) en lloc de
+    // canviar de proveïdor.
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
+      className: "voff-map-tiles-soft",
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">contribuïdors d\'OpenStreetMap</a>'
     }).addTo(map);
 

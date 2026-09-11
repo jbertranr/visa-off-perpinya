@@ -34,6 +34,22 @@
       flex: 1; min-height: 0; position: relative;
     }
     #voff-map { position: absolute; inset: 0; bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
+    /* Suavitza el mapa base (tile.openstreetmap.org és l'únic proveïdor
+       OSM sense clau d'API que encara funciona) — menys saturat i una
+       mica més clar, perquè es llegeixi millor amb els marcadors a
+       sobre. Els marcadors/popus no porten aquesta classe. */
+    .voff-map-tiles-soft { filter: saturate(0.55) brightness(1.12) contrast(0.92); }
+    /* Marcadors amb icona de color (pin de Font Awesome) en lloc del
+       xinxeta blava per defecte de Leaflet — mateix codi de color que
+       .circuitBadge: blau=Visa, taronja=OFF. */
+    .voff-map-marker { text-align: center; cursor: pointer; }
+    .voff-map-marker i {
+      font-size: 30px;
+      filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.35));
+    }
+    .voff-map-marker--visa i { color: var(--ds-color-primary); }
+    .voff-map-marker--off i { color: var(--ds-color-accent); }
+    .voff-map-marker--mixed i { color: var(--ds-color-text); }
     /* A la dreta (no a l'esquerra): el control de zoom natiu de Leaflet
        viu al top-left del mapa (leaflet-top.leaflet-left, z-index propi
        molt alt) i tapava/interceptava els clics d'aquest panell quan

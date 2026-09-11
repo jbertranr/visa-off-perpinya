@@ -43,7 +43,12 @@
   var activeVT = null;
   var loadedCss = new Set();
   var loadedJs = new Set();
-  var styleKeys = new Set();
+  // hash -> <style> element que HEM injectat nosaltres (inclou els de la
+  // càrrega inicial). No és només un registre de "ja vist": a cada
+  // navegació es reconcilia perquè el <head> tingui exactament els
+  // <style> de la pàgina actual, ni un més ni un menys (vegeu bug de
+  // fuita més avall).
+  var styleEls = new Map();
   var scrollByUrl = new Map();
 
   function strHash(s) {
@@ -68,7 +73,7 @@
   function seedLoaded() {
     document.querySelectorAll('link[rel="stylesheet"]').forEach(function (l) { loadedCss.add(abs(l.getAttribute('href'))); });
     document.querySelectorAll('script[src]').forEach(function (s) { loadedJs.add(abs(s.getAttribute('src'))); });
-    document.querySelectorAll('head style').forEach(function (st) { styleKeys.add(strHash(st.textContent)); });
+    document.querySelectorAll('head style').forEach(function (st) { styleEls.set(strHash(st.textContent), st); });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', seedLoaded);
   else seedLoaded();
@@ -149,13 +154,29 @@
         doc.querySelectorAll('link[rel="stylesheet"]').forEach(function (l) {
           cssJobs.push(loadCss(abs(l.getAttribute('href'), target.href)));
         });
+        // Reconcilia els <style> de <head>: bug real (2026-09-12) — es
+        // limitava a AFEGIR els que faltaven i no treia mai els de la
+        // pàgina anterior (p. ex. el bloc `body{overflow:hidden;height:
+        // 100vh}` propi de mapa.html es quedava per sempre en tornar a
+        // "A prop"/"Explora", bloquejant-hi tot el scroll de la pàgina —
+        // "el header tapa el fons i no puc fer scroll"). Ara el <head>
+        // acaba tenint exactament els <style> d'aquesta pàgina, ni un
+        // més ni un menys.
+        var wantedKeys = new Set();
         doc.querySelectorAll('head style').forEach(function (st) {
           var k = strHash(st.textContent);
-          if (!styleKeys.has(k)) {
-            styleKeys.add(k);
+          wantedKeys.add(k);
+          if (!styleEls.has(k)) {
             var el = document.createElement('style');
             el.textContent = st.textContent;
             document.head.appendChild(el);
+            styleEls.set(k, el);
+          }
+        });
+        styleEls.forEach(function (el, k) {
+          if (!wantedKeys.has(k)) {
+            el.remove();
+            styleEls.delete(k);
           }
         });
 

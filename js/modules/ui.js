@@ -199,11 +199,7 @@ function fitxaAuthorshipBlock(exh) {
   }
   wrap.append(el("p", "voff-fitxa__authors", exh.authors.map((a) => a.name).join(", ")));
   for (const author of exh.authors) {
-    if (author.bioCa) {
-      wrap.append(el("p", "ds-text ds-text--sm", author.bioCa));
-    } else {
-      wrap.append(el("p", "ds-text ds-text--sm ds-text--muted", "Biografia per confirmar"));
-    }
+    if (author.bioCa) wrap.append(el("p", "ds-text ds-text--sm", author.bioCa));
     if (author.profileUrl) {
       const a = document.createElement("a");
       a.href = author.profileUrl;
