@@ -33,7 +33,9 @@
       max-width: none; padding: 0; margin: 0;
       flex: 1; min-height: 0; position: relative;
     }
-    #voff-map { position: absolute; inset: 0; bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
+    /* Sense els 64px de la tabbar mentre estigui amagada (.ds-tabbar a
+       app.css) — si es reactiva, tornar-hi el "64px +". */
+    #voff-map { position: absolute; inset: 0; bottom: env(safe-area-inset-bottom, 0px); }
     /* Suavitza el mapa base (tile.openstreetmap.org és l'únic proveïdor
        OSM sense clau d'API que encara funciona) — menys saturat i una
        mica més clar, perquè es llegeixi millor amb els marcadors a
@@ -73,13 +75,13 @@
     .voff-map-locate-btn {
       position: absolute; z-index: 1100;
       right: var(--ds-space-3);
-      bottom: calc(64px + env(safe-area-inset-bottom, 0px) + var(--ds-space-3));
+      bottom: calc(env(safe-area-inset-bottom, 0px) + var(--ds-space-3));
       background: var(--ds-color-surface); box-shadow: var(--ds-shadow);
     }
     .voff-map-locate-status {
       position: absolute; z-index: 1100;
       right: var(--ds-space-3);
-      bottom: calc(64px + env(safe-area-inset-bottom, 0px) + var(--ds-space-3) + 44px);
+      bottom: calc(env(safe-area-inset-bottom, 0px) + var(--ds-space-3) + 44px);
       max-width: 220px;
       background: var(--ds-color-surface); box-shadow: var(--ds-shadow);
       padding: var(--ds-space-2) var(--ds-space-3);
@@ -105,8 +107,11 @@
 
   <header class="voff-header-wrap">
     <div class="ds-site-header">
+      <button class="ds-icon-button voff-header__menu-btn" id="btn-open-nav" type="button" aria-haspopup="dialog" aria-controls="dlg-nav" aria-label="Obre el menú de navegació">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
       <div class="ds-site-header__text">
-        <p class="ds-site-header__title">Visa 2026 i VISA OFF</p>
+        <p class="ds-site-header__title">VISA 2026 i VISA OFF</p>
         <p class="ds-site-header__subtitle">Mapa &middot; només emplaçaments amb coordenades verificades</p>
       </div>
       <div class="voff-header__actions">
@@ -131,12 +136,54 @@
     <noscript><p class="ds-text" style="padding:var(--ds-space-4);">El mapa necessita JavaScript. Consulta la llista a «Explora».</p></noscript>
   </main>
 
+  <!-- Tabbar amagada temporalment (app.css .ds-tabbar) — substituïda pel
+       menú hamburguesa (#dlg-nav, més avall). Es deixa el codi tal com
+       és per poder-la reactivar sense refer-la. -->
   <nav class="ds-tabbar" aria-label="Navegació principal">
     <a class="ds-tabbar__item" data-tab="index" href="index.html"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>A prop</span></a>
     <a class="ds-tabbar__item" data-tab="explora" href="explora.html"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><span>Explora</span></a>
     <a class="ds-tabbar__item" data-tab="ruta" href="ruta.html"><i class="fa-solid fa-route" aria-hidden="true"></i><span>Ruta<span class="ds-tabbar__badge" id="voff-route-badge" hidden>0</span></span></a>
     <a class="ds-tabbar__item" data-tab="mapa" href="mapa.html"><i class="fa-solid fa-map" aria-hidden="true"></i><span>Mapa</span></a>
   </nav>
+
+  <dialog class="ds-modal ds-modal--sm" id="dlg-nav" aria-labelledby="dlg-nav-title">
+    <div class="ds-modal__header">
+      <p class="ds-modal__title" id="dlg-nav-title">Menú</p>
+      <button class="ds-icon-button" data-ds-modal-close aria-label="Tanca"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <div class="ds-modal__body">
+      <nav class="voff-nav-menu" aria-label="Navegació principal">
+        <a class="voff-nav-menu__item" data-nav-page="index" href="index.html">
+          <span class="voff-nav-menu__icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+          <span class="voff-nav-menu__text">
+            <span class="voff-nav-menu__title">A prop</span>
+            <span class="voff-nav-menu__desc">Exposicions properes, ara mateix o planificant una visita.</span>
+          </span>
+        </a>
+        <a class="voff-nav-menu__item" data-nav-page="explora" href="explora.html">
+          <span class="voff-nav-menu__icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></span>
+          <span class="voff-nav-menu__text">
+            <span class="voff-nav-menu__title">Explora</span>
+            <span class="voff-nav-menu__desc">Cerca i filtra tot el catàleg de Visa i l'OFF.</span>
+          </span>
+        </a>
+        <a class="voff-nav-menu__item" data-nav-page="ruta" href="ruta.html">
+          <span class="voff-nav-menu__icon"><i class="fa-solid fa-route" aria-hidden="true"></i></span>
+          <span class="voff-nav-menu__text">
+            <span class="voff-nav-menu__title">Ruta</span>
+            <span class="voff-nav-menu__desc">La teva selecció d'exposicions, agrupada per seu i amb un ordre suggerit.</span>
+          </span>
+        </a>
+        <a class="voff-nav-menu__item" data-nav-page="mapa" href="mapa.html">
+          <span class="voff-nav-menu__icon"><i class="fa-solid fa-map" aria-hidden="true"></i></span>
+          <span class="voff-nav-menu__text">
+            <span class="voff-nav-menu__title">Mapa</span>
+            <span class="voff-nav-menu__desc">Tots els emplaçaments amb coordenades verificades.</span>
+          </span>
+        </a>
+      </nav>
+    </div>
+  </dialog>
 
   <dialog class="ds-modal ds-modal--fit" id="dlg-venue" aria-labelledby="dlg-venue-title">
     <div class="ds-modal__header">
@@ -156,6 +203,7 @@
 
   <script src="assets/vendor/leaflet1.9.3/leaflet.js"></script>
   <script src="js/fontsize.js"></script>
+  <script src="js/navmenu.js"></script>
   <script src="js/mapa.js"></script>
 </body>
 </html>

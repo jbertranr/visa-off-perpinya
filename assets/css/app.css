@@ -15,6 +15,16 @@
   display: none !important;
 }
 
+/* Amagat TEMPORALMENT (2026-09-12): substituït pel menú hamburguesa
+   (.voff-nav-menu, obert des de #btn-open-nav a la capçalera) mentre es
+   decideix el disseny de navegació definitiu. El codi de tabbar.js i
+   #voff-route-badge es deixen tal com són (l'element existeix, només no
+   es pinta) — reactivar-lo és treure aquesta regla i tornar el
+   padding-bottom de sota al valor amb "+ 72px". */
+.ds-tabbar {
+  display: none;
+}
+
 /* Override local, només d'aquesta app: fons blanc en lloc del gris
    blavós per defecte de skin-neutra (--ds-color-bg: #eef0f4) — no es
    toca l'skin compartida perquè no afecti la resta d'apps que la fan
@@ -105,8 +115,63 @@ html.voff-text-xl { font-size: 125%; }
 }
 
 .voff-header__date-btn,
-.voff-header__fontsize-btn {
+.voff-header__fontsize-btn,
+.voff-header__menu-btn {
   flex-shrink: 0;
+}
+
+/* ── Menú hamburguesa (substitueix temporalment la tabbar) ──
+   Llista de destinacions dins d'un .ds-modal, cadascuna amb icona +
+   títol + una frase explicant què hi ha — el mateix contingut que
+   abans mostrava la tabbar, però amb context per a qui no coneix
+   l'app. */
+.voff-nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ds-space-1);
+}
+
+.voff-nav-menu__item {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-3);
+  padding: var(--ds-space-3);
+  border-radius: var(--ds-radius);
+  color: inherit;
+  text-decoration: none;
+}
+.voff-nav-menu__item:hover,
+.voff-nav-menu__item:focus-visible {
+  background: var(--ds-color-surface-alt);
+}
+.voff-nav-menu__item.is-active {
+  background: var(--ds-color-primary-xlight);
+}
+
+.voff-nav-menu__icon {
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ds-color-primary-xlight);
+  color: var(--ds-color-primary);
+  font-size: 1.05rem;
+}
+
+.voff-nav-menu__text { min-width: 0; }
+.voff-nav-menu__title {
+  display: block;
+  font-weight: 700;
+  color: var(--ds-color-text);
+}
+.voff-nav-menu__desc {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.82rem;
+  color: var(--ds-color-muted);
 }
 
 .voff-header-wrap .ds-icon-button {
@@ -129,7 +194,9 @@ html.voff-text-xl { font-size: 125%; }
   max-width: 640px;
   margin: 0 auto;
   padding: var(--ds-space-4);
-  padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  /* Sense els 72px de la tabbar mentre estigui amagada (vegeu .ds-tabbar
+     més amunt) — només l'espai de seguretat d'iOS/Android. */
+  padding-bottom: calc(var(--ds-space-4) + env(safe-area-inset-bottom, 0px));
   min-height: calc(100vh - 64px);
 }
 

@@ -17,10 +17,12 @@
   <link rel="stylesheet" href="assets/css/components/status.css">
   <link rel="stylesheet" href="assets/css/components/button.css">
   <link rel="stylesheet" href="assets/css/components/empty.css">
+  <link rel="stylesheet" href="assets/css/components/modal.css">
   <link rel="stylesheet" href="assets/css/components/tabbar.css">
   <link rel="stylesheet" href="assets/css/components/typography.css">
   <link rel="stylesheet" href="assets/css/app.css">
   <script src="assets/css/router.js"></script>
+  <script src="assets/css/components/modal.js"></script>
   <script src="assets/css/components/tabbar.js"></script>
   <script src="js/config.js"></script>
 </head>
@@ -29,8 +31,11 @@
 
   <header class="voff-header-wrap">
     <div class="ds-site-header">
+      <button class="ds-icon-button voff-header__menu-btn" id="btn-open-nav" type="button" aria-haspopup="dialog" aria-controls="dlg-nav" aria-label="Obre el menú de navegació">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
       <div class="ds-site-header__text">
-        <p class="ds-site-header__title">Visa 2026 i VISA OFF</p>
+        <p class="ds-site-header__title">VISA 2026 i VISA OFF</p>
         <p class="ds-site-header__subtitle">Fitxa d'exposició</p>
       </div>
       <div class="voff-header__actions">
@@ -50,6 +55,9 @@
     </div>
   </main>
 
+  <!-- Tabbar amagada temporalment (app.css .ds-tabbar) — substituïda pel
+       menú hamburguesa (#dlg-nav, més avall). Es deixa el codi tal com
+       és per poder-la reactivar sense refer-la. -->
   <nav class="ds-tabbar" aria-label="Navegació principal">
     <a class="ds-tabbar__item" data-tab="index" href="index.html"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>A prop</span></a>
     <a class="ds-tabbar__item" data-tab="explora" href="explora.html"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><span>Explora</span></a>
@@ -57,7 +65,47 @@
     <a class="ds-tabbar__item" data-tab="mapa" href="mapa.html"><i class="fa-solid fa-map" aria-hidden="true"></i><span>Mapa</span></a>
   </nav>
 
+  <dialog class="ds-modal ds-modal--sm" id="dlg-nav" aria-labelledby="dlg-nav-title">
+    <div class="ds-modal__header">
+      <p class="ds-modal__title" id="dlg-nav-title">Menú</p>
+      <button class="ds-icon-button" data-ds-modal-close aria-label="Tanca"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <div class="ds-modal__body">
+      <nav class="voff-nav-menu" aria-label="Navegació principal">
+        <a class="voff-nav-menu__item" data-nav-page="index" href="index.html">
+          <span class="voff-nav-menu__icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+          <span class="voff-nav-menu__text">
+            <span class="voff-nav-menu__title">A prop</span>
+            <span class="voff-nav-menu__desc">Exposicions properes, ara mateix o planificant una visita.</span>
+          </span>
+        </a>
+        <a class="voff-nav-menu__item" data-nav-page="explora" href="explora.html">
+          <span class="voff-nav-menu__icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></span>
+          <span class="voff-nav-menu__text">
+            <span class="voff-nav-menu__title">Explora</span>
+            <span class="voff-nav-menu__desc">Cerca i filtra tot el catàleg de Visa i l'OFF.</span>
+          </span>
+        </a>
+        <a class="voff-nav-menu__item" data-nav-page="ruta" href="ruta.html">
+          <span class="voff-nav-menu__icon"><i class="fa-solid fa-route" aria-hidden="true"></i></span>
+          <span class="voff-nav-menu__text">
+            <span class="voff-nav-menu__title">Ruta</span>
+            <span class="voff-nav-menu__desc">La teva selecció d'exposicions, agrupada per seu i amb un ordre suggerit.</span>
+          </span>
+        </a>
+        <a class="voff-nav-menu__item" data-nav-page="mapa" href="mapa.html">
+          <span class="voff-nav-menu__icon"><i class="fa-solid fa-map" aria-hidden="true"></i></span>
+          <span class="voff-nav-menu__text">
+            <span class="voff-nav-menu__title">Mapa</span>
+            <span class="voff-nav-menu__desc">Tots els emplaçaments amb coordenades verificades.</span>
+          </span>
+        </a>
+      </nav>
+    </div>
+  </dialog>
+
   <script src="js/fontsize.js"></script>
+  <script src="js/navmenu.js"></script>
   <script src="js/fitxa.js"></script>
 </body>
 </html>
