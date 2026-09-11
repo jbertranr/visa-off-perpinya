@@ -390,21 +390,23 @@
   margin: var(--ds-space-4) 0;
 }
 
-/* Imatge de capçalera: a sang per damunt del padding de la targeta
-   (marges negatius = amplada del padding de .voff-fitxa-card). */
+/* Imatge de capçalera: ocupa un terç de l'amplada de la fitxa,
+   centrada, sense retallar mai (object-fit natural). */
 .voff-fitxa__image {
-  margin: calc(var(--ds-space-4) * -1) calc(var(--ds-space-4) * -1) var(--ds-space-3);
+  width: 33%;
+  margin: 0 auto var(--ds-space-3);
 }
 .voff-fitxa__image img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: var(--ds-radius-lg) var(--ds-radius-lg) 0 0;
+  border-radius: var(--ds-radius);
 }
 .voff-fitxa__image-caption {
-  margin: var(--ds-space-1) var(--ds-space-4) 0;
+  margin: var(--ds-space-1) 0 0;
   font-size: 0.68rem;
   color: var(--ds-color-muted);
+  text-align: center;
 }
 
 .voff-fitxa__title {
