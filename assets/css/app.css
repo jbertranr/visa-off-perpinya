@@ -34,6 +34,14 @@ html, body {
   touch-action: pan-y pinch-zoom;
 }
 
+/* Mateixa restricció dins d'un <dialog> modal (.ds-modal__body és el
+   contenidor amb scroll intern) — el html/body de dalt no hi arriba
+   perquè el <dialog> es renderitza al top layer, fora del flux normal. */
+.ds-modal__body {
+  overflow-x: hidden;
+  touch-action: pan-y pinch-zoom;
+}
+
 /* Mida de lletra (accessibilitat, botó a la capçalera — js/fontsize.js).
    Escala el font-size arrel: com que tot el design-system està
    dimensionat en rem, un sol canvi aquí escala text, espaiats i icones
@@ -434,18 +442,34 @@ html.voff-text-xl { font-size: 125%; }
 }
 
 /* Fila de "bullets" a dalt de tot: circuit, estat, i a la dreta
-   visitada/preferit com a botons rodons compactes. */
+   visitada/preferit com a botons rodons compactes. Al modal (amplada
+   retallada per .ds-modal--fit) el badge de circuit + la píndola
+   d'estat + els 3 botons rodons no sempre caben en una sola línia —
+   es fan més compactes (mida de lletra reduïda) i, si encara no hi
+   caben, la fila embolcalla en lloc de solapar-se. */
 .voff-fitxa__bullets {
   display: flex;
   align-items: center;
-  gap: var(--ds-space-2);
+  flex-wrap: wrap;
+  row-gap: var(--ds-space-1);
+  column-gap: var(--ds-space-2);
 }
 
-.voff-fitxa__bullets-spacer { flex: 1; }
+.voff-fitxa__bullets .ds-badge {
+  font-size: 0.66rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.voff-fitxa__bullets .ds-status {
+  font-size: 0.72rem;
+  gap: var(--ds-space-1);
+}
+
+.voff-fitxa__bullets-spacer { flex: 1; min-width: var(--ds-space-2); }
 
 .voff-fitxa__bullet-btn {
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid var(--ds-color-border);
   background: var(--ds-color-surface);
@@ -453,8 +477,9 @@ html.voff-text-xl { font-size: 125%; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
+  flex-shrink: 0;
 }
 .voff-fitxa__bullet-btn.is-active { color: var(--ds-color-warning); border-color: var(--ds-color-warning); }
 .voff-fitxa__bullet-btn:nth-of-type(1).is-active { color: var(--ds-color-success); border-color: var(--ds-color-success); }
