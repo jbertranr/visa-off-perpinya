@@ -184,6 +184,22 @@
     });
   }
 
+  // Tancable: es queda amagat la resta d'aquesta sessió del navegador
+  // (sessionStorage), però torna a aparèixer la propera vegada que
+  // s'obri l'app, per si es vol activar la ubicació més endavant.
+  function wireGeoBarClose() {
+    const bar = document.getElementById("voff-geo-bar");
+    const closeBtn = document.getElementById("btn-close-geo-bar");
+    if (!bar || !closeBtn) return;
+    let dismissed = false;
+    try { dismissed = sessionStorage.getItem("voffGeoBarClosed") === "1"; } catch (e) { /* ignore */ }
+    if (dismissed) bar.hidden = true;
+    closeBtn.addEventListener("click", () => {
+      bar.hidden = true;
+      try { sessionStorage.setItem("voffGeoBarClosed", "1"); } catch (e) { /* ignore */ }
+    });
+  }
+
   function wirePlanDialog() {
     const dlg = document.getElementById("dlg-plan");
     const openBtn = document.getElementById("btn-open-plan");
@@ -252,6 +268,7 @@
     updateRouteBadge();
     wireCircuitFilters();
     wireGeolocation();
+    wireGeoBarClose();
     wirePlanDialog();
     wireMinimap();
     wireMoreFilters();

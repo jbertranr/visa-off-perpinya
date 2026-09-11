@@ -58,10 +58,13 @@
 
   <main id="main-content" class="ds-main" tabindex="-1">
 
-    <div class="voff-geo-bar">
+    <div class="voff-geo-bar" id="voff-geo-bar">
       <i class="fa-solid fa-location-crosshairs" aria-hidden="true"></i>
       <p class="voff-geo-bar__text" id="voff-geo-status">Sense ubicació — mostrant totes les seus. Activa la ubicació per veure distàncies.</p>
       <button class="ds-button ds-button--sm" id="btn-use-location" type="button">Utilitza la meva ubicació</button>
+      <button class="ds-icon-button voff-geo-bar__close" id="btn-close-geo-bar" type="button" aria-label="Tanca l'avís d'ubicació">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
     </div>
 
     <details class="voff-minimap">

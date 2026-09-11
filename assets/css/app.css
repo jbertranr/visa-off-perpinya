@@ -277,6 +277,9 @@
   padding: var(--ds-space-3);
   margin-bottom: var(--ds-space-3);
   background: var(--ds-color-surface-alt);
+}
+.voff-geo-bar__close {
+  flex-shrink: 0;
   border-radius: var(--ds-radius);
 }
 
