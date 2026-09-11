@@ -11,6 +11,8 @@
   let map = null;
   let markers = []; // { marker, venueGroup }
   let circuitFilter = "tots";
+  let youAreHereMarker = null;
+  let youAreHereCircle = null;
 
   function parisWallClockNow() {
     const mode = mods.state.getPlanMode();
@@ -130,6 +132,45 @@
     });
   }
 
+  // Ubicació sota demanda (mai a l'arrencada, mateix patró que aprop.js):
+  // un punt blau al mapa + cercle de precisió, i centra/apropa el mapa
+  // a la ubicació. Es pot tornar a clicar per actualitzar-la.
+  function wireLocate() {
+    const btn = document.getElementById("btn-map-locate");
+    const statusEl = document.getElementById("voff-map-locate-status");
+    if (!btn) return;
+    btn.addEventListener("click", async () => {
+      btn.disabled = true;
+      statusEl.hidden = true;
+      const icon = btn.querySelector("i");
+      icon.className = "fa-solid fa-spinner fa-spin";
+      try {
+        const loc = await mods.geo.requestLocation();
+        if (youAreHereMarker) map.removeLayer(youAreHereMarker);
+        if (youAreHereCircle) map.removeLayer(youAreHereCircle);
+        youAreHereMarker = L.marker([loc.lat, loc.lng], {
+          icon: L.divIcon({ className: "voff-map-you-are-here", iconSize: [16, 16], iconAnchor: [8, 8] }),
+          zIndexOffset: 1000,
+          title: "La teva ubicació"
+        }).addTo(map);
+        youAreHereCircle = L.circle([loc.lat, loc.lng], {
+          radius: loc.accuracyM, color: "#1857c4", weight: 1, fillOpacity: 0.08
+        }).addTo(map);
+        map.setView([loc.lat, loc.lng], Math.max(map.getZoom(), 15));
+        if (loc.accuracyM > 100) {
+          statusEl.textContent = `Precisió baixa (±${Math.round(loc.accuracyM)} m).`;
+          statusEl.hidden = false;
+        }
+      } catch (err) {
+        statusEl.textContent = `No s'ha pogut obtenir la ubicació: ${err.messageCa}`;
+        statusEl.hidden = false;
+      } finally {
+        btn.disabled = false;
+        icon.className = "fa-solid fa-location-crosshairs";
+      }
+    });
+  }
+
   async function init() {
     const mapEl = document.getElementById("voff-map");
     if (!mapEl || typeof L === "undefined") return;
@@ -158,6 +199,7 @@
     }
 
     updateRouteBadge();
+    wireLocate();
 
     map = L.map(mapEl, { zoomControl: true });
     map.setView([window.APP.perpignanCenterRef.lat, window.APP.perpignanCenterRef.lng], 15);

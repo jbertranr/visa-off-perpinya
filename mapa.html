@@ -67,6 +67,33 @@
       background: var(--ds-color-surface); padding: var(--ds-space-2);
       border-radius: var(--ds-radius); box-shadow: var(--ds-shadow);
     }
+    /* Botó "la meva ubicació" — cantonada inferior dreta (el zoom ocupa
+       la superior esquerra i els filtres la superior dreta), per sobre
+       de tot amb el mateix z-index alt que el panell de filtres. */
+    .voff-map-locate-btn {
+      position: absolute; z-index: 1100;
+      right: var(--ds-space-3);
+      bottom: calc(64px + env(safe-area-inset-bottom, 0px) + var(--ds-space-3));
+      background: var(--ds-color-surface); box-shadow: var(--ds-shadow);
+    }
+    .voff-map-locate-status {
+      position: absolute; z-index: 1100;
+      right: var(--ds-space-3);
+      bottom: calc(64px + env(safe-area-inset-bottom, 0px) + var(--ds-space-3) + 44px);
+      max-width: 220px;
+      background: var(--ds-color-surface); box-shadow: var(--ds-shadow);
+      padding: var(--ds-space-2) var(--ds-space-3);
+      border-radius: var(--ds-radius);
+    }
+    /* Marcador "ets aquí": punt blau amb halo, sense pin — diferent dels
+       marcadors d'exposició perquè no es confongui amb cap seu. */
+    .voff-map-you-are-here {
+      width: 16px; height: 16px;
+      background: var(--ds-color-primary);
+      border: 3px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 6px color-mix(in srgb, var(--ds-color-primary) 25%, transparent), 0 1px 4px rgba(0, 0, 0, 0.35);
+    }
   </style>
   <script src="assets/css/router.js"></script>
   <script src="assets/css/components/modal.js"></script>
@@ -97,6 +124,10 @@
       <button class="ds-button ds-button--sm ds-button--ghost" data-map-filter="OFF" type="button">OFF</button>
     </div>
     <div id="voff-map"></div>
+    <p class="ds-text ds-text--sm voff-map-locate-status" id="voff-map-locate-status" hidden></p>
+    <button class="ds-icon-button voff-map-locate-btn" id="btn-map-locate" type="button" aria-label="Mostra la meva ubicació al mapa">
+      <i class="fa-solid fa-location-crosshairs" aria-hidden="true"></i>
+    </button>
     <noscript><p class="ds-text" style="padding:var(--ds-space-4);">El mapa necessita JavaScript. Consulta la llista a «Explora».</p></noscript>
   </main>
 
