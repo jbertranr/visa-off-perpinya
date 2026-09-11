@@ -51,6 +51,19 @@ export function renderExhibitionCard(exh, { parisWallClock, closingSoonMinutes, 
   const card = el("div", `ds-card ds-card--status-start voff-card ${exh.circuit === "VISA" ? "ds-card--primary" : "ds-card--accent"}`);
   card.setAttribute("data-exh-id", exh.id);
 
+  if (exh.image) {
+    const imgCol = el("div", "voff-card__imgcol");
+    const thumb = document.createElement("img");
+    thumb.src = exh.image;
+    thumb.alt = "";
+    thumb.loading = "lazy";
+    imgCol.append(thumb);
+    card.append(imgCol);
+    card.classList.add("voff-card--with-image");
+  }
+
+  const rightCol = el("div", "voff-card__rightcol");
+
   const top = el("div", "voff-card__top");
   top.append(circuitBadge(exh.circuit));
   if (isVisited(exh)) {
@@ -80,21 +93,12 @@ export function renderExhibitionCard(exh, { parisWallClock, closingSoonMinutes, 
     if (onToggleFavorite) onToggleFavorite(exh);
   });
   top.append(favBtn);
-  card.append(top);
+  rightCol.append(top);
 
   const body = document.createElement("a");
   body.className = "voff-card__body";
   body.href = `fitxa.html?edition=${encodeURIComponent(exh.editionId)}&id=${encodeURIComponent(exh.id)}`;
   body.setAttribute("data-no-router", ""); // router.js no l'ha de tractar com una navegació de pàgina
-
-  if (exh.image) {
-    const thumb = document.createElement("img");
-    thumb.className = "voff-card__thumb";
-    thumb.src = exh.image;
-    thumb.alt = "";
-    thumb.loading = "lazy";
-    body.append(thumb);
-  }
 
   const text = el("div", "voff-card__text");
   text.append(el("p", "voff-card__title", exh.titleOriginal));
@@ -125,7 +129,8 @@ export function renderExhibitionCard(exh, { parisWallClock, closingSoonMinutes, 
     ev.preventDefault();
     onOpen(exh);
   });
-  card.append(body);
+  rightCol.append(body);
+  card.append(rightCol);
 
   return card;
 }

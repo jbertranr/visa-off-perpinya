@@ -147,6 +147,7 @@
 /* ── Targeta d'exposició ── */
 .voff-card {
   padding: var(--ds-space-3) var(--ds-space-3) var(--ds-space-3) calc(var(--ds-space-3) + 4px);
+  overflow: hidden;
 }
 
 /* card.css fa .ds-card--status-start::before sempre --ds-color-primary;
@@ -154,6 +155,33 @@
    per .ds-card--primary/--accent) — override local, només .voff-card. */
 .voff-card.ds-card--status-start::before {
   background: var(--ds-card-color, var(--ds-color-primary));
+}
+
+/* Amb imatge: la foto ocupa tota l'alçada del cantó esquerre (100%),
+   a sang amb la targeta — desactivem la barra de color (redundant amb
+   la foto) i posem tot el padding a la columna dreta. */
+.voff-card--with-image {
+  display: flex;
+  align-items: stretch;
+  padding: 0;
+}
+.voff-card--with-image.ds-card--status-start::before {
+  display: none;
+}
+.voff-card__imgcol {
+  flex: 0 0 35%;
+  align-self: stretch;
+}
+.voff-card__imgcol img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.voff-card__rightcol {
+  flex: 1;
+  min-width: 0;
+  padding: var(--ds-space-3);
 }
 
 .voff-card__top {
@@ -185,9 +213,7 @@
 .voff-card__fav-btn.is-active { color: var(--ds-color-warning); }
 
 .voff-card__body {
-  display: flex;
-  gap: var(--ds-space-3);
-  align-items: flex-start;
+  display: block;
   width: 100%;
   text-align: left;
   cursor: pointer;
@@ -200,17 +226,7 @@
   color: inherit;
 }
 
-.voff-card__thumb {
-  flex-shrink: 0;
-  width: 64px;
-  height: 64px;
-  border-radius: var(--ds-radius);
-  object-fit: contain;
-  background: var(--ds-color-surface-alt);
-}
-
 .voff-card__text {
-  flex: 1;
   min-width: 0;
 }
 .voff-card__body:hover,
