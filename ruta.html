@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ca" data-ds-skin="neutra">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ruta · Visa+OFF Perpinyà</title>
+  <meta name="description" content="La teva selecció d'exposicions, agrupada per seu i amb un ordre de visita suggerit.">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1857c4">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/skins/skin-neutra.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components/card.css">
+  <link rel="stylesheet" href="assets/css/components/badge.css">
+  <link rel="stylesheet" href="assets/css/components/button.css">
+  <link rel="stylesheet" href="assets/css/components/input.css">
+  <link rel="stylesheet" href="assets/css/components/empty.css">
+  <link rel="stylesheet" href="assets/css/components/modal.css">
+  <link rel="stylesheet" href="assets/css/components/tabbar.css">
+  <link rel="stylesheet" href="assets/css/components/typography.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <script src="assets/css/router.js"></script>
+  <script src="assets/css/components/modal.js"></script>
+  <script src="assets/css/components/tabbar.js"></script>
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <a class="ds-skip-link" href="#main-content">Salta al contingut principal</a>
+
+  <header class="voff-header-wrap">
+    <div class="ds-site-header">
+      <div class="ds-site-header__logo-wrap">
+        <img class="ds-site-header__logo" src="assets/icons/icon.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="ds-site-header__text">
+        <p class="ds-site-header__title">Ruta</p>
+        <p class="ds-site-header__tagline">Visa 2026 &middot; VISA OFF</p>
+        <p class="ds-site-header__subtitle">La teva selecció, per seus</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="ds-main" tabindex="-1">
+
+    <div class="voff-plan-fields">
+      <div>
+        <label class="ds-text ds-text--sm" for="voff-ruta-inici">Punt de partida</label>
+        <select class="ds-input" id="voff-ruta-inici">
+          <option value="centre">Centre de Perpinyà (referència)</option>
+          <option value="gps">La meva ubicació</option>
+        </select>
+      </div>
+      <div>
+        <label class="ds-text ds-text--sm" for="voff-ruta-hora">Hora d'inici</label>
+        <input class="ds-input" type="time" id="voff-ruta-hora" value="10:00">
+      </div>
+    </div>
+    <div class="voff-plan-fields">
+      <div>
+        <label class="ds-text ds-text--sm" for="voff-ruta-minuts">Minuts per exposició</label>
+        <input class="ds-input" type="number" id="voff-ruta-minuts" value="15" min="5" max="120" step="5">
+      </div>
+      <div>
+        <label class="ds-text ds-text--sm" for="voff-ruta-disponible">Temps disponible (min)</label>
+        <input class="ds-input" type="number" id="voff-ruta-disponible" value="180" min="15" step="15">
+      </div>
+    </div>
+
+    <button class="ds-button ds-button--sm" id="btn-proposa-ordre" type="button" style="margin-bottom: var(--ds-space-3);">
+      <i class="fa-solid fa-arrow-up-1-9" aria-hidden="true"></i> Proposa un ordre per proximitat
+    </button>
+
+    <div class="voff-route-summary" id="voff-route-summary" hidden></div>
+
+    <div id="voff-route-stops" aria-live="polite"></div>
+
+  </main>
+
+  <nav class="ds-tabbar" aria-label="Navegació principal">
+    <a class="ds-tabbar__item" data-tab="index" href="index.html"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>A prop</span></a>
+    <a class="ds-tabbar__item" data-tab="explora" href="explora.html"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><span>Explora</span></a>
+    <a class="ds-tabbar__item" data-tab="ruta" href="ruta.html"><i class="fa-solid fa-route" aria-hidden="true"></i><span>Ruta<span class="ds-tabbar__badge" id="voff-route-badge" hidden>0</span></span></a>
+    <a class="ds-tabbar__item" data-tab="mapa" href="mapa.html"><i class="fa-solid fa-map" aria-hidden="true"></i><span>Mapa</span></a>
+  </nav>
+
+  <dialog class="ds-modal ds-modal--fit" id="dlg-fitxa" aria-labelledby="dlg-fitxa-title">
+    <div class="ds-modal__header">
+      <p class="ds-modal__title" id="dlg-fitxa-title">Fitxa d'exposició</p>
+      <button class="ds-icon-button" data-ds-modal-close aria-label="Tanca"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <div class="ds-modal__body" id="dlg-fitxa-body"></div>
+  </dialog>
+
+  <script src="js/ruta.js"></script>
+</body>
+</html>

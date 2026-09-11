@@ -1,0 +1,179 @@
+/* ============================================================
+   design-system / components / button.css
+   Basat en .button/.icon-button de ControlDePresencia i en
+   .hl-btn (botó invertit sobre fons de color) de s360_eix1_seu.
+
+   La icona (<i class="fa-solid ...">, sempre primer fill directe)
+   es mostra dins una capsa de color — mateix llenguatge visual que
+   .ds-icon-box (icon.css) i les targetes d'indicador (.ds-card--stat,
+   card.css): cap canvi de marcatge necessari, l'estil aplica
+   directament sobre l'element <i> ja existent.
+   ============================================================ */
+
+.ds-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-3);
+  padding: var(--ds-space-2) var(--ds-space-4) var(--ds-space-2) var(--ds-space-2);
+  border: 1px solid var(--ds-color-border);
+  border-radius: var(--ds-radius);
+  background: var(--ds-color-surface);
+  color: var(--ds-color-text);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background var(--ds-transition), border-color var(--ds-transition), color var(--ds-transition);
+}
+
+.ds-button i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--ds-radius-sm);
+  background: var(--ds-color-primary);
+  color: var(--ds-color-ink-on-primary);
+  font-size: 13px;
+  flex-shrink: 0;
+  transition: background var(--ds-transition), color var(--ds-transition), border-radius var(--ds-transition);
+}
+
+.ds-button:hover {
+  border-color: var(--ds-color-primary);
+}
+
+.ds-button--primary {
+  background: var(--ds-color-primary-xlight);
+  border-color: var(--ds-color-primary-light);
+}
+
+.ds-button--primary i {
+  background: var(--ds-color-primary-dark);
+}
+
+.ds-button--ghost {
+  background: transparent;
+}
+
+.ds-button--ghost i {
+  background: var(--ds-color-primary-xlight);
+  color: var(--ds-color-primary);
+}
+
+/* Botó invertit sobre un fons ja acolorit (p. ex. dins
+   .ds-card--action o un bloc de crida a l'acció): sense capsa —
+   nomès la icona solta, com un enllaç de text. */
+.ds-button--invert {
+  padding-left: var(--ds-space-2);
+  background: transparent;
+  border-color: transparent;
+  color: var(--ds-color-primary);
+}
+
+.ds-button--invert i {
+  width: auto;
+  height: auto;
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  border-radius: 0;
+}
+
+.ds-button--invert:hover {
+  color: var(--ds-color-primary-dark);
+}
+
+.ds-button:disabled,
+.ds-button.is-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.ds-button:disabled i,
+.ds-button.is-disabled i {
+  background: var(--ds-color-border);
+  color: var(--ds-color-muted);
+}
+
+/* Mides — recuperat de .btn-sm/.btn-lg de Tabler UI
+   (docs.tabler.io/ui/components/buttons). */
+.ds-button--sm {
+  padding: var(--ds-space-1) var(--ds-space-3) var(--ds-space-1) var(--ds-space-1);
+  font-size: 0.82rem;
+}
+
+.ds-button--sm i {
+  width: 22px;
+  height: 22px;
+  font-size: 11px;
+}
+
+.ds-button--lg {
+  padding: var(--ds-space-3) var(--ds-space-6) var(--ds-space-3) var(--ds-space-3);
+  font-size: 1.05rem;
+  border-left: 4px solid var(--ds-color-primary);
+}
+
+.ds-button--lg i {
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+}
+
+/* Forma píndola — recuperat de .btn-pill de Tabler UI: la capsa de la
+   icona també es torna rodona, coherent amb la forma del botó. */
+.ds-button--pill {
+  border-radius: var(--ds-radius-pill);
+}
+
+.ds-button--pill i {
+  border-radius: 50%;
+}
+
+/* Estat de càrrega — recuperat de .btn-loading de Tabler UI:
+   amaga el text i mostra un .ds-spinner centrat (components/spinner.css). */
+.ds-button--loading {
+  color: transparent;
+  pointer-events: none;
+  position: relative;
+}
+
+.ds-button--loading i {
+  visibility: hidden;
+}
+
+.ds-button--loading .ds-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Contenidor per agrupar botons — recuperat de .btn-list de Tabler UI. */
+.ds-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ds-space-2);
+}
+
+.ds-icon-button {
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 0;
+  border: 1px solid var(--ds-color-border);
+  border-radius: var(--ds-radius-sm);
+  background: var(--ds-color-surface);
+  color: var(--ds-color-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--ds-transition), border-color var(--ds-transition), color var(--ds-transition);
+}
+
+.ds-icon-button:hover {
+  border-color: var(--ds-color-primary);
+  color: var(--ds-color-primary);
+}

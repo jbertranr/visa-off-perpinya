@@ -1,0 +1,54 @@
+{
+  "preparedOn": "2026-09-11",
+  "catalogVersion": 1,
+  "productionReady": false,
+  "visa": {
+    "announcedExhibitions": 27,
+    "importedExhibitions": 27,
+    "withVenueAssigned": 26,
+    "withVenueConflicting": 1,
+    "withVerifiedCoordinates": 27,
+    "withConfirmedOpeningHours": 27,
+    "withVerifiedSummary": 27,
+    "notesCa": "Els 27 títols s'han contrastat amb una font de premsa independent (phototrend.fr) — coincideixen. L'horari 10-20h i la gratuïtat són la regla general publicada pel festival, no verificats un per un a cada fitxa individual (la web oficial ha bloquejat l'accés automatitzat, vegeu incidències)."
+  },
+  "off": {
+    "announcedExhibitions": 146,
+    "announcedVenues": 103,
+    "importedExhibitions": 10,
+    "withVenueAssigned": 10,
+    "withVerifiedCoordinates": 9,
+    "withConfirmedOpeningHours": 0,
+    "withVerifiedSummary": 0,
+    "notesCa": "Mostra parcial de 10 sobre 146 exposicions anunciades. La importació completa no s'ha pogut fer en aquesta sessió: la guia 2026 (calameo) és un flipbook sense text extraïble i les pàgines de categories del web mostren només imatges sense dades associades — la mateixa limitació que ja anotava l'encàrrec. S'ha confirmat de nou aquest bloqueig en aquesta sessió (vegeu incidències)."
+  },
+  "venues": {
+    "total": 19,
+    "geocoded": 19,
+    "geocodedPortalExact": 12,
+    "geocodedStreetLevelApproximate": 7,
+    "geocodeSource": "nominatim.openstreetmap.org",
+    "geocodedOn": "2026-09-11"
+  },
+  "authorBiographies": { "verified": 7, "total": 40, "notesCa": "7 biografies breus verificades contra fonts secundàries independents (Wikipedia, Pulitzer.org, webs personals) i confirmades com la persona correcta (sense confusió d'homònims): Depardon, Hicks, Ballesta, Guttenfelder, Ludwig, Yamashita, Nissen — els fotògrafs més coneguts del programa. Els 33 restants queden pendents; visapourlimage.com continua bloquejant l'accés automatitzat a les seves pròpies fitxes de fotògraf." },
+  "conflicts": [
+    {
+      "exhibitionId": "visa-2026-the-people-of-minneapolis-vs-ice",
+      "type": "venue-conflicting-sources",
+      "status": "no-resolt",
+      "notesCa": "Fitxa web oficial diu Minimes; preprograma PDF (7/8/2026) diu Dominicains. Intent de resolució en aquesta sessió sense èxit (visapourlimage.com bloqueja l'accés automatitzat, 403, tant a l'HTML com al PDF)."
+    }
+  ],
+  "incidents": [
+    {
+      "id": "visapourlimage-blocked",
+      "descriptionCa": "visapourlimage.com retorna HTTP 403 a totes les peticions automatitzades (pàgines HTML i el PDF del preprograma), tant al llistat d'exposicions com a fitxes individuals. Els 27 títols i emplaçaments Visa provenen íntegrament del fitxer de recerca inicial, contrastats només indirectament (premsa) — no directament amb la font oficial en aquesta sessió.",
+      "impactCa": "No s'ha pogut verificar horari específic per exposició (es manté la regla general del festival, que sí és una font pública diferent i accessible), ni resoldre el conflicte d'emplaçament de Guttenfelder, ni completar biografies d'autors."
+    },
+    {
+      "id": "off-guide-not-extractable",
+      "descriptionCa": "La guia OFF 2026 (calameo, flipbook) i les pàgines de categories (festivaloff-perpignan.fr) no exposen text extraïble per a les 146 exposicions — només imatges. festivaloff-perpignan.fr/les-commerçants sí ha funcionat i ha aportat 94 adreces de comerços participants.",
+      "impactCa": "El catàleg OFF es queda en 10 de 146 exposicions anunciades. Les 94 adreces de comerços recuperades s'han fet servir només per confirmar/precisar les 9 adreces ja conegudes — no s'han creat exposicions noves sense dades reals que les sustentin."
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+/* ============================================================
+   design-system / components / modal.css
+   Finestra modal sobre <dialog> natiu. L'obertura (bloquejant amb
+   dialog.showModal() → focus atrapat + ::backdrop, o lliure) la
+   gestiona components/modal.js (script clàssic, com tabs.js).
+   Recuperat del patró .app-modal que es repetia a redactorDocuments
+   (modal de progrés + modal de transcripció amb cronòmetre) —
+   2026-08-31.
+   ============================================================ */
+
+.ds-modal {
+  border: none;
+  padding: 0;
+  border-radius: var(--ds-radius);
+  max-width: 520px;
+  width: calc(100vw - 2 * var(--ds-space-4));
+  /* Un modal alt (formulari llarg, taula, fitxa de component…) no ha de
+     sobreeixir del viewport: es limita l'alçada i el cos fa scroll intern.
+     `.ds-modal` és flex-column perquè capçalera i peu quedin fixos i només
+     el `.ds-modal__body` s'encongeixi. */
+  max-height: calc(100dvh - 2 * var(--ds-space-6));
+  display: flex;
+  flex-direction: column;
+  color: var(--ds-color-text);
+  background: var(--ds-color-surface);
+  box-shadow: var(--ds-shadow-lg);
+}
+
+.ds-modal:not([open]) {
+  display: none;
+}
+
+.ds-modal::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Aparició suau quan showModal() afegeix l'atribut [open]. */
+.ds-modal[open] {
+  animation: ds-modal-in var(--ds-transition);
+}
+
+@keyframes ds-modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-modal[open] {
+    animation: none;
+  }
+}
+
+/* ── Mides ─────────────────────────────────────────────────── */
+.ds-modal--sm {
+  max-width: 360px;
+}
+
+.ds-modal--wide {
+  max-width: min(920px, calc(100vw - 2 * var(--ds-space-4)));
+}
+
+/* S'eixampla en funció del contingut, amb un mínim raonable i un topall
+   del 90% del viewport en tots dos eixos; passat el topall, el
+   `.ds-modal__body` fa scroll intern. Per a modals de contingut variable
+   (una fitxa, una previsualització, una taula ampla…). */
+.ds-modal--fit {
+  width: fit-content;
+  min-width: min(560px, 90vw);
+  max-width: 90vw;
+  max-height: 90dvh;
+}
+
+/* ── Regions ──────────────────────────────────────────────── */
+.ds-modal__header {
+  flex-shrink: 0;
+  padding: var(--ds-space-4) var(--ds-space-5);
+  border-bottom: 1px solid var(--ds-color-border);
+  font-weight: 700;
+  color: var(--ds-color-primary);
+  /* Títol a l'esquerra + un botó de tancar (.ds-icon-button amb
+     [data-ds-modal-close]) a la dreta. */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ds-space-3);
+}
+
+.ds-modal__header .ds-icon-button {
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  color: var(--ds-color-muted);
+}
+
+.ds-modal__body {
+  padding: var(--ds-space-5);
+  display: grid;
+  gap: var(--ds-space-3);
+  /* Part que fa scroll quan el modal arriba a la seva alçada màxima
+     (capçalera i peu queden fixos). min-height: 0 perquè un fill flex
+     pugui encongir-se per sota del seu contingut. */
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* Cos centrat — modals d'estat (progrés, transcripció, confirmació breu). */
+.ds-modal__body--center {
+  justify-items: center;
+  text-align: center;
+  gap: var(--ds-space-2);
+}
+
+.ds-modal__footer {
+  padding: var(--ds-space-3) var(--ds-space-5);
+  border-top: 1px solid var(--ds-color-border);
+  display: flex;
+  gap: var(--ds-space-2);
+  justify-content: flex-end;
+}
+
+/* ── Peces de contingut d'un modal d'estat ────────────────── */
+/* Títol dins el cos, quan el modal no porta capçalera pròpia. */
+.ds-modal__title {
+  margin: 0;
+  font-weight: 700;
+  color: var(--ds-color-primary);
+}
+
+/* Cronòmetre mm:ss — l'actualitza modal.js si porta [data-ds-modal-timer]. */
+.ds-modal__timer {
+  margin: var(--ds-space-1) 0 0;
+  font-family: var(--ds-font-mono, ui-monospace, "Cascadia Code", "Consolas", monospace);
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ds-color-text);
+}
+
+.ds-modal__note {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--ds-color-muted);
+}

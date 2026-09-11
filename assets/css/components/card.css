@@ -1,0 +1,381 @@
+/* ============================================================
+   design-system / components / card.css
+   Dues famílies:
+   - .ds-card: targeta genèrica de contingut (base: ControlDePresencia
+     .section-card/.panel/_panell .card; variants de color:
+     justificacioGeneralitat/www .info-card--primary/--accent/--success).
+   - .ds-card--action: targeta amb capçalera de color + peu amb
+     fletxa, model .action-card de s360_eix1_seu.
+   ============================================================ */
+
+/* ── Targeta genèrica ──────────────────────────────────────── */
+.ds-card {
+  background: var(--ds-color-surface);
+  border: 1px solid var(--ds-color-border);
+  border-radius: var(--ds-radius);
+  padding: var(--ds-space-4);
+  box-shadow: var(--ds-shadow-sm);
+}
+
+/* --primary/--accent/--success ja NO tenyeixen el fons de la targeta
+   (2026-08-23): el fons es queda sempre blanc/surface — nomès la
+   icona (.ds-icon-box, ja existent), la ratlla sota el títol
+   (.ds-card__accent) i l'etiqueta de cantonada (.ds-card__badge)
+   en porten el color, via la variable --ds-card-color. */
+.ds-card--primary {
+  --ds-card-color: var(--ds-color-primary);
+}
+
+.ds-card--accent {
+  --ds-card-color: var(--ds-color-accent);
+}
+
+.ds-card--success {
+  --ds-card-color: var(--ds-color-success);
+}
+
+.ds-card--warn {
+  --ds-card-color: var(--ds-color-warning);
+}
+
+/* Etiqueta petita a la cantonada superior dreta (p. ex. per indicar
+   la variant o un estat). Sense --ds-card-color (targeta per
+   defecte) queda neutra; amb --primary/--accent/--success n'hereta
+   el color automàticament. */
+.ds-card__badge {
+  position: absolute;
+  top: var(--ds-space-4);
+  right: var(--ds-space-4);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--ds-radius-pill);
+  background: color-mix(in srgb, var(--ds-card-color, var(--ds-color-border)) 18%, var(--ds-color-surface));
+  color: var(--ds-card-color, var(--ds-color-muted));
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ds-card__badge i {
+  font-size: 0.7rem;
+}
+
+/* Ratlla curta de color sota el títol — reutilitzada també per
+   .ds-card--stat com a underline de la xifra. */
+.ds-card__accent {
+  display: block;
+  width: 28px;
+  height: 3px;
+  margin: var(--ds-space-1) 0 var(--ds-space-2);
+  border-radius: var(--ds-radius-pill);
+  background: var(--ds-card-color, var(--ds-color-primary));
+}
+
+/* Mida compacta — recuperat de .card-sm de Tabler UI
+   (docs.tabler.io/ui/components/cards). */
+.ds-card--sm {
+  padding: var(--ds-space-3);
+}
+
+/* Barra d'estat de color a la vora — recuperat de .card-status-top/
+   .card-status-start de Tabler UI. Combina amb --primary/--accent/
+   --success/--warn/--danger via components/badge.css o directament
+   amb var(--ds-color-*). */
+.ds-card {
+  position: relative;
+}
+
+.ds-card--status-top::before,
+.ds-card--status-start::before {
+  content: '';
+  position: absolute;
+  background: var(--ds-color-primary);
+}
+
+.ds-card--status-top::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: var(--ds-radius) var(--ds-radius) 0 0;
+}
+
+.ds-card--status-start::before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  border-radius: var(--ds-radius) 0 0 var(--ds-radius);
+}
+
+.ds-card__header {
+  font-size: 0.8rem;
+  margin: 0em 0em 0em 0.5em;
+}
+
+.ds-card__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ds-color-primary);
+  margin: 0 0 var(--ds-space-2);
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-2);
+}
+
+/* Per a una capçalera de targeta amb icona en capsa de color
+   (en lloc de la banda de color sencera de .ds-card--action),
+   posar un <span class="ds-icon-box ..."><i class="fa-solid
+   ..."></i></span> just abans del text dins .ds-card__title —
+   veure components/icon.css. */
+
+/* ── Targeta d'acció (2026-08-24: redissenyada 3a vegada) ──────
+   Fons blanc al cos, capçalera I peu tenyits del color de la
+   variant (--ds-card-color) — únics blocs de color de la targeta.
+   Contingut centrat: capçalera amb etiqueta petita + menú kebab,
+   icona circular gran centrada, títol i descripció centrats. Fa
+   servir sempre --ds-card-color (com .ds-card genèrica) — combina
+   amb --primary/--accent/--success/--warn. Estructura HTML:
+   .ds-card__header (.ds-card__title + botó .ds-icon-button) /
+   .ds-card__body (.ds-card__icon + .ds-card__title + .ds-card__accent
+   + .ds-card__desc) / .ds-card__footer. */
+/* Tota la targeta és clicable (2026-08-24): navega via onclick al
+   mateix href que el peu .ds-card__footer (JS inline al marcatge),
+   ja que el contenidor ha de ser un <div> (el botó kebab de la
+   capçalera no pot anar dins d'un <a>). */
+.ds-card--action {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--ds-radius);
+  border: 1px solid color-mix(in srgb, var(--ds-card-color, var(--ds-color-primary)) 20%, var(--ds-color-border));
+  overflow: hidden;
+  background: var(--ds-color-surface);
+  box-shadow: var(--ds-shadow-sm);
+  text-align: left;
+  transition: box-shadow var(--ds-transition), border-color var(--ds-transition), transform var(--ds-transition);
+}
+
+.ds-card--action:hover {
+  box-shadow: var(--ds-shadow);
+  transform: translateY(-2px);
+}
+
+/* Barra lateral esquerra, mateix patró que .ds-card--stat::before
+   (més intensa que el fons de la capçalera). */
+.ds-card--action::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: color-mix(in srgb, var(--ds-card-color, var(--ds-color-primary)) 70%, var(--ds-color-surface));
+}
+
+.ds-card--action .ds-card__header {
+  padding: var(--ds-space-3) var(--ds-space-3) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ds-space-2);
+  text-align: left;
+  background: transparent;
+  color: var(--ds-card-color, var(--ds-color-primary));
+}
+
+.ds-card--action .ds-card__header .ds-card__title {
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: inherit;
+}
+
+.ds-card--action .ds-card__header .ds-icon-button {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+
+.ds-card--action .ds-card__icon {
+  flex-shrink: 0;
+  font-size: 22px;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  margin: 0;
+}
+
+.ds-card__header .ds-card__title {
+  margin: 0;
+  color: inherit;
+}
+
+.ds-card--action .ds-card__body {
+  padding: var(--ds-space-3) var(--ds-space-4) var(--ds-space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--ds-space-1);
+  flex: 1;
+}
+
+/* Sense peu (.ds-card__footer): una mica més de padding inferior
+   perquè la targeta no quedi massa baixa en comparació amb la
+   variant amb peu. */
+.ds-card--action:not(:has(.ds-card__footer)) .ds-card__body {
+  padding-bottom: calc(var(--ds-space-4) + var(--ds-space-3));
+}
+
+/* Bloc de text (títol + subtítol) al costat de la icona, dins
+   .ds-card__stat-top — ocupa l'espai restant de la fila perquè el
+   subtítol quedi alineat amb el títol (no amb la icona). */
+.ds-card--action .ds-card__stat-top > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.ds-card--action .ds-card__body .ds-card__title {
+  font-size: 1.3rem;
+  text-align: left;
+  color: var(--ds-color-text);
+  margin-bottom: 0;
+}
+
+.ds-card--action .ds-card__stat-top .ds-card__desc {
+  text-align: left;
+}
+
+.ds-card__desc {
+  font-size: 0.82rem;
+  color: var(--ds-color-muted);
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Peu = l'únic <a> real de la targeta (2026-08-24): el contenidor
+   .ds-card--action ha passat a ser un <div> perquè el menú kebab de
+   la capçalera (.ds-icon-button) sigui un <button> vàlid — un botó
+   no pot anar dins d'un <a>. */
+.ds-card--action .ds-card__footer {
+  padding: var(--ds-space-3) var(--ds-space-4);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: color-mix(in srgb, var(--ds-card-color, var(--ds-color-primary)) 14%, var(--ds-color-surface));
+  color: var(--ds-card-color, var(--ds-color-primary));
+  text-decoration: none;
+}
+
+.ds-card--action .ds-card__footer:hover {
+  text-decoration: underline;
+}
+
+/* ── Targeta d'indicador (stat) ────────────────────────────────
+   Icona circular en degradat, barra de color a l'esquerra, patró
+   de punts decoratiu i minigràfic (sparkline) al peu. Fa servir
+   --ds-card-color (mateixa variable que --primary/--accent/
+   --success/--warn) i .ds-card__accent (ja existent) com a ratlla
+   sota la xifra. */
+.ds-card--stat {
+  position: relative;
+  overflow: hidden;
+  padding: var(--ds-space-4) var(--ds-space-4) var(--ds-space-3);
+  padding-left: calc(var(--ds-space-4) + 4px);
+  min-width: 220px;
+}
+
+.ds-card--stat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--ds-card-color, var(--ds-color-primary));
+}
+
+.ds-card__stat-dots {
+  position: absolute;
+  top: var(--ds-space-3);
+  right: var(--ds-space-3);
+  width: 48px;
+  height: 48px;
+  background-image: radial-gradient(var(--ds-card-color, var(--ds-color-primary)) 1.5px, transparent 1.5px);
+  background-size: 8px 8px;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.ds-card__stat-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-3);
+  z-index: 1;
+}
+
+.ds-card__stat-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  color: #fff;
+  background: radial-gradient(circle at 30% 30%, color-mix(in srgb, var(--ds-card-color, var(--ds-color-primary)) 70%, white), var(--ds-card-color, var(--ds-color-primary)));
+  box-shadow: var(--ds-shadow-sm);
+}
+
+.ds-card__stat-value {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ds-color-primary);
+}
+
+.ds-card__stat-label {
+  position: relative;
+  z-index: 1;
+  margin: var(--ds-space-2) 0 0;
+  font-size: 0.82rem;
+  color: var(--ds-color-muted);
+}
+
+.ds-card__stat-spark {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: var(--ds-space-2);
+}
+
+.ds-card__stat-spark-fill {
+  fill: color-mix(in srgb, var(--ds-card-color, var(--ds-color-primary)) 12%, transparent);
+  stroke: none;
+}
+
+.ds-card__stat-spark-line {
+  fill: none;
+  stroke: var(--ds-card-color, var(--ds-color-primary));
+  stroke-width: 2;
+}
+
+.ds-card__stat-spark-dot {
+  fill: var(--ds-card-color, var(--ds-color-primary));
+}

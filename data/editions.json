@@ -1,0 +1,38 @@
+{
+  "editions": [
+    {
+      "id": "visa-2026",
+      "name": "Visa pour l'Image 2026",
+      "circuit": "VISA",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-13",
+      "generalOpeningHours": {
+        "timeZone": "Europe/Paris",
+        "appliesEveryDay": true,
+        "intervals": [["10:00", "20:00"]],
+        "status": "confirmed-festival-schedule",
+        "sourceUrl": "https://visapourlimage.com/les-expositions/"
+      },
+      "generalPrice": { "amount": 0, "currency": "EUR", "status": "confirmed-festival-rule" },
+      "sources": [
+        "https://visapourlimage.com/les-expositions/",
+        "https://visapourlimage.com/en/"
+      ]
+    },
+    {
+      "id": "off-2026",
+      "name": "Festival Objectif Image Pays Catalan 2026",
+      "displayAlias": "OFF de Perpignan",
+      "circuit": "OFF",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-12",
+      "generalOpeningHours": null,
+      "generalPrice": null,
+      "sources": [
+        "https://www.festivaloff-perpignan.fr/",
+        "https://www.calameo.com/capsud66/books/005992874731caeca1b92"
+      ],
+      "notesCa": "L'OFF no anuncia un horari general únic com Visa: cada espai (comerç, galeria, sala) té el seu propi horari d'accés, no verificat encara per a la majoria d'entrades del catàleg. El 13/09 l'OFF ja no compta com a obert, llevat de pròrroga específica documentada — Visa manté l'obertura general fins al 13 inclòs."
+    }
+  ]
+}

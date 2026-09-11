@@ -1,0 +1,56 @@
+/* ============================================================
+   design-system / components / status.css
+   Model .status de Tabler UI (docs.tabler.io/ui/components/statuses):
+   punt d'estat amb text, opcionalment animat (p. ex. "en línia").
+   ============================================================ */
+
+.ds-status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-2);
+  font-size: 0.85rem;
+  color: var(--ds-color-text);
+}
+
+.ds-status__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ds-color-muted);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.ds-status--ok .ds-status__dot {
+  background: var(--ds-color-success);
+}
+
+.ds-status--warn .ds-status__dot {
+  background: var(--ds-color-warning);
+}
+
+.ds-status--danger .ds-status__dot {
+  background: var(--ds-color-danger);
+}
+
+/* Animació de polsació — recuperat de .status-dot-animated de Tabler UI. */
+.ds-status--animated .ds-status__dot::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.5;
+  animation: ds-status-ping 1.6s ease-out infinite;
+}
+
+@keyframes ds-status-ping {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}

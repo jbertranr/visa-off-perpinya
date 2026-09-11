@@ -1,0 +1,29 @@
+/* ============================================================
+   design-system / components / input.css
+   Primer component de formulari: estil base d'un <input> de text
+   (inclou type="search"). Sense variants complexes de moment —
+   només l'aspecte visual bàsic (vora, radi, padding amb tokens) i
+   l'estat de focus, coherent amb la resta de controls interactius
+   (mateix --ds-focus-ring que .ds-button/.ds-nav__link).
+   ============================================================ */
+
+.ds-input {
+  width: 100%;
+  padding: var(--ds-space-2) var(--ds-space-3);
+  border: 1px solid var(--ds-color-border);
+  border-radius: var(--ds-radius-sm);
+  background: var(--ds-color-surface);
+  color: var(--ds-color-text);
+  font: inherit;
+  font-size: 0.88rem;
+}
+
+.ds-input::placeholder {
+  color: var(--ds-color-muted);
+}
+
+.ds-input:focus-visible {
+  outline: none;
+  border-color: var(--ds-color-primary);
+  box-shadow: var(--ds-focus-ring);
+}

@@ -1,0 +1,78 @@
+/* ============================================================
+   design-system / components / badge.css
+   Forma de píndola i variants de color pàl·lides, model
+   justificacioGeneralitat/www .badge--success/--warning/--primary,
+   fent el mateix paper que .tag.ok/warn/bad de ControlDePresencia.
+   ============================================================ */
+
+.ds-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-1);
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--ds-radius-pill);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: var(--ds-color-surface-alt);
+  color: var(--ds-color-muted);
+}
+
+.ds-badge--primary {
+  background: var(--ds-color-primary-xlight);
+  color: var(--ds-color-primary);
+}
+
+.ds-badge--ok {
+  background: var(--ds-color-success-bg);
+  color: var(--ds-color-success);
+}
+
+.ds-badge--warn {
+  background: var(--ds-color-warning-bg);
+  color: var(--ds-color-warning);
+}
+
+.ds-badge--danger {
+  background: var(--ds-color-danger-bg);
+  color: var(--ds-color-danger);
+}
+
+.ds-badge--neutral {
+  background: var(--ds-color-surface-alt);
+  color: var(--ds-color-muted);
+  border: 1px solid var(--ds-color-border);
+}
+
+/* Mides — recuperat de .badge-sm/.badge-lg de Tabler UI
+   (docs.tabler.io/ui/components/badges). */
+.ds-badge--sm {
+  padding: 0.1rem 0.5rem;
+  font-size: 0.68rem;
+}
+
+.ds-badge--lg {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+/* Punt de notificació sense text — recuperat de "empty notification
+   badges display as small dots" de Tabler UI. Combina amb --primary/
+   --ok/--warn/--danger per acolorir-lo. */
+.ds-badge--dot {
+  width: 9px;
+  height: 9px;
+  min-width: 0;
+  padding: 0;
+  border-radius: 50%;
+}
+
+/* Superposada a la cantonada d'un element pare amb position:relative
+   (p. ex. una icona o un avatar) — recuperat de .badge-notification
+   de Tabler UI. */
+.ds-badge--notification {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}

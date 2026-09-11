@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ca" data-ds-skin="neutra">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>A prop · Visa+OFF Perpinyà</title>
+  <meta name="description" content="Guia independent (no oficial) de les exposicions de Visa pour l'Image i l'OFF a Perpinyà.">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1857c4">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/skins/skin-neutra.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components/card.css">
+  <link rel="stylesheet" href="assets/css/components/badge.css">
+  <link rel="stylesheet" href="assets/css/components/status.css">
+  <link rel="stylesheet" href="assets/css/components/button.css">
+  <link rel="stylesheet" href="assets/css/components/empty.css">
+  <link rel="stylesheet" href="assets/css/components/spinner.css">
+  <link rel="stylesheet" href="assets/css/components/modal.css">
+  <link rel="stylesheet" href="assets/css/components/tabbar.css">
+  <link rel="stylesheet" href="assets/css/components/typography.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <script src="assets/css/router.js"></script>
+  <script src="assets/css/components/modal.js"></script>
+  <script src="assets/css/components/tabbar.js"></script>
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <a class="ds-skip-link" href="#main-content">Salta al contingut principal</a>
+
+  <header class="voff-header-wrap">
+    <div class="ds-site-header">
+      <div class="ds-site-header__logo-wrap">
+        <img class="ds-site-header__logo" src="assets/icons/icon.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="ds-site-header__text">
+        <p class="ds-site-header__title">Visa+OFF Perpinyà</p>
+        <p class="ds-site-header__tagline">Visa 2026 &middot; VISA OFF</p>
+        <p class="ds-site-header__subtitle" id="voff-header-date">—</p>
+      </div>
+      <button class="ds-button ds-button--sm ds-button--ghost voff-header__date-btn" id="btn-open-plan" type="button" aria-haspopup="dialog" aria-controls="dlg-plan">
+        <i class="fa-solid fa-calendar-day" aria-hidden="true"></i>
+        <span class="voff-sr-only">Mode Ara / Planificar</span>
+      </button>
+    </div>
+    <div class="voff-filters" role="group" aria-label="Filtra per circuit">
+      <button class="ds-button ds-button--sm" data-circuit-filter="tots" type="button">Tots</button>
+      <button class="ds-button ds-button--sm ds-button--ghost" data-circuit-filter="VISA" type="button">Visa</button>
+      <button class="ds-button ds-button--sm ds-button--ghost" data-circuit-filter="OFF" type="button">OFF</button>
+      <button class="ds-button ds-button--sm ds-button--ghost voff-filters__more" id="btn-more-filters" type="button">
+        <i class="fa-solid fa-sliders" aria-hidden="true"></i> Més filtres
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content" class="ds-main" tabindex="-1">
+
+    <div class="voff-geo-bar">
+      <i class="fa-solid fa-location-crosshairs" aria-hidden="true"></i>
+      <p class="voff-geo-bar__text" id="voff-geo-status">Sense ubicació — mostrant totes les seus. Activa la ubicació per veure distàncies.</p>
+      <button class="ds-button ds-button--sm" id="btn-use-location" type="button">Utilitza la meva ubicació</button>
+    </div>
+
+    <details class="voff-minimap">
+      <summary class="ds-button ds-button--sm ds-button--ghost" style="display:inline-flex; cursor:pointer;">
+        <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Mostra el minimapa
+      </summary>
+      <div class="voff-minimap__frame" id="voff-minimap-frame"></div>
+    </details>
+
+    <div id="voff-aprop-list" aria-live="polite">
+      <p class="ds-text ds-text--sm ds-text--muted">Carregant el catàleg…</p>
+    </div>
+
+  </main>
+
+  <nav class="ds-tabbar" aria-label="Navegació principal">
+    <a class="ds-tabbar__item" data-tab="index" href="index.html"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>A prop</span></a>
+    <a class="ds-tabbar__item" data-tab="explora" href="explora.html"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><span>Explora</span></a>
+    <a class="ds-tabbar__item" data-tab="ruta" href="ruta.html"><i class="fa-solid fa-route" aria-hidden="true"></i><span>Ruta<span class="ds-tabbar__badge" id="voff-route-badge" hidden>0</span></span></a>
+    <a class="ds-tabbar__item" data-tab="mapa" href="mapa.html"><i class="fa-solid fa-map" aria-hidden="true"></i><span>Mapa</span></a>
+  </nav>
+
+  <dialog class="ds-modal ds-modal--sm" id="dlg-plan" aria-labelledby="dlg-plan-title">
+    <div class="ds-modal__header">
+      <p class="ds-modal__title" id="dlg-plan-title">Ara o planificar?</p>
+      <button class="ds-icon-button" data-ds-modal-close aria-label="Tanca"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <div class="ds-modal__body">
+      <div class="voff-plan-toggle" role="group" aria-label="Mode">
+        <button class="ds-button ds-button--sm" id="btn-mode-ara" type="button">Ara</button>
+        <button class="ds-button ds-button--sm ds-button--ghost" id="btn-mode-planificar" type="button">Planificar</button>
+      </div>
+      <div class="voff-plan-fields" id="voff-plan-fields" hidden>
+        <div>
+          <label class="ds-text ds-text--sm" for="voff-plan-date">Data</label>
+          <input class="ds-input" type="date" id="voff-plan-date">
+        </div>
+        <div>
+          <label class="ds-text ds-text--sm" for="voff-plan-time">Hora</label>
+          <input class="ds-input" type="time" id="voff-plan-time">
+        </div>
+      </div>
+      <p class="ds-text ds-text--sm ds-text--muted" style="margin-top:var(--ds-space-3);">Totes les hores són de Perpinyà (Europe/Paris), independentment del teu dispositiu.</p>
+    </div>
+  </dialog>
+
+  <dialog class="ds-modal ds-modal--sm" id="dlg-more-filters" aria-labelledby="dlg-more-filters-title">
+    <div class="ds-modal__header">
+      <p class="ds-modal__title" id="dlg-more-filters-title">Més filtres</p>
+      <button class="ds-icon-button" data-ds-modal-close aria-label="Tanca"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <div class="ds-modal__body">
+      <label class="ds-text" style="display:flex; align-items:center; gap: var(--ds-space-2); margin-bottom: var(--ds-space-3);">
+        <input type="checkbox" id="voff-filter-preferits"> Només preferits
+      </label>
+      <label class="ds-text" style="display:flex; align-items:center; gap: var(--ds-space-2);">
+        <input type="checkbox" id="voff-filter-pendents"> Només pendents de visitar
+      </label>
+    </div>
+  </dialog>
+
+  <dialog class="ds-modal ds-modal--fit" id="dlg-fitxa" aria-labelledby="dlg-fitxa-title">
+    <div class="ds-modal__header">
+      <p class="ds-modal__title" id="dlg-fitxa-title">Fitxa d'exposició</p>
+      <button class="ds-icon-button" data-ds-modal-close aria-label="Tanca"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <div class="ds-modal__body" id="dlg-fitxa-body"></div>
+  </dialog>
+
+  <script src="js/aprop.js"></script>
+</body>
+</html>

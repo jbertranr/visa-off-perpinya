@@ -1,0 +1,69 @@
+/* ============================================================
+   design-system / skins / skin-neutra.css
+   Skin per defecte per a eines personals (ControlDePresencia,
+   _panell): blaus/grisos neutres, font de sistema, amb variant
+   fosca (basat en el dark mode ja existent a _panell/style.css,
+   l'única app amb aquesta implementació).
+
+   Cada regla va sota :root[data-ds-skin="neutra"] perquè
+   skin.js pugui alternar skins en calent sense recarregar la
+   pàgina (només cal tenir totes les skins carregades i canviar
+   l'atribut data-ds-skin de <html>).
+   ============================================================ */
+
+:root[data-ds-skin="neutra"] {
+  --ds-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --ds-color-bg: #eef0f4;
+  --ds-color-surface: #ffffff;
+  --ds-color-surface-alt: #e7ebf3;
+  --ds-color-text: #21252b;
+  --ds-color-muted: #5a616c;
+  --ds-color-border: #d6dae2;
+
+  --ds-color-primary: #1857c4;
+  --ds-color-primary-dark: #0d2a5c;
+  --ds-color-primary-light: #e3edfc;
+  --ds-color-primary-xlight: #f2f6fd;
+  --ds-color-ink-on-primary: #ffffff;
+
+  --ds-color-accent: #e2650f;
+  --ds-color-accent-bg: #fdeade;
+
+  /* Verd triat perquè coincideix, de manera independent, amb
+     _panell (--running) i amb justificacioGeneralitat/www
+     (--c-success) — senyal fiable de "verd d'èxit" real. */
+  --ds-color-success: #2e7d32;
+  --ds-color-success-bg: #e8f5e9;
+
+  --ds-color-warning: #b64f0a;
+  --ds-color-warning-bg: #fdeade;
+
+  /* ControlDePresencia feia servir el mateix to per warning i
+     danger; aquí es diferencien amb un vermell real (com
+     justificacioGeneralitat/www), disponible per si mai cal. */
+  --ds-color-danger: #b3261e;
+  --ds-color-danger-bg: #fbe9e7;
+
+  --ds-focus-ring: 0 0 0 3px rgba(24, 87, 196, 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-ds-skin="neutra"] {
+    --ds-color-bg: #16181d;
+    --ds-color-surface: #1f2228;
+    --ds-color-surface-alt: #262a31;
+    --ds-color-text: #eeeeee;
+    --ds-color-muted: #999999;
+    --ds-color-border: #333333;
+
+    --ds-color-primary-light: #1c2c47;
+    --ds-color-primary-xlight: #182335;
+
+    --ds-color-success-bg: #16281a;
+    --ds-color-warning-bg: #33220f;
+    --ds-color-danger-bg: #331615;
+
+    --ds-focus-ring: 0 0 0 3px rgba(93, 149, 231, 0.45);
+  }
+}

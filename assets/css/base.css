@@ -1,0 +1,87 @@
+/* ============================================================
+   design-system / base.css
+   Reset mínim + estils d'element natiu. Depèn de tokens.css i
+   d'una skin ja carregada (usa variables --ds-color-*).
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--ds-color-bg);
+}
+
+body {
+  margin: 0;
+  font-family: var(--ds-font);
+  color: var(--ds-color-text);
+  background: var(--ds-color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+}
+
+/* Codi. `pre` i `code` en monoespai; un `<code>` inline «pelat» (fora
+   d'un `<pre>`) ja queda com una etiqueta amb fons subtil — mateix
+   aspecte que .ds-code (components/typography.css). Els blocs multilínia
+   fan servir .ds-code-block (components/code.css). */
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--ds-font-mono);
+}
+
+:not(pre) > code {
+  font-size: 0.86em;
+  padding: 0.12em 0.4em;
+  border-radius: var(--ds-radius-sm);
+  /* Relatiu al color del text del context: chip gris sobre fons clar,
+     chip translúcid clar sobre fons de color (peu, .ds-panel--solid…). */
+  background: color-mix(in srgb, currentColor 8%, transparent);
+  border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+}
+
+button,
+select,
+input,
+textarea {
+  font: inherit;
+}
+
+button,
+select,
+input {
+  border-radius: var(--ds-radius-sm);
+}
+
+button:focus-visible,
+select:focus-visible,
+input:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: none;
+  box-shadow: var(--ds-focus-ring);
+}
+
+/* Enllaç "Salta al contingut" — patró ja present a
+   ControlDePresencia (main.css), generalitzat aquí. */
+.ds-skip-link {
+  position: absolute;
+  left: -9999px;
+  top: var(--ds-space-4);
+  z-index: 1000;
+  background: var(--ds-color-primary);
+  color: var(--ds-color-ink-on-primary);
+  padding: var(--ds-space-3) var(--ds-space-4);
+  border-radius: var(--ds-radius-sm);
+}
+
+.ds-skip-link:focus {
+  left: var(--ds-space-4);
+}

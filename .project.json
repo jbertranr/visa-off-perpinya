@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "visaOffPerpinya",
+  "label": "Visa+OFF Perpinyà",
+  "category": "99_test",
+  "path": "99_test/prj_visa_off_perpinya/aplicacions/visaOffPerpinya",
+  "description": "Guia mòbil independent (no oficial) de les exposicions de Visa pour l'Image i l'OFF a Perpinyà: catàleg combinat, estat d'obertura, preferits i ruta a peu. productionReady: false — OFF és una mostra parcial (10/146), vegeu INFORME_COBERTURA.md.",
+  "normatives": [
+    "norm-web-vanilla"
+  ],
+  "documentation": {
+    "readme": "99_test/prj_visa_off_perpinya/aplicacions/visaOffPerpinya/README.md",
+    "claude": "99_test/prj_visa_off_perpinya/aplicacions/visaOffPerpinya/CLAUDE.md"
+  },
+  "workspace": {
+    "includeNormatives": true,
+    "includeDesignSystem": true
+  },
+  "services": [],
+  "pages": [
+    {
+      "label": "Visa+OFF Perpinyà — A prop",
+      "path": "99_test/prj_visa_off_perpinya/aplicacions/visaOffPerpinya/index.html"
+    }
+  ]
+}

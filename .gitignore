@@ -1,0 +1,5 @@
+# Res a ignorar de moment — app 100% estàtica, sense build ni dependències.
+# Si en el futur s'hi afegeix alguna eina local (p. ex. un script amb node_modules/),
+# afegeix-la aquí.
+.DS_Store
+Thumbs.db

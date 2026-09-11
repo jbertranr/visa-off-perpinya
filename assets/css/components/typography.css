@@ -1,0 +1,204 @@
+/* ============================================================
+   design-system / components / typography.css
+   Escala tipogràfica de contingut: títols i paràgrafs de mides
+   diferents dins del cos d'una pàgina — a diferència de
+   .ds-page-title/.ds-page-subtitle (layout.css), que són el títol
+   ÚNIC de cada pàgina, aquestes classes s'apliquen a qualsevol
+   nombre de títols/paràgrafs DINS del contingut (seccions d'una
+   home-page llarga, capçaleres de bloc, text destacat...).
+   Convenció: dos blocs, .ds-heading (títols) i .ds-text
+   (paràgrafs/línies de text), cadascun amb modificadors de mida.
+   tokens.css no defineix cap escala de mida de font — les mides
+   viuen només aquí.
+   ============================================================ */
+
+.ds-heading {
+  margin: 0;
+  font-weight: 700;
+  color: var(--ds-color-text);
+  line-height: 1.2;
+}
+
+.ds-heading--xl {
+  font-size: 2.2rem;
+}
+
+.ds-heading--lg {
+  font-size: 1.6rem;
+}
+
+.ds-heading--md {
+  font-size: 1.2rem;
+}
+
+.ds-heading--sm {
+  font-size: 1rem;
+}
+
+/* Color primari — mateix ús que el títol de pàgina o de targeta,
+   per a títols de bloc que han de destacar amb el color de marca. */
+.ds-heading--primary {
+  color: var(--ds-color-primary);
+}
+
+.ds-heading--center {
+  text-align: center;
+}
+
+.ds-heading--muted {
+  color: var(--ds-color-muted);
+}
+
+.ds-text {
+  margin: 0;
+  color: var(--ds-color-text);
+  line-height: 1.5;
+}
+
+/* Paràgraf destacat (p. ex. l'entradeta d'una secció o una cita) —
+   una mica més gran que el text normal. */
+.ds-text--lead {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.ds-text--sm {
+  font-size: 0.82rem;
+}
+
+.ds-text--muted {
+  color: var(--ds-color-muted);
+}
+
+.ds-text--center {
+  text-align: center;
+}
+
+.ds-text--bold {
+  font-weight: 700;
+}
+
+/* Mida mínima — per sota de --sm. */
+.ds-text--xs {
+  font-size: 0.72rem;
+}
+
+/* Lletra petita: peus de figura, notes al peu, "última actualització",
+   avisos discrets. --xs + color mig-to, en una sola classe. */
+.ds-text--caption {
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--ds-color-muted);
+}
+
+/* ── Rètol superior (overline / kicker) ──────────────────────
+   Etiqueta curta en majúscules a sobre d'un títol (p. ex. la
+   primera línia d'un hero, o el rètol d'una secció). Substitueix
+   els rètols ad-hoc fets amb .ds-badge o estils inline. */
+.ds-overline {
+  display: block;
+  margin: 0 0 var(--ds-space-1);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ds-color-primary);
+}
+
+.ds-overline--accent {
+  color: var(--ds-color-accent);
+}
+
+.ds-overline--muted {
+  color: var(--ds-color-muted);
+}
+
+/* ── Codi inline ─────────────────────────────────────────────
+   Equivalent explícit a l'estil que base.css ja dona a un `<code>`
+   pelat — útil sobre un `<span>`, o quan es vol ser explícit. */
+.ds-code {
+  font-family: var(--ds-font-mono);
+  font-size: 0.86em;
+  padding: 0.12em 0.4em;
+  border-radius: var(--ds-radius-sm);
+  background: color-mix(in srgb, currentColor 8%, transparent);
+  border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+}
+
+/* ── Prosa: contenidor de text redactat lliurement ───────────
+   Aplica ritme vertical i estil de lectura als descendents
+   (`p`, `ul`/`ol`, `h2`–`h4`, `a`, `strong`…) sense haver de
+   classar cada etiqueta — a diferència de .ds-heading / .ds-text,
+   que són per a peces soltes. Independent d'on s'ubiqui: funciona
+   dins una .ds-card, una .ds-zone, el cos d'un modal o una pàgina. */
+.ds-prose {
+  color: var(--ds-color-text);
+  line-height: 1.6;
+}
+
+.ds-prose > * {
+  margin: 0;
+}
+
+.ds-prose > * + * {
+  margin-top: var(--ds-space-4);
+}
+
+.ds-prose h2,
+.ds-prose h3,
+.ds-prose h4 {
+  color: var(--ds-color-primary);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.ds-prose h2 { font-size: 1.2rem; }
+.ds-prose h3 { font-size: 1.05rem; }
+.ds-prose h4 { font-size: 0.95rem; }
+
+/* Menys separació entre un títol i el que ve just a sota. */
+.ds-prose > h2 + *,
+.ds-prose > h3 + *,
+.ds-prose > h4 + * {
+  margin-top: var(--ds-space-2);
+}
+
+.ds-prose ul,
+.ds-prose ol {
+  padding-left: var(--ds-space-5);
+}
+
+.ds-prose li + li {
+  margin-top: var(--ds-space-1);
+}
+
+.ds-prose a {
+  color: var(--ds-color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ds-prose a:hover {
+  color: var(--ds-color-primary-dark);
+}
+
+.ds-prose strong {
+  font-weight: 700;
+}
+
+/* Amplada de lectura còmoda per a text llarg. Sense el modificador,
+   la prosa omple el contenidor. */
+.ds-prose--narrow {
+  max-width: 65ch;
+}
+
+/* ── Separador tènue entre apartats ──────────────────────────
+   Línia puntejada molt lleugera per dividir blocs dins d'una
+   columna o una targeta, sense el pes d'un `border` continu.
+   Sobre un <hr> o un <div>. */
+.ds-divider {
+  height: 0;
+  border: 0;
+  border-top: 1px dotted color-mix(in srgb, var(--ds-color-border) 65%, transparent);
+  margin: var(--ds-space-4) 0;
+}

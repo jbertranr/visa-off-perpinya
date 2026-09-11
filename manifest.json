@@ -1,0 +1,15 @@
+{
+  "name": "Visa+OFF Perpinyà",
+  "short_name": "Visa+OFF",
+  "description": "Guia independent (no oficial) de les exposicions de Visa pour l'Image i l'OFF a Perpinyà.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eef0f4",
+  "theme_color": "#1857c4",
+  "lang": "ca",
+  "icons": [
+    { "src": "assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

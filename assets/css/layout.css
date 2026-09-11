@@ -1,0 +1,818 @@
+/* ============================================================
+   design-system / layout.css
+   Esquelet de pàgina — modelat sobre s360_eix1_seu/index.html
+   (secció 9.1 de l'anàlisi): barra utilitària, capçalera amb
+   logotip, breadcrumb, títol de pàgina, contenidor principal i
+   peu. No conté components solts (targetes, botons...) — això
+   viu a components/.
+   ============================================================ */
+
+/* ── Barra utilitària superior ─────────────────────────────── */
+.ds-topbar {
+  background: var(--ds-color-primary-light);
+  font-size: 0.82rem;
+  padding: var(--ds-space-2) var(--ds-space-6);
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--ds-space-6);
+}
+
+.ds-topbar a {
+  color: var(--ds-color-primary-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ds-topbar a:hover {
+  text-decoration: underline;
+}
+
+/* Contingut estàndard de la topbar, farcit per `topbar.js` (selector
+   de skin + avatar + botó de sortir). Marcatge: un únic
+   <div class="ds-topbar" data-ds-topbar ...></div>. */
+.ds-topbar__skin-switcher {
+  display: inline-flex;
+  gap: var(--ds-space-2);
+}
+
+.ds-topbar__skin-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--ds-color-primary-dark);
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.82rem;
+  padding: var(--ds-space-1) var(--ds-space-2);
+  border-radius: var(--ds-radius-sm);
+  cursor: pointer;
+}
+
+.ds-topbar__skin-btn:hover {
+  text-decoration: underline;
+}
+
+.ds-topbar__skin-btn.is-active {
+  background: var(--ds-color-primary);
+  color: var(--ds-color-ink-on-primary);
+  text-decoration: none;
+}
+
+.ds-topbar__user {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-2);
+}
+
+/* Botó de sortir: més petit que .ds-icon-button per defecte, perquè
+   faci joc amb l'avatar --sm (28px) del seu costat. */
+.ds-topbar__logout {
+  width: 28px;
+  height: 28px;
+  font-size: 0.75rem;
+}
+
+/* ── Capçalera del lloc ────────────────────────────────────── */
+.ds-site-header {
+  background: var(--ds-color-surface);
+  border-bottom: 3px solid var(--ds-color-primary);
+  padding: var(--ds-space-4) var(--ds-space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-4);
+}
+
+.ds-site-header__logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ds-color-primary);
+  border-radius: var(--ds-radius-sm);
+  padding: var(--ds-space-2) var(--ds-space-3);
+  min-width: 50px;
+  min-height: 42px;
+  flex-shrink: 0;
+}
+
+.ds-site-header__logo {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+
+.ds-site-header__text {
+  border-left: 1px solid var(--ds-color-border);
+  padding-left: var(--ds-space-4);
+}
+
+.ds-site-header__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ds-color-primary);
+  line-height: 1.2;
+}
+
+.ds-site-header__subtitle {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--ds-color-muted);
+  font-weight: 300;
+}
+
+/* ── Breadcrumb ────────────────────────────────────────────── */
+.ds-breadcrumb {
+  background: var(--ds-color-surface);
+  padding: var(--ds-space-2) var(--ds-space-6);
+  font-size: 0.8rem;
+  color: var(--ds-color-muted);
+  border-bottom: 1px solid var(--ds-color-border);
+}
+
+.ds-breadcrumb a {
+  color: var(--ds-color-primary);
+  text-decoration: none;
+}
+
+.ds-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.ds-breadcrumb__sep {
+  margin: 0 var(--ds-space-2);
+}
+
+/* ── Contenidor principal ──────────────────────────────────── */
+.ds-main {
+  flex: 1;
+  max-width: var(--ds-content-max-width);
+  width: 100%;
+  margin: var(--ds-space-8) auto;
+  padding: 0 var(--ds-space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--ds-space-6);
+}
+
+/* Variant d'amplada completa: el contingut ocupa tot l'ample del
+   viewport amb marges laterals fixos, en lloc de quedar centrat en una
+   columna de --ds-content-max-width. Per a pàgines amb taules amples,
+   editors costat a costat, dashboards, etc. (patró usat abans per
+   estilguia amb un override cru; ara és aquest modificador). */
+.ds-main--wide {
+  max-width: none;
+  margin-top: var(--ds-space-3);
+  margin-bottom: var(--ds-space-8);
+  padding-left: var(--ds-space-12);
+  padding-right: var(--ds-space-12);
+}
+
+/* Si una pàgina --wide porta barra lateral (.ds-layout), la barra queda
+   gairebé enganxada a la vora esquerra del viewport. */
+.ds-main--wide:has(> .ds-layout) {
+  padding-left: var(--ds-space-2);
+}
+
+@media (max-width: 720px) {
+  .ds-main--wide {
+    padding-left: var(--ds-space-4);
+    padding-right: var(--ds-space-4);
+  }
+}
+
+/* Shell pla «a sang» — shell PER DEFECTE de les apps d'eina / dashboard / editor (README §
+   "Shell pla per a apps d'eina"): el contingut omple tot l'ample sota el chrome, sense marge ni
+   padding, sense targetes; les zones (barres laterals + àrea central) s'enganxen entre elles i
+   al menú de dalt, separades només per un traç vertical fi que va SEMPRE de dalt (chrome) fins a
+   baix. El .ds-main centrat (o --wide) queda per a pàgines de lectura / formularis / graella de
+   targetes.
+
+   DUES MODALITATS, segons si la pàgina porta <footer class="ds-footer"> a continuació:
+   · SENSE peu (app d'eina "pura", p. ex. un editor): el <body> es fixa a l'alçada del viewport
+     i cada zona fa scroll INTERN — el traç no s'escurça mai perquè el shell no s'allarga.
+   · AMB peu: scroll de pàgina normal, el peu queda a sota; el `flex: 1` de .ds-main--flush +
+     .ds-zones estira les columnes de sota el chrome fins al peu encara que el contingut sigui
+     curt (les barres laterals van «a sang» amb el chrome i el peu). El traç arriba igualment
+     de dalt a baix perquè les columnes estan estirades (align-items: stretch).
+
+   Selector `.ds-main.ds-main--flush` (doble classe, a diferència de `.ds-main--wide`) a
+   propòsit: hi ha apps que sobreescriuen `.ds-main` sencer al seu `app.css` (p. ex. `estilguia`),
+   i un modificador d'una sola classe hi perdria per ordre de font. */
+.ds-main.ds-main--flush {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  background: var(--ds-color-surface);
+  /* `flex: 1` (heretat de .ds-main): quan el contingut és curt, el <main> omple tot l'espai de
+     sota el chrome fins al peu — les barres laterals van «a sang» amb el chrome i el peu. Quan
+     el contingut és llarg, creix i el peu baixa. */
+}
+
+/* Graella de zones dins .ds-main--flush. Per defecte, tantes columnes iguals com zones; una app
+   fixa amplades pròpies posant `--ds-zones-columns` (inline o en una classe pròpia), p. ex.
+   `--ds-zones-columns: 320px minmax(0, 1fr) 320px` per a dos rails laterals fixos.
+   `align-items: stretch` estira totes les columnes a la mateixa alçada → el traç separador
+   arriba SEMPRE de dalt (chrome) fins a baix (peu). */
+.ds-zones {
+  display: grid;
+  flex: 1;
+  gap: 0;
+  align-items: stretch;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-template-columns: var(--ds-zones-columns, none);
+}
+
+/* Cada columna del shell pla. El traç separador va SOBRE .ds-zone (el contenidor de la columna),
+   mai sobre un bloc intern — així la línia és contínua encara que la zona apili sub-seccions
+   (p. ex. una barra d'eines sobre un canvas). Cap fons ni vora de targeta. */
+.ds-zone {
+  min-width: 0;
+  padding: var(--ds-space-6);
+}
+
+/* Zona de contingut amb ritme vertical automàtic entre els seus blocs
+   directes (títol, paràgrafs, seccions, graelles…) — perquè una pàgina
+   de lectura dins el shell pla no quedi enganxada sense haver
+   d'embolcallar-ho tot en .stack. Opt-in perquè les zones que
+   gestionen el propi layout (flex/grid amb gap, com les barres d'eines
+   d'un editor) no s'hi vegin afectades. */
+.ds-zone--flow > * + * {
+  margin-top: var(--ds-space-5);
+}
+
+.ds-zone--flow > :is(h1, h2, h3, .ds-heading, .ds-page-title) + * {
+  margin-top: var(--ds-space-3);
+}
+
+/* Zona que conté una llista de navegació «a sang» (.ds-toc / .ds-sidebar__list): sense padding,
+   així les vores i el hover de cada fila arriben d'extrem a extrem de la columna. Els blocs que
+   no són llista (un títol, un peu) es paddegen ells mateixos. */
+.ds-zone--nav {
+  padding: 0;
+}
+
+.ds-zone + .ds-zone {
+  border-left: 1px solid var(--ds-color-border);
+}
+
+/* ── Zones redimensionables (opt-in: zones-resize.js) ──────────
+   Amb data-ds-zones-resizable, `zones-resize.js` insereix un tirador
+   .ds-zones__resize-handle sobre cada traç que separa una columna px
+   d'una de flexible. El traç el dibuixa el ::before del tirador (no
+   el border de .ds-zone, que s'amaga) perquè s'il·lumini en fer
+   hover / arrossegar. */
+.ds-zones[data-ds-zones-resizable] {
+  position: relative;
+}
+
+.ds-zones[data-ds-zones-resizable] > .ds-zone + .ds-zone {
+  border-left-color: transparent;
+}
+
+.ds-zones__resize-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 11px;
+  margin-left: -5px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: col-resize;
+  z-index: 5;
+  touch-action: none;
+}
+
+.ds-zones__resize-handle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  width: 1px;
+  background: var(--ds-color-border);
+  transition: background var(--ds-transition), width var(--ds-transition), left var(--ds-transition);
+}
+
+.ds-zones__resize-handle:hover::before,
+.ds-zones__resize-handle:focus-visible::before,
+.ds-zones__resize-handle.is-dragging::before {
+  background: var(--ds-color-primary);
+  width: 3px;
+  left: 4px;
+}
+
+.ds-zones__resize-handle:focus-visible {
+  outline: none;
+}
+
+/* Botó rodó per plegar / desplegar el primer rail. Se situa sobre el
+   traç, a prop de dalt; quan el rail està plegat, es queda enganxat a
+   la vora esquerra. */
+.ds-zones__toggle {
+  position: absolute;
+  top: var(--ds-space-4);
+  transform: translateX(-50%);
+  z-index: 6;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--ds-color-border);
+  border-radius: 50%;
+  background: var(--ds-color-surface);
+  color: var(--ds-color-muted);
+  font-size: 10px;
+  cursor: pointer;
+  transition: color var(--ds-transition), border-color var(--ds-transition), left var(--ds-transition);
+}
+
+.ds-zones__toggle:hover,
+.ds-zones__toggle:focus-visible {
+  color: var(--ds-color-primary);
+  border-color: var(--ds-color-primary);
+  outline: none;
+}
+
+.ds-zone.is-collapsed {
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Amb un rail plegat, el traç torna a ser visible entre la vora i el
+   contingut (ja no hi ha tirador que el dibuixi), i la zona de
+   contingut es desplaça cap a dins perquè el botó rodó (enganxat a la
+   vora) no li trepitgi el títol. Primer rail plegat → la zona SEGÜENT;
+   rail dret plegat → la zona ANTERIOR (`:has(+ .is-collapsed)`). */
+.ds-zones[data-ds-zones-resizable] > .ds-zone.is-collapsed + .ds-zone {
+  border-left-color: var(--ds-color-border);
+  padding-left: var(--ds-space-10);
+}
+.ds-zones[data-ds-zones-resizable] > .ds-zone:has(+ .ds-zone.is-collapsed) {
+  padding-right: var(--ds-space-10);
+}
+
+@media (max-width: 960px) {
+  .ds-zones__resize-handle,
+  .ds-zones__toggle {
+    display: none;
+  }
+
+  /* Sota 960px les zones s'apilen: el "plegat" no té sentit, es mostra. */
+  .ds-zone.is-collapsed {
+    padding: var(--ds-space-6);
+    overflow: visible;
+  }
+
+  .ds-zones[data-ds-zones-resizable] > .ds-zone.is-collapsed + .ds-zone {
+    padding-left: var(--ds-space-6);
+  }
+}
+
+/* Shell pla SENSE <footer class="ds-footer"> (app d'eina "pura", p. ex. un editor a pantalla
+   completa): el <body> es fixa a l'alçada del viewport i cada zona fa scroll INTERN, en lloc que
+   una zona alta allargui la pàgina. Amb peu (cas per defecte de les plantilles) aquest bloc no
+   s'aplica: la pàgina fa scroll normal i el peu queda a sota. Requereix que .ds-main--flush sigui
+   fill directe del <body>. Mateix ús de :has() que .ds-main--wide:has(> .ds-layout). */
+body:has(> .ds-main.ds-main--flush):not(:has(> .ds-footer)) {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body:has(> .ds-main.ds-main--flush):not(:has(> .ds-footer)) > .ds-main.ds-main--flush,
+body:has(> .ds-main.ds-main--flush):not(:has(> .ds-footer)) .ds-zones {
+  min-height: 0;
+}
+
+/* Sense peu, la fila del grid de zones ha de ser EXACTAMENT l'alçada del contenidor (no `auto`,
+   que creixeria amb el contingut de la columna més alta i deixaria les zones sense alçada
+   acotada). Així `.ds-zone { overflow-y: auto }` — i qualsevol cadena flex interna d'una zona
+   (p. ex. un `.ds-accordion` amb una secció que ha d'omplir i fer scroll) — funciona. */
+body:has(> .ds-main.ds-main--flush):not(:has(> .ds-footer)) .ds-zones {
+  grid-auto-rows: minmax(0, 1fr);
+}
+
+body:has(> .ds-main.ds-main--flush):not(:has(> .ds-footer)) .ds-zone {
+  min-height: 0;
+  overflow-y: auto;
+}
+
+@media (max-width: 960px) {
+  body:has(> .ds-main.ds-main--flush):not(:has(> .ds-footer)) {
+    height: auto;
+    overflow: visible;
+  }
+
+  body:has(> .ds-main.ds-main--flush):not(:has(> .ds-footer)) .ds-zone {
+    overflow-y: visible;
+  }
+
+  .ds-zones {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    /* Files a l'alçada del seu contingut, no estirades per omplir el shell
+       (evita espai buit sota una zona curta quan s'apilen). */
+    align-content: start;
+  }
+
+  .ds-zone + .ds-zone {
+    border-left: none;
+    border-top: 1px solid var(--ds-color-border);
+  }
+}
+
+/* ── Títol de pàgina ───────────────────────────────────────── */
+.ds-page-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ds-color-primary);
+  padding-bottom: var(--ds-space-2);
+  border-bottom: 2px solid var(--ds-color-primary-light);
+}
+
+/* Variant "hero": el títol d'una capçalera centrada i destacada
+   (p. ex. la primera pantalla d'una home-page), sense la vora
+   inferior de separació (ja no hi ha contingut de pàgina a sota
+   immediatament) i una mica més gran. Combina amb
+   .ds-page-subtitle--hero. */
+.ds-page-title--hero {
+  font-size: 2.1rem;
+  border-bottom: none;
+  margin-top: var(--ds-space-3);
+}
+
+.ds-page-subtitle--hero {
+  font-size: 1rem;
+}
+
+.ds-page-subtitle {
+  margin: var(--ds-space-1) 0 0;
+  font-size: 0.9rem;
+  color: var(--ds-color-muted);
+  font-weight: 300;
+}
+
+/* El subtítol forma part del bloc del títol: separació fixa de
+   var(--ds-space-2) sigui quin sigui el context (dins .ds-main centrat,
+   dins una .ds-zone del shell pla, dins una .ds-card…). */
+.ds-page-title + .ds-page-subtitle {
+  margin-top: var(--ds-space-2);
+}
+
+/* Dins de .ds-main (flex amb gap: var(--ds-space-6)) cal cancel·lar
+   aquest gap perquè el resultat sigui el mateix var(--ds-space-2). */
+.ds-main > .ds-page-title + .ds-page-subtitle {
+  margin-top: calc(var(--ds-space-2) - var(--ds-space-6));
+}
+
+/* ── Peu institucional ─────────────────────────────────────── */
+.ds-footer {
+  background: var(--ds-color-primary);
+  color: rgba(255, 255, 255, 0.85);
+  padding: var(--ds-space-5) var(--ds-space-6);
+  font-size: 0.78rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.ds-footer a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ds-footer strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* ── Transicions de navegació ────────────────────────────────
+   `router.js` (opcional) canvia de pàgina sense recàrrega dins
+   document.startViewTransition(); quan cau a la navegació completa
+   (pla B, o sense router.js), aquesta regla fa el mateix crossfade
+   entre documents (View Transitions MPA). El chrome porta
+   view-transition-name propi perquè es mantingui fix (no fa fade); només
+   #main-content fa la transició. Els navegadors sense View Transitions
+   ignoren tot això i fan navegació normal. */
+@view-transition {
+  navigation: auto;
+}
+
+.ds-topbar { view-transition-name: ds-vt-topbar; }
+.ds-site-header { view-transition-name: ds-vt-site-header; }
+.ds-nav { view-transition-name: ds-vt-nav; }
+.ds-breadcrumb { view-transition-name: ds-vt-breadcrumb; }
+.ds-footer { view-transition-name: ds-vt-footer; }
+#main-content { view-transition-name: ds-vt-main; }
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 1ms !important;
+  }
+}
+
+/* ── Layout amb barra(es) lateral(s) — opcional ───────────────
+   NO forma part de l'esquelet obligatori de pàgina: és un patró
+   addicional que una pàgina activa només quan ho necessita (p. ex.
+   un catàleg amb navegació i configuració persistents als costats
+   del contingut principal). S'usa dins de .ds-main. */
+.ds-layout {
+  display: grid;
+  grid-template-columns: minmax(200px, 260px) minmax(0, 1fr);
+  gap: var(--ds-space-6);
+  align-items: start;
+}
+
+.ds-layout--both-sides {
+  grid-template-columns: minmax(200px, 260px) minmax(0, 1fr) minmax(180px, 220px);
+}
+
+/* Barra lateral a la dreta en lloc de l'esquerra — mateixes columnes
+   que .ds-layout però invertides. No cal canviar l'ordre dels fills a
+   l'HTML: `order` s'encarrega de la posició visual. */
+.ds-layout--sidebar-right {
+  grid-template-columns: minmax(0, 1fr) minmax(200px, 260px);
+}
+
+.ds-layout--sidebar-right > .ds-layout__aside {
+  order: 2;
+}
+
+.ds-layout__aside {
+  position: sticky;
+  top: var(--ds-space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--ds-space-3);
+}
+
+@media (max-width: 860px) {
+  .ds-layout,
+  .ds-layout--both-sides {
+    grid-template-columns: 1fr;
+  }
+
+  .ds-layout__aside {
+    position: static;
+  }
+}
+
+/* ── Menú de navegació principal — opcional ────────────────────
+   Barra amb elements icona+text, típicament sota .ds-breadcrumb (o
+   sota .ds-site-header si la pàgina no té breadcrumb). No forma part
+   de l'esquelet obligatori. Funciona amb <a> o <button> indistintament
+   — .ds-nav__link és una classe, no depèn de l'element. L'estat actiu
+   és la classe .is-active (afegida per JS) o l'atribut nadiu
+   [aria-current="page"] si l'app ja el fa servir per a un altre motiu. */
+.ds-nav {
+  display: flex;
+  width: 100%;
+  background: var(--ds-color-surface);
+  border-bottom: 1px solid var(--ds-color-border);
+}
+
+.ds-nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-2);
+  padding: var(--ds-space-3) var(--ds-space-4);
+  margin-bottom: -1px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--ds-color-muted);
+  text-decoration: none;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: color var(--ds-transition), border-color var(--ds-transition);
+}
+
+.ds-nav__link:hover {
+  color: var(--ds-color-primary);
+}
+
+.ds-nav__link.is-active,
+.ds-nav__link[aria-current="page"] {
+  color: var(--ds-color-primary);
+  border-bottom-color: var(--ds-color-primary);
+}
+
+/* ── Barra lateral de navegació — opcional ────────────────────
+   Modelat originalment sobre el sidebar ad-hoc de `panell` (avui
+   migrat a aquesta mateixa classe, `public/index.html`): contenidor
+   amb fons ple i vora dreta (a diferència de .ds-layout__aside, que
+   és transparent i pensat per a contingut lliure com un configurador).
+   Pot usar-se sol o dins .ds-layout__aside quan es vol aquest aspecte
+   concret (vegeu `panell` i `SeguimentDeFeines` per a exemples reals
+   combinant totes dues classes al mateix element). */
+.ds-sidebar {
+  background: var(--ds-color-surface);
+  border-right: 1px solid var(--ds-color-border);
+  padding: var(--ds-space-6) var(--ds-space-4);
+}
+
+.ds-sidebar__section {
+  margin-bottom: var(--ds-space-5);
+}
+
+.ds-sidebar__section-title {
+  display: block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ds-color-muted);
+  padding: 0 var(--ds-space-3);
+  margin-bottom: var(--ds-space-2);
+}
+
+/* Variant per a una secció que aparella un títol amb un paràgraf
+   descriptiu a sota (en lloc d'etiquetar una llista, com fa
+   .ds-sidebar__section-title) — p. ex. una barra lateral que explica
+   què conté cada categoria. El títol ha de destacar clarament per
+   damunt del text: mida i pes més alts, color ple (no mig-to com
+   .ds-sidebar__section-title, que és una etiqueta discreta). Fet
+   servir per primer cop a `panell` (barres de "Taules mestres" i
+   "Diagnòstic", 2026-08-26). */
+.ds-sidebar__section-heading {
+  display: block;
+  margin: 0 0 var(--ds-space-1);
+  padding: 0 var(--ds-space-3);
+  font-size: 0.85rem;
+  font-weight: 700;
+  /* Color primari, no --ds-color-text: mateixa convenció que
+     .ds-page-title/.ds-card__title/.ds-toc__title — un títol es
+     tenyeix amb el color de marca de l'skin actiu, no amb el gris
+     neutre del cos del text. */
+  color: var(--ds-color-primary);
+}
+
+.ds-sidebar__section-text {
+  margin: 0;
+  padding: 0 var(--ds-space-3);
+  font-size: 0.78rem;
+  color: var(--ds-color-muted);
+  line-height: 1.4;
+}
+
+.ds-sidebar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ds-sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-2);
+  padding: var(--ds-space-2) var(--ds-space-3);
+  border: none;
+  border-bottom: 1px solid var(--ds-color-border);
+  background: none;
+  border-radius: 0;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--ds-color-text);
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ds-sidebar__list > *:last-child .ds-sidebar__link,
+.ds-sidebar__link:last-child {
+  border-bottom: none;
+}
+
+.ds-sidebar__link:hover {
+  background: var(--ds-color-surface-alt);
+}
+
+.ds-sidebar__link.is-active {
+  background: var(--ds-color-primary-light);
+  color: var(--ds-color-primary);
+  font-weight: 600;
+}
+
+/* ── Índex / selector de components (TOC) ─────────────────────
+   Llista plana de selecció (índex de continguts, selector de
+   components d'un catàleg) — a diferència de .ds-sidebar (barra de
+   navegació d'app amb seccions i fons tenyit a l'actiu), aquí l'actiu
+   es marca amb una ratlla esquerra de color, sense fons tenyit.
+   Modificador .ds-toc--panel: variant amb caixa (vora + cantonades
+   arrodonides + padding) per a usos flotants (p. ex. una barra
+   lateral dins .ds-layout__aside); sense el modificador, la llista
+   queda "flush" (sense caixa pròpia), pensada per anar ja dins d'un
+   contenidor amb la seva pròpia vora. */
+.ds-toc__title {
+  display: block;
+  margin: 0;
+  padding: var(--ds-space-3) var(--ds-space-4);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ds-color-primary);
+  border-bottom: 1px solid var(--ds-color-border);
+}
+
+/* Sense padding al contenidor: així les vores (border-bottom) de cada
+   .ds-toc__link arriben d'extrem a extrem de la caixa, no només fins
+   al marge intern. */
+.ds-toc--panel {
+  background: var(--ds-color-surface);
+  border: 1px solid var(--ds-color-border);
+  border-radius: var(--ds-radius);
+  overflow: hidden;
+}
+
+.ds-toc--panel .ds-toc__title {
+  padding: var(--ds-space-2) var(--ds-space-3);
+}
+
+.ds-toc__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ds-toc__link {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-4);
+  padding: var(--ds-space-2) var(--ds-space-3);
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid var(--ds-color-border);
+  color: var(--ds-color-text);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+/* Nota: .ds-toc__link:last-child NO funciona aquí (cada link és fill
+   únic del seu <li>, per tant sempre és :last-child del seu propi
+   pare) — cal apuntar a l'últim <li> de la llista i baixar-hi el
+   link com a descendent. */
+.ds-toc__list > *:last-child .ds-toc__link {
+  border-bottom: none;
+}
+
+/* La icona és una .ds-icon-box (icon.css) amb --solid: fons ple del
+   color primari i icona en blanc, en lloc d'una <i> solta. */
+.ds-toc__link .ds-icon-box {
+  flex-shrink: 0;
+}
+
+/* Bloc de text amb títol + subtítol opcional (2a línia, com un
+   subtítol discret sota l'etiqueta principal). */
+.ds-toc__link-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.ds-toc__link-subtitle {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--ds-color-muted);
+}
+
+.ds-toc__link:hover {
+  background: var(--ds-color-surface-alt);
+  color: var(--ds-color-primary);
+}
+
+.ds-toc__link:focus-visible {
+  outline: none;
+  box-shadow: var(--ds-focus-ring);
+}
+
+.ds-toc__link.is-active,
+.ds-toc__link[aria-current="page"] {
+  border-left-color: var(--ds-color-primary);
+  color: var(--ds-color-primary);
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 520px) {
+  .ds-topbar {
+    justify-content: center;
+  }
+
+  .ds-site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ds-site-header__text {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--ds-color-border);
+    padding-top: var(--ds-space-2);
+  }
+}
