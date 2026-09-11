@@ -508,10 +508,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6983123,
+        "lng": 2.8946981
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -520,7 +523,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "camara",
@@ -530,10 +533,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.7043232,
+        "lng": 2.8920592
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -542,7 +548,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "curtina",
@@ -552,10 +558,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6988335,
+        "lng": 2.8882083
+      },
+      "coordinateStatus": "approximate-street-nominatim",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -564,7 +573,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar. Nominatim només ha trobat el carrer (Ronda Clemenceau), sense el número 6 concret."
     },
     {
       "id": "hotel-mondial",
@@ -574,10 +583,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6998965,
+        "lng": 2.8890063
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -586,7 +598,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "la-part-du-reve",
@@ -596,10 +608,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.7002302,
+        "lng": 2.8899406
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -608,7 +623,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "maison-dahlia",
@@ -618,10 +633,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6981551,
+        "lng": 2.8934002
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -630,7 +648,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "au-goustous",
@@ -640,10 +658,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.698264,
+        "lng": 2.8962754
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -652,7 +673,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "cave-millesime",
@@ -662,10 +683,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6999924,
+        "lng": 2.8897094
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -674,7 +698,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar. La cerca per adreça (\"6 rue Gustave Flaubert\") retornava per defecte un carrer homònim a Toluges (~6,7 km, poble veí, lloc equivocat). S'ha corregit amb una segona cerca que ha trobat el comerç \"Millésimes\" pel seu nom, al carrer Flaubert de Perpinyà (barri Clemenceau) — coincideix amb el nom del local."
     },
     {
       "id": "ego-glacier",
@@ -684,10 +708,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6988407,
+        "lng": 2.8952797
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -696,7 +723,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar. La cerca per adreça (\"1 place République\") retornava per defecte Canet de Rosselló (~9 km, poble de la costa, lloc equivocat). S'ha corregit cercant el negoci pel nom (\"Ego Glacier\"), trobat directament a la plaça de la República de Perpinyà."
     },
     {
       "id": "italia-mia",
@@ -706,10 +733,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6979758,
+        "lng": 2.8969031
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -718,7 +748,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "la-rotonde",
@@ -728,10 +758,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6983981,
+        "lng": 2.8890342
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -740,7 +773,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "bohem-cuisine",
@@ -750,10 +783,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.7011709,
+        "lng": 2.8925763
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -762,7 +798,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "boucherie-guillaume",
@@ -772,10 +808,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6988219,
+        "lng": 2.8949585
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -784,7 +823,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar. La cerca per adreça (\"14 rue Mirabeau\") retornava per defecte Baixàs (~9 km, poble veí, lloc equivocat: hi ha diversos carrers Mirabeau a la comarca). S'ha corregit cercant el negoci pel nom (\"Boucherie Guillaume\"/\"Chez Guillaume\"), trobat al carrer Mirabeau de Perpinyà (barri Sant Joan), mateix número (14) que l'adreça original."
     },
     {
       "id": "clemenceau-gestion-immobiliere",
@@ -794,10 +833,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6982107,
+        "lng": 2.8869431
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -806,7 +848,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "havas-voyage",
@@ -816,10 +858,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6993004,
+        "lng": 2.8941445
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -828,7 +873,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "l-atelier-photo-mgb",
@@ -838,10 +883,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6983921,
+        "lng": 2.897128
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -850,7 +898,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "librairie-hybride",
@@ -860,10 +908,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.7009032,
+        "lng": 2.8947832
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -872,7 +923,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "panirosa",
@@ -882,10 +933,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6993583,
+        "lng": 2.8960197
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -894,7 +948,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar. La cerca directa per adreça no trobava el carrer (\"rue des Trois Journées\"); s'ha resolt cercant el negoci pel nom (\"Panirosa\"), forner trobat al carrer de les Tres Jornades de Perpinyà."
     },
     {
       "id": "cajelice",
@@ -904,10 +958,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6991973,
+        "lng": 2.8900244
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -916,7 +973,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "credit-agricole-agence-catalogne",
@@ -926,10 +983,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6981521,
+        "lng": 2.8890325
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -938,7 +998,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "havas-voyage-2",
@@ -948,10 +1008,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6983829,
+        "lng": 2.8925378
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -960,7 +1023,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "la-cour-du-baron",
@@ -970,10 +1033,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6982171,
+        "lng": 2.8962238
+      },
+      "coordinateStatus": "approximate-street-nominatim",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -982,7 +1048,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar. Nominatim només ha trobat el carrer (carrer del Teatre), sense el número 6 concret."
     },
     {
       "id": "lily-aime",
@@ -992,10 +1058,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.699989,
+        "lng": 2.8958482
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -1004,7 +1073,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar. La cerca per adreça (\"2 place Gambetta\") retornava per defecte Saleilles (~6 km, poble veí, lloc equivocat: hi ha una altra plaça Gambetta). S'ha corregit restringint la cerca a la zona de Perpinyà (viewbox), trobant la plaça Gambetta real del barri Sant Joan."
     },
     {
       "id": "petite-pousse",
@@ -1014,10 +1083,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6985793,
+        "lng": 2.8894886
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -1026,7 +1098,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar. La cerca per adreça retornava en primer lloc Villeneuve-de-la-Raho (~7 km, poble veí, lloc equivocat); el resultat correcte (plaça Joan Payrà, Perpinyà) apareixia en segon lloc a la mateixa cerca."
     },
     {
       "id": "atelier-saint-augustin",
@@ -1036,10 +1108,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6974996,
+        "lng": 2.8935223
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -1048,7 +1123,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "la-droguerie",
@@ -1058,10 +1133,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6975721,
+        "lng": 2.8943009
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -1070,7 +1148,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "la-ferme-des-augustins",
@@ -1080,10 +1158,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6975721,
+        "lng": 2.8943009
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -1092,7 +1173,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "patisserie-buisson",
@@ -1102,10 +1183,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6975048,
+        "lng": 2.8942575
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -1114,7 +1198,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "gigi-brunch",
@@ -1124,10 +1208,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6975179,
+        "lng": 2.8945024
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -1136,7 +1223,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "nocibe",
@@ -1146,10 +1233,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6997163,
+        "lng": 2.8950116
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -1158,7 +1248,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "botanika",
@@ -1180,7 +1270,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Intent de geocodificació (2026-09-12): cap resultat a Nominatim per a \"rue des Remparts de la Villeneuve\"/\"remparts Villeneuve\" (amb número, sense número, cercat pel nom del comerç, i restringit a la zona de Perpinyà) — pot ser un nom de carrer informal o mal transcrit a la font. Coordenades pendents de geocodificar."
     },
     {
       "id": "bookine",
@@ -1190,10 +1280,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6986174,
+        "lng": 2.8941348
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -1202,7 +1295,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "mano-di-pasta",
@@ -1212,10 +1305,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6995989,
+        "lng": 2.8923743
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -1224,7 +1320,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "pharmacie-vauban",
@@ -1234,10 +1330,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.6989104,
+        "lng": 2.8917699
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -1246,7 +1345,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     },
     {
       "id": "villa-arts-66",
@@ -1256,10 +1355,13 @@
       "countryCode": "FR",
       "kind": "comerc",
       "circuit": "OFF",
-      "coordinates": null,
-      "coordinateStatus": "pending-geocode",
-      "geocodedOn": null,
-      "geocodeSource": null,
+      "coordinates": {
+        "lat": 42.7009598,
+        "lng": 2.8994264
+      },
+      "coordinateStatus": "verified-nominatim-portal",
+      "geocodedOn": "2026-09-12",
+      "geocodeSource": "nominatim.openstreetmap.org",
       "accessibility": null,
       "contactUrl": null,
       "addressSources": [
@@ -1268,7 +1370,7 @@
       "addressStatus": "verified-image-inspection",
       "entranceVerified": false,
       "normalOpeningHours": null,
-      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual). Coordenades pendents de geocodificar."
+      "notesCa": "Adreça i nom llegits directament de la fitxa-imatge oficial del festival (verificació visual)."
     }
   ]
 }

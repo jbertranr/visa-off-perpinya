@@ -12,8 +12,9 @@ verificat** i **pendents** — sense forçar cap recompte.
 | **Visa** | 27 | **27** | 26 (1 en conflicte) | 27/27 (via seu) | 27/27 (regla general) |
 | **OFF** | 146 | **10** | 10/10 | 9/10 (via seu) | 0/10 |
 
-**Emplaçaments:** 19/19 geocodificats (Nominatim, 11/09/2026) — 12 amb portal exacte, 7
-a nivell de carrer/plaça (sense número). **Autors:** 40, cap biografia verificada.
+**Emplaçaments:** 54/55 geocodificats (Nominatim, 11 i 12/09/2026) — 45 amb portal exacte,
+9 a nivell de carrer/plaça (sense número), 1 pendent ("Botanika" — vegeu actualització
+12/09/2026 més avall). **Autors:** 92, 8 amb biografia verificada.
 
 ## Visa pour l'Image — 27/27 importades
 
@@ -85,6 +86,34 @@ d'scraping automàtic.
 demanar el PDF directament a l'associació OFF) i, full a full, anotar títol/autor/emplaçament
 a `data/exhibitions.json` seguint l'esquema existent — after `node validate-catalog.cjs`
 per comprovar-ho abans de publicar.
+
+## Actualització 12/09/2026 — geocodificació dels 35 emplaçaments nous de l'OFF
+
+Els 35 emplaçaments importats a la categoria «Individuel reportage Off 2026» (vegeu
+`data/coverage.json`) tenien adreça verificada visualment però cap coordenada. S'ha fet
+un lot de geocodificació amb Nominatim (`nominatim.openstreetmap.org`, respectant el ritme
+d'una petició per segon i identificant l'aplicació al `User-Agent`):
+
+- **34 de 35 resolts.** La primera passada (cerca directa `<adreça>, Perpignan, France`) va
+  donar resultat per a 31; **6 d'aquests 31 eren erronis** (coincidència amb un carrer/plaça
+  homònim a un poble veí — Toluges, Canet de Rosselló, Baixàs, Saleilles, Villeneuve-de-la-
+  Raho — detectat comparant la distància de cada resultat amb el centre de referència de
+  Perpinyà; res a més de ~1 km del centre coincidia amb l'àrea real del festival). Es van
+  corregir manualment 5 d'aquests 6 (cercant pel **nom del comerç** en lloc de l'adreça, o
+  restringint la cerca a una `viewbox` al voltant de Perpinyà); el 6è ("Petite Pousse") ja
+  tenia el resultat correcte com a **segona** opció de la mateixa cerca. Les altres 3
+  adreces sense cap resultat a la primera passada (Panirosa, Botanika, Mano di Pasta) es
+  van reintentar amb variants — 2 de 3 amb èxit (Panirosa pel nom, Mano di Pasta amb
+  l'adreça neta).
+- **1 sense resoldre: "Botanika"** (26 rue remparts Villeneuve) — cap variant provada
+  (amb/sense número, pel nom del comerç, restringit a la zona de Perpinyà) ha donat cap
+  resultat a Nominatim. Es manté `coordinateStatus: "pending-geocode"` — no s'ha inventat
+  cap coordenada.
+- Cada venue corregit porta al seu `notesCa` (`data/venues.json`) el detall de quina
+  coincidència equivocada va sortir inicialment i com es va resoldre, per transparència.
+
+Amb això, dels 55 emplaçaments del catàleg, **54 tenen coordenades reals** (45 a nivell de
+portal exacte, 9 a nivell de carrer/plaça) i **1 queda pendent**.
 
 ## Limitacions explícites (no s'han saltat per completar el catàleg)
 

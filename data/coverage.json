@@ -20,22 +20,26 @@
     "importedExhibitionsSolid": 58,
     "importedExhibitionsLowConfidence": 4,
     "withVenueAssigned": 62,
-    "withVerifiedCoordinates": 10,
-    "withVenuePendingGeocode": 35,
+    "withVerifiedCoordinates": 58,
+    "withVenuePendingGeocode": 1,
     "withConfirmedOpeningHours": 0,
     "withVerifiedSummary": 2,
     "withImage": 48,
-    "notesCa": "62 sobre 146 anunciades. 53 provenen d'inspecció visual directa (baixada + lectura) de totes les imatges de la categoria «Individuel reportage Off 2026» — cada imatge és una fitxa completa amb títol, autor i emplaçament impresos, no un simple nom de fitxer. 5 d'aquestes coincidien exactament amb entrades ja importades de la guia inicial (bona validació creuada). 4 més són de BAIXA CONFIANÇA (noms de fitxer de les miniatures de categoria, sense emplaçament, ordre nom/cognom no verificat en 2 d'elles). Els 35 emplaçaments nous d'aquesta categoria tenen adreça verificada visualment però CAP coordenada encara — pendents d'un lot de geocodificació. Falten 4 categories del programa OFF (Collectif reportage, Invité, Individuel libre, Collectif libre, ~93 exposicions més) per fer amb el mateix mètode."
+    "notesCa": "62 sobre 146 anunciades. 53 provenen d'inspecció visual directa (baixada + lectura) de totes les imatges de la categoria «Individuel reportage Off 2026» — cada imatge és una fitxa completa amb títol, autor i emplaçament impresos, no un simple nom de fitxer. 5 d'aquestes coincidien exactament amb entrades ja importades de la guia inicial (bona validació creuada). 4 més són de BAIXA CONFIANÇA (noms de fitxer de les miniatures de categoria, sense emplaçament, ordre nom/cognom no verificat en 2 d'elles). Lot de geocodificació fet el 2026-09-12 (Nominatim): 34 dels 35 emplaçaments pendents ja tenen coordenades (9 casos on la cerca automàtica per adreça retornava per defecte un poble veí —Toluges, Canet de Rosselló, Baixàs, Saleilles, Vilanova de Raó— s'han corregit manualment cercant pel nom del comerç o restringint la zona de cerca a Perpinyà). Només \"Botanika\" (26 rue remparts Villeneuve) es queda pendent — Nominatim no reconeix aquest carrer amb cap variant provada. Falten 4 categories del programa OFF (Collectif reportage, Invité, Individuel libre, Collectif libre, ~93 exposicions més) per fer amb el mateix mètode."
   },
   "venues": {
-    "total": 19,
-    "geocoded": 19,
-    "geocodedPortalExact": 12,
-    "geocodedStreetLevelApproximate": 7,
+    "total": 55,
+    "geocoded": 54,
+    "geocodedPortalExact": 45,
+    "geocodedStreetLevelApproximate": 9,
     "geocodeSource": "nominatim.openstreetmap.org",
-    "geocodedOn": "2026-09-11"
+    "geocodedOn": "2026-09-11 / 2026-09-12 (segon lot, els 35 emplaçaments nous de l'OFF)"
   },
-  "authorBiographies": { "verified": 7, "total": 40, "notesCa": "7 biografies breus verificades contra fonts secundàries independents (Wikipedia, Pulitzer.org, webs personals) i confirmades com la persona correcta (sense confusió d'homònims): Depardon, Hicks, Ballesta, Guttenfelder, Ludwig, Yamashita, Nissen — els fotògrafs més coneguts del programa. Els 33 restants queden pendents; visapourlimage.com continua bloquejant l'accés automatitzat a les seves pròpies fitxes de fotògraf." },
+  "authorBiographies": {
+    "verified": 7,
+    "total": 40,
+    "notesCa": "7 biografies breus verificades contra fonts secundàries independents (Wikipedia, Pulitzer.org, webs personals) i confirmades com la persona correcta (sense confusió d'homònims): Depardon, Hicks, Ballesta, Guttenfelder, Ludwig, Yamashita, Nissen — els fotògrafs més coneguts del programa. Els 33 restants queden pendents; visapourlimage.com continua bloquejant l'accés automatitzat a les seves pròpies fitxes de fotògraf."
+  },
   "conflicts": [
     {
       "exhibitionId": "visa-2026-the-people-of-minneapolis-vs-ice",
