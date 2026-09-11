@@ -13,8 +13,12 @@
   <link rel="stylesheet" href="assets/css/skins/skin-neutra.css">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components/card.css">
   <link rel="stylesheet" href="assets/css/components/badge.css">
+  <link rel="stylesheet" href="assets/css/components/status.css">
   <link rel="stylesheet" href="assets/css/components/button.css">
+  <link rel="stylesheet" href="assets/css/components/empty.css">
+  <link rel="stylesheet" href="assets/css/components/modal.css">
   <link rel="stylesheet" href="assets/vendor/leaflet1.9.3/leaflet.css">
   <link rel="stylesheet" href="assets/css/components/tabbar.css">
   <link rel="stylesheet" href="assets/css/components/typography.css">
@@ -30,14 +34,26 @@
       flex: 1; min-height: 0; position: relative;
     }
     #voff-map { position: absolute; inset: 0; bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
+    /* A la dreta (no a l'esquerra): el control de zoom natiu de Leaflet
+       viu al top-left del mapa (leaflet-top.leaflet-left, z-index propi
+       molt alt) i tapava/interceptava els clics d'aquest panell quan
+       coincidien al mateix racó — els filtres no s'aplicaven perquè el
+       clic real l'atrapava el botó de zoom, no el botó Visa/OFF de sota. */
     .voff-map-filters {
-      position: absolute; top: var(--ds-space-3); left: var(--ds-space-3); z-index: 20;
+      /* z-index molt alt a propòsit: els panes/controls interns de
+         Leaflet (dins de #voff-map) fan servir z-index de fins a ~1000
+         (leaflet-top/leaflet-control-container), i com que #voff-map no
+         estableix un context d'apilament propi (position:absolute sense
+         z-index), els seus descendents competien directament amb aquest
+         panell i el tapaven sencer. */
+      position: absolute; top: var(--ds-space-3); right: var(--ds-space-3); z-index: 1100;
       display: flex; flex-direction: column; gap: var(--ds-space-1);
       background: var(--ds-color-surface); padding: var(--ds-space-2);
       border-radius: var(--ds-radius); box-shadow: var(--ds-shadow);
     }
   </style>
   <script src="assets/css/router.js"></script>
+  <script src="assets/css/components/modal.js"></script>
   <script src="assets/css/components/tabbar.js"></script>
   <script src="js/config.js"></script>
 </head>
@@ -74,6 +90,22 @@
     <a class="ds-tabbar__item" data-tab="ruta" href="ruta.html"><i class="fa-solid fa-route" aria-hidden="true"></i><span>Ruta<span class="ds-tabbar__badge" id="voff-route-badge" hidden>0</span></span></a>
     <a class="ds-tabbar__item" data-tab="mapa" href="mapa.html"><i class="fa-solid fa-map" aria-hidden="true"></i><span>Mapa</span></a>
   </nav>
+
+  <dialog class="ds-modal ds-modal--fit" id="dlg-venue" aria-labelledby="dlg-venue-title">
+    <div class="ds-modal__header">
+      <p class="ds-modal__title" id="dlg-venue-title">Exposicions</p>
+      <button class="ds-icon-button" data-ds-modal-close aria-label="Tanca"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <div class="ds-modal__body" id="dlg-venue-body"></div>
+  </dialog>
+
+  <dialog class="ds-modal ds-modal--fit" id="dlg-fitxa" aria-labelledby="dlg-fitxa-title">
+    <div class="ds-modal__header">
+      <p class="ds-modal__title" id="dlg-fitxa-title">Fitxa d'exposició</p>
+      <button class="ds-icon-button" data-ds-modal-close aria-label="Tanca"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <div class="ds-modal__body" id="dlg-fitxa-body"></div>
+  </dialog>
 
   <script src="assets/vendor/leaflet1.9.3/leaflet.js"></script>
   <script src="js/fontsize.js"></script>

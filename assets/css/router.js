@@ -52,9 +52,26 @@
     return h;
   }
 
-  document.querySelectorAll('link[rel="stylesheet"]').forEach(function (l) { loadedCss.add(abs(l.getAttribute('href'))); });
-  document.querySelectorAll('script[src]').forEach(function (s) { loadedJs.add(abs(s.getAttribute('src'))); });
-  document.querySelectorAll('head style').forEach(function (st) { styleKeys.add(strHash(st.textContent)); });
+  // Bug real (2026-09-11): aquest "seeding" s'executava de seguida, en el
+  // moment en què el propi <script> de router.js corre — típicament el
+  // PRIMER <script> de <head>. En aquell instant el parser encara no ha
+  // arribat als següents (modal.js/tabbar.js/config.js a <head>, i sobretot
+  // l'script propi de cada pàgina al final de <body>, com aprop.js), així
+  // que `document.querySelectorAll('script[src]')` només trobava el propi
+  // router.js. Resultat: loadJs() els tractava com "no carregats" a CADA
+  // navegació on tornaven a aparèixer (p. ex. tornar a "A prop" després
+  // d'haver visitat una altra pantalla) i els tornava a injectar i executar
+  // sencers — múltiples IIFE i múltiples listeners 'ds:navigated' pel
+  // mateix script, amb estat (favorits/pendents, etc.) duplicat i
+  // inconsistent. Cal esperar que el DOM inicial estigui sencer abans de
+  // fer el seeding.
+  function seedLoaded() {
+    document.querySelectorAll('link[rel="stylesheet"]').forEach(function (l) { loadedCss.add(abs(l.getAttribute('href'))); });
+    document.querySelectorAll('script[src]').forEach(function (s) { loadedJs.add(abs(s.getAttribute('src'))); });
+    document.querySelectorAll('head style').forEach(function (st) { styleKeys.add(strHash(st.textContent)); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', seedLoaded);
+  else seedLoaded();
 
   function loadCss(href) {
     if (loadedCss.has(href)) return Promise.resolve();

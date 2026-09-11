@@ -47,17 +47,21 @@
         </button>
       </div>
     </div>
-    <div class="voff-filters" role="group" aria-label="Filtra per circuit">
-      <button class="ds-button ds-button--sm" data-circuit-filter="tots" type="button">Tots</button>
-      <button class="ds-button ds-button--sm ds-button--ghost" data-circuit-filter="VISA" type="button">Visa</button>
-      <button class="ds-button ds-button--sm ds-button--ghost" data-circuit-filter="OFF" type="button">OFF</button>
-      <button class="ds-button ds-button--sm ds-button--ghost voff-filters__more" id="btn-more-filters" type="button">
-        <i class="fa-solid fa-sliders" aria-hidden="true"></i> Més filtres
-      </button>
-    </div>
   </header>
 
   <main id="main-content" class="ds-main" tabindex="-1">
+
+    <div class="voff-filters" role="group" aria-label="Filtres" style="padding:0 0 var(--ds-space-3);">
+      <button class="ds-button ds-button--sm" data-circuit-filter="tots" type="button"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Tots</button>
+      <button class="ds-button ds-button--sm ds-button--ghost" data-circuit-filter="VISA" type="button"><i class="fa-solid fa-camera-retro" aria-hidden="true"></i> Visa</button>
+      <button class="ds-button ds-button--sm ds-button--ghost" data-circuit-filter="OFF" type="button"><i class="fa-solid fa-store" aria-hidden="true"></i> OFF</button>
+      <button class="ds-button ds-button--sm ds-button--ghost" id="btn-filter-preferits" type="button">
+        <i class="fa-solid fa-star" aria-hidden="true"></i> Preferits
+      </button>
+      <button class="ds-button ds-button--sm ds-button--ghost" id="btn-filter-pendents" type="button">
+        <i class="fa-solid fa-circle" aria-hidden="true"></i> Pendents
+      </button>
+    </div>
 
     <div class="voff-geo-bar" id="voff-geo-bar">
       <i class="fa-solid fa-location-crosshairs" aria-hidden="true"></i>
@@ -109,21 +113,6 @@
         </div>
       </div>
       <p class="ds-text ds-text--sm ds-text--muted" style="margin-top:var(--ds-space-3);">Totes les hores són de Perpinyà (Europe/Paris), independentment del teu dispositiu.</p>
-    </div>
-  </dialog>
-
-  <dialog class="ds-modal ds-modal--sm" id="dlg-more-filters" aria-labelledby="dlg-more-filters-title">
-    <div class="ds-modal__header">
-      <p class="ds-modal__title" id="dlg-more-filters-title">Més filtres</p>
-      <button class="ds-icon-button" data-ds-modal-close aria-label="Tanca"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
-    </div>
-    <div class="ds-modal__body">
-      <label class="ds-text" style="display:flex; align-items:center; gap: var(--ds-space-2); margin-bottom: var(--ds-space-3);">
-        <input type="checkbox" id="voff-filter-preferits"> Només preferits
-      </label>
-      <label class="ds-text" style="display:flex; align-items:center; gap: var(--ds-space-2);">
-        <input type="checkbox" id="voff-filter-pendents"> Només pendents de visitar
-      </label>
     </div>
   </dialog>
 

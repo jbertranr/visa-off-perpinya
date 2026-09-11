@@ -234,18 +234,20 @@
     reflectMode();
   }
 
-  function wireMoreFilters() {
-    const btn = document.getElementById("btn-more-filters");
-    const dlg = document.getElementById("dlg-more-filters");
-    const favChk = document.getElementById("voff-filter-preferits");
-    const pendChk = document.getElementById("voff-filter-pendents");
-    if (!btn || !dlg) return;
-    btn.addEventListener("click", () => {
-      if (window.DSModal) window.DSModal.obre("dlg-more-filters");
-      else dlg.showModal();
-    });
-    favChk.addEventListener("change", () => { state.onlyFavorites = favChk.checked; render(); });
-    pendChk.addEventListener("change", () => { state.onlyPending = pendChk.checked; render(); });
+  // Botons directes (Preferits/Pendents), mateix patró que explora.js —
+  // ja no calen com a checkboxes dins d'un modal "Més filtres".
+  function wireExtraFilters() {
+    const toggle = (id, key) => {
+      const btn = document.getElementById(id);
+      if (!btn) return;
+      btn.addEventListener("click", () => {
+        state[key] = !state[key];
+        btn.classList.toggle("ds-button--ghost", !state[key]);
+        render();
+      });
+    };
+    toggle("btn-filter-preferits", "onlyFavorites");
+    toggle("btn-filter-pendents", "onlyPending");
   }
 
   async function init() {
@@ -271,7 +273,7 @@
     wireGeoBarClose();
     wirePlanDialog();
     wireMinimap();
-    wireMoreFilters();
+    wireExtraFilters();
 
     try {
       const { catalog, fromCache } = await mods.data.loadCatalog();

@@ -12,28 +12,67 @@
   let markers = []; // { marker, venueGroup }
   let circuitFilter = "tots";
 
-  function popupContent(group) {
-    const wrap = document.createElement("div");
-    const title = document.createElement("p");
-    title.style.fontWeight = "700";
-    title.style.margin = "0 0 4px";
-    title.textContent = group.venue.name;
-    wrap.append(title);
+  function parisWallClockNow() {
+    const mode = mods.state.getPlanMode();
+    if (mode === "planificar") {
+      const dt = mods.state.getPlanDateTime();
+      return mods.opening.planAsParisWallClock(dt.date, dt.time);
+    }
+    return mods.opening.nowAsParisWallClock();
+  }
+
+  function updateRouteBadge() {
+    const badge = document.getElementById("voff-route-badge");
+    if (!badge) return;
+    const n = mods.state.getRoute().length;
+    badge.hidden = n === 0;
+    badge.textContent = String(n);
+  }
+
+  // Fitxa dins d'un modal apilat sobre el del llistat del lloc — mateix
+  // patró que aprop.js/explora.js/ruta.js.
+  function openFitxa(exh) {
+    const body = document.getElementById("dlg-fitxa-body");
+    body.replaceChildren(mods.ui.buildFitxaCard(exh, mods, { onRouteChange: updateRouteBadge }));
+    document.getElementById("dlg-fitxa-title").textContent = exh.titleOriginal;
+    if (window.DSModal) window.DSModal.obre("dlg-fitxa");
+    else document.getElementById("dlg-fitxa").showModal();
+    history.replaceState(null, "", `#exh=${encodeURIComponent(exh.editionId)}::${encodeURIComponent(exh.id)}`);
+  }
+
+  // En clicar un marcador: modal amb la llista d'exposicions d'aquell
+  // lloc (en lloc del popup nadiu de Leaflet amb un enllaç fora de la
+  // pantalla — es demana que "en demanar les exposicions d'un lloc surti
+  // una finestra modal").
+  function openVenueModal(group) {
+    document.getElementById("dlg-venue-title").textContent = group.venue.name;
+    const body = document.getElementById("dlg-venue-body");
+    body.replaceChildren();
 
     const meta = document.createElement("p");
-    meta.style.margin = "0 0 8px";
-    meta.style.fontSize = "0.82rem";
+    meta.className = "ds-text ds-text--sm ds-text--muted";
     const bits = [`${group.exhibitions.length} ${group.exhibitions.length === 1 ? "exposició" : "exposicions"}`];
     if (group.venue.coordinateStatus === "approximate-street-nominatim") bits.push("ubicació aproximada (carrer, no portal)");
     meta.textContent = bits.join(" · ");
-    wrap.append(meta);
+    body.append(meta);
 
-    const btn = document.createElement("a");
-    btn.href = `explora.html?venue=${encodeURIComponent(group.venueId)}`;
-    btn.className = "ds-button ds-button--sm";
-    btn.textContent = "Veure les exposicions d'aquest lloc";
-    wrap.append(btn);
-    return wrap;
+    const parisWallClock = parisWallClockNow();
+    const prefs = mods.state.getPrefs();
+    const list = document.createElement("div");
+    list.style.display = "flex";
+    list.style.flexDirection = "column";
+    list.style.gap = "var(--ds-space-2)";
+    for (const exh of group.exhibitions) {
+      list.append(mods.ui.renderExhibitionCard(exh, {
+        parisWallClock,
+        closingSoonMinutes: prefs.closingSoonMinutes,
+        onOpen: openFitxa
+      }));
+    }
+    body.append(list);
+
+    if (window.DSModal) window.DSModal.obre("dlg-venue");
+    else document.getElementById("dlg-venue").showModal();
   }
 
   function renderMarkers(catalog) {
@@ -49,7 +88,7 @@
       const marker = L.marker([group.venue.coordinates.lat, group.venue.coordinates.lng], {
         title: `${group.venue.name} (${group.exhibitions.length})`
       });
-      marker.bindPopup(popupContent(group));
+      marker.on("click", () => openVenueModal(group));
       marker.addTo(map);
       markers.push({ marker, group });
     }
@@ -73,12 +112,31 @@
   async function init() {
     const mapEl = document.getElementById("voff-map");
     if (!mapEl || typeof L === "undefined") return;
-    if (map) return; // ja inicialitzat — no en calen dos
+    // Guarda SÍNCRONA (abans de qualsevol await): quan router.js carrega
+    // aquest script per primera vegada en una navegació, init() es crida
+    // dues vegades quasi seguides (la pròpia comprovació de readyState al
+    // final del fitxer + el 'ds:navigated' que arriba tot seguit). Amb
+    // `if (map) return` només (assignat després de l'await de sota), les
+    // dues crides passaven la comprovació abans que cap hagués acabat
+    // d'inicialitzar Leaflet, i la segona feia petar "Map container is
+    // already initialized." Marcar l'element mateix, de seguida, tanca
+    // la finestra de carrera; com que a cada visita nova la router.js
+    // importa un <div id="voff-map"> fresc, la marca es reinicia sola.
+    if (mapEl.dataset.voffMapInit) return;
+    mapEl.dataset.voffMapInit = "1";
 
     if (!mods) {
-      const [data] = await Promise.all([import("./modules/data.js")]);
-      mods = { data };
+      const [opening, geo, data, stateMod, ui] = await Promise.all([
+        import("./modules/opening.js"),
+        import("./modules/geo.js"),
+        import("./modules/data.js"),
+        import("./modules/state.js"),
+        import("./modules/ui.js")
+      ]);
+      mods = { opening, geo, data, state: stateMod, ui };
     }
+
+    updateRouteBadge();
 
     map = L.map(mapEl, { zoomControl: true });
     map.setView([window.APP.perpignanCenterRef.lat, window.APP.perpignanCenterRef.lng], 15);

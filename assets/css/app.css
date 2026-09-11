@@ -124,11 +124,6 @@ html.voff-text-xl { font-size: 125%; }
   border-bottom: 1px solid var(--ds-color-border);
 }
 
-.voff-filters__more {
-  margin-left: auto;
-  flex-shrink: 0;
-}
-
 /* ── Contingut ── */
 #main-content.ds-main {
   max-width: 640px;
